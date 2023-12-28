@@ -2155,7 +2155,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 織 u7e54 (織) - GlyphWiki u7e54 (国際符号化文字集合・ユニコード統合漢字 U+7E54「織」)
 繕 u7e55 (繕) - GlyphWiki u7e55 (国際符号化文字集合・ユニコード統合漢字 U+7E55「繕」)
 繞 u7e5e (繞) - GlyphWiki u7e5e (国際符号化文字集合・ユニコード統合漢字 U+7E5E「繞」)
-繪 u7e6a (繪) - GlyphWiki u7e6a (国際符号化文字集合・ユニコード統合漢字 U+7E6A「繪」)
+繪 u7e6a (絵) - GlyphWiki u7e6a (国際符号化文字集合・ユニコード統合漢字 U+7E6A「繪」)
 繫 u7e6b (繫) - GlyphWiki u7e6b (国際符号化文字集合・ユニコード統合漢字 U+7E6B「繫」)
 繰 u7e70 (繰) - GlyphWiki u7e70 (国際符号化文字集合・ユニコード統合漢字 U+7E70「繰」)
 繼 u7e7c (繼) - GlyphWiki u7e7c (国際符号化文字集合・ユニコード統合漢字 U+7E7C「繼」)
