@@ -1255,7 +1255,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 揚 u63da (揚) - GlyphWiki u63da (国際符号化文字集合・ユニコード統合漢字 U+63DA「揚」)
 換 u63db (換) - GlyphWiki u63db (国際符号化文字集合・ユニコード統合漢字 U+63DB「換」)
 握 u63e1 (握) - GlyphWiki u63e1 (国際符号化文字集合・ユニコード統合漢字 U+63E1「握」)
-揭 u63ed (揭) - GlyphWiki u63ed (国際符号化文字集合・ユニコード統合漢字 U+63ED「揭」)
+揭 u63ed (掲) - GlyphWiki u63ed (国際符号化文字集合・ユニコード統合漢字 U+63ED「揭」)
 揮 u63ee (揮) - GlyphWiki u63ee (国際符号化文字集合・ユニコード統合漢字 U+63EE「揮」)
 搆 u6406 (搆) - GlyphWiki u6406 (国際符号化文字集合・ユニコード統合漢字 U+6406「搆」)
 損 u640d (損) - GlyphWiki u640d (国際符号化文字集合・ユニコード統合漢字 U+640D「損」)
