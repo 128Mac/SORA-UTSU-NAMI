@@ -1646,7 +1646,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 溜 u6e9c (溜) - GlyphWiki u6e9c (国際符号化文字集合・ユニコード統合漢字 U+6E9C「溜」)
 溝 u6e9d (溝) - GlyphWiki u6e9d (国際符号化文字集合・ユニコード統合漢字 U+6E9D「溝」)
 溢 u6ea2 (溢) - GlyphWiki u6ea2 (国際符号化文字集合・ユニコード統合漢字 U+6EA2「溢」)
-溪 u6eaa (溪) - GlyphWiki u6eaa (国際符号化文字集合・ユニコード統合漢字 U+6EAA「溪」)
+溪 u6eaa (渓) - GlyphWiki u6eaa (国際符号化文字集合・ユニコード統合漢字 U+6EAA「溪」)
 溫 u6eab (溫) - GlyphWiki u6eab (国際符号化文字集合・ユニコード統合漢字 U+6EAB「溫」)
 溶 u6eb6 (溶) - GlyphWiki u6eb6 (国際符号化文字集合・ユニコード統合漢字 U+6EB6「溶」)
 溺 u6eba (溺) - GlyphWiki u6eba (国際符号化文字集合・ユニコード統合漢字 U+6EBA「溺」)
