@@ -1514,7 +1514,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 檻 u6abb (檻) - GlyphWiki u6abb (国際符号化文字集合・ユニコード統合漢字 U+6ABB「檻」)
 櫃 u6ac3 (櫃) - GlyphWiki u6ac3 (国際符号化文字集合・ユニコード統合漢字 U+6AC3「櫃」)
 櫛 u6adb (櫛) - GlyphWiki u6adb (国際符号化文字集合・ユニコード統合漢字 U+6ADB「櫛」)
-櫻 u6afb (櫻) - GlyphWiki u6afb (国際符号化文字集合・ユニコード統合漢字 U+6AFB「櫻」)
+櫻 u6afb (桜) - GlyphWiki u6afb (国際符号化文字集合・ユニコード統合漢字 U+6AFB「櫻」)
 權 u6b0a (權) - GlyphWiki u6b0a (国際符号化文字集合・ユニコード統合漢字 U+6B0A「權」)
 欒 u6b12 (欒) - GlyphWiki u6b12 (国際符号化文字集合・ユニコード統合漢字 U+6B12「欒」)
 次 u6b21 (次) - GlyphWiki u6b21 (国際符号化文字集合・ユニコード統合漢字 U+6B21「次」)
