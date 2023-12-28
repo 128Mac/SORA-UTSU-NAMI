@@ -2169,7 +2169,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 缺 u7f3a (欠) - GlyphWiki u7f3a (国際符号化文字集合・ユニコード統合漢字 U+7F3A「缺」)
 罅 u7f45 (罅) - GlyphWiki u7f45 (国際符号化文字集合・ユニコード統合漢字 U+7F45「罅」)
 罎 u7f4e (罎) - GlyphWiki u7f4e (国際符号化文字集合・ユニコード統合漢字 U+7F4E「罎」)
-罐 u7f50 (罐) - GlyphWiki u7f50 (国際符号化文字集合・ユニコード統合漢字 U+7F50「罐」)
+罐 u7f50 (缶) - GlyphWiki u7f50 (国際符号化文字集合・ユニコード統合漢字 U+7F50「罐」)
 罩 u7f69 (罩) - GlyphWiki u7f69 (国際符号化文字集合・ユニコード統合漢字 U+7F69「罩」)
 罪 u7f6a (罪) - GlyphWiki u7f6a (国際符号化文字集合・ユニコード統合漢字 U+7F6A「罪」)
 置 u7f6e (置) - GlyphWiki u7f6e (国際符号化文字集合・ユニコード統合漢字 U+7F6E「置」)
