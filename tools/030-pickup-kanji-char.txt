@@ -925,7 +925,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 嵯 u5d6f (嵯) - GlyphWiki u5d6f (国際符号化文字集合・ユニコード統合漢字 U+5D6F「嵯」)
 嶮 u5dae (嶮) - GlyphWiki u5dae (国際符号化文字集合・ユニコード統合漢字 U+5DAE「嶮」)
 嶽 u5dbd (岳) - GlyphWiki u5dbd (国際符号化文字集合・ユニコード統合漢字 U+5DBD「嶽」)
-巖 u5dd6 (巖) - GlyphWiki u5dd6 (国際符号化文字集合・ユニコード統合漢字 U+5DD6「巖」)
+巖 u5dd6 (巌) - GlyphWiki u5dd6 (国際符号化文字集合・ユニコード統合漢字 U+5DD6「巖」)
 川 u5ddd (川) - GlyphWiki u5ddd (国際符号化文字集合・ユニコード統合漢字 U+5DDD「川」)
 州 u5dde (州) - GlyphWiki u5dde (国際符号化文字集合・ユニコード統合漢字 U+5DDE「州」)
 巢 u5de2 (巢) - GlyphWiki u5de2 (国際符号化文字集合・ユニコード統合漢字 U+5DE2「巢」)
