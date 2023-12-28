@@ -283,7 +283,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 乎 u4e4e (乎) - GlyphWiki u4e4e (国際符号化文字集合・ユニコード統合漢字 U+4E4E「乎」)
 乏 u4e4f (乏) - GlyphWiki u4e4f (国際符号化文字集合・ユニコード統合漢字 U+4E4F「乏」)
 乗 u4e57 (乗) - GlyphWiki u4e57 (国際符号化文字集合・ユニコード統合漢字 U+4E57「乗」)
-乘 u4e58 (乘) - GlyphWiki u4e58 (国際符号化文字集合・ユニコード統合漢字 U+4E58「乘」)
+乘 u4e58 (乗) - GlyphWiki u4e58 (国際符号化文字集合・ユニコード統合漢字 U+4E58「乘」)
 乙 u4e59 (乙) - GlyphWiki u4e59 (国際符号化文字集合・ユニコード統合漢字 U+4E59「乙」)
 九 u4e5d (九) - GlyphWiki u4e5d (国際符号化文字集合・ユニコード統合漢字 U+4E5D「九」)
 乞 u4e5e (乞) - GlyphWiki u4e5e (国際符号化文字集合・ユニコード統合漢字 U+4E5E「乞」)
