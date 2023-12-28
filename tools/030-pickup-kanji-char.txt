@@ -878,7 +878,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 寸 u5bf8 (寸) - GlyphWiki u5bf8 (国際符号化文字集合・ユニコード統合漢字 U+5BF8「寸」)
 寺 u5bfa (寺) - GlyphWiki u5bfa (国際符号化文字集合・ユニコード統合漢字 U+5BFA「寺」)
 射 u5c04 (射) - GlyphWiki u5c04 (国際符号化文字集合・ユニコード統合漢字 U+5C04「射」)
-將 u5c07 (將) - GlyphWiki u5c07 (国際符号化文字集合・ユニコード統合漢字 U+5C07「將」)
+將 u5c07 (将) - GlyphWiki u5c07 (国際符号化文字集合・ユニコード統合漢字 U+5C07「將」)
 尉 u5c09 (尉) - GlyphWiki u5c09 (国際符号化文字集合・ユニコード統合漢字 U+5C09「尉」)
 尊 u5c0a (尊) - GlyphWiki u5c0a (国際符号化文字集合・ユニコード統合漢字 U+5C0A「尊」)
 尋 u5c0b (尋) - GlyphWiki u5c0b (国際符号化文字集合・ユニコード統合漢字 U+5C0B「尋」)
