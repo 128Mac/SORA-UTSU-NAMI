@@ -1689,7 +1689,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 激 u6fc0 (激) - GlyphWiki u6fc0 (国際符号化文字集合・ユニコード統合漢字 U+6FC0「激」)
 濁 u6fc1 (濁) - GlyphWiki u6fc1 (国際符号化文字集合・ユニコード統合漢字 U+6FC1「濁」)
 濃 u6fc3 (濃) - GlyphWiki u6fc3 (国際符号化文字集合・ユニコード統合漢字 U+6FC3「濃」)
-濕 u6fd5 (濕) - GlyphWiki u6fd5 (国際符号化文字集合・ユニコード統合漢字 U+6FD5「濕」)
+濕 u6fd5 (湿) - GlyphWiki u6fd5 (国際符号化文字集合・ユニコード統合漢字 U+6FD5「濕」)
 濟 u6fdf (済) - GlyphWiki u6fdf (国際符号化文字集合・ユニコード統合漢字 U+6FDF「濟」)
 濡 u6fe1 (濡) - GlyphWiki u6fe1 (国際符号化文字集合・ユニコード統合漢字 U+6FE1「濡」)
 濤 u6fe4 (濤) - GlyphWiki u6fe4 (国際符号化文字集合・ユニコード統合漢字 U+6FE4「濤」)
