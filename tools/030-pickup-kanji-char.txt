@@ -1635,7 +1635,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 温 u6e29 (温) - GlyphWiki u6e29 (国際符号化文字集合・ユニコード統合漢字 U+6E29「温」)
 測 u6e2c (測) - GlyphWiki u6e2c (国際符号化文字集合・ユニコード統合漢字 U+6E2C「測」)
 港 u6e2f (港) - GlyphWiki u6e2f (国際符号化文字集合・ユニコード統合漢字 U+6E2F「港」)
-渴 u6e34 (渴) - GlyphWiki u6e34 (国際符号化文字集合・ユニコード統合漢字 U+6E34「渴」)
+渴 u6e34 (渇) - GlyphWiki u6e34 (国際符号化文字集合・ユニコード統合漢字 U+6E34「渴」)
 渾 u6e3e (渾) - GlyphWiki u6e3e (国際符号化文字集合・ユニコード統合漢字 U+6E3E「渾」)
 湛 u6e5b (湛) - GlyphWiki u6e5b (国際符号化文字集合・ユニコード統合漢字 U+6E5B「湛」)
 湧 u6e67 (湧) - GlyphWiki u6e67 (国際符号化文字集合・ユニコード統合漢字 U+6E67「湧」)
