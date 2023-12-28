@@ -2943,7 +2943,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 高 u9ad8 (高) - GlyphWiki u9ad8 (国際符号化文字集合・ユニコード統合漢字 U+9AD8「高」)
 髪 u9aea (髪) - GlyphWiki u9aea (国際符号化文字集合・ユニコード統合漢字 U+9AEA「髪」)
 髭 u9aed (髭) - GlyphWiki u9aed (国際符号化文字集合・ユニコード統合漢字 U+9AED「髭」)
-髮 u9aee (髮) - GlyphWiki u9aee (国際符号化文字集合・ユニコード統合漢字 U+9AEE「髮」)
+髮 u9aee (髪) - GlyphWiki u9aee (国際符号化文字集合・ユニコード統合漢字 U+9AEE「髮」)
 髷 u9af7 (髷) - GlyphWiki u9af7 (国際符号化文字集合・ユニコード統合漢字 U+9AF7「髷」)
 鬚 u9b1a (鬚) - GlyphWiki u9b1a (国際符号化文字集合・ユニコード統合漢字 U+9B1A「鬚」)
 鬢 u9b22 (鬢) - GlyphWiki u9b22 (国際符号化文字集合・ユニコード統合漢字 U+9B22「鬢」)
