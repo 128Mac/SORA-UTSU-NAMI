@@ -2737,7 +2737,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 釅 u91c5 (釅) - GlyphWiki u91c5 (国際符号化文字集合・ユニコード統合漢字 U+91C5「釅」)
 釆 u91c6 (釆) - GlyphWiki u91c6 (国際符号化文字集合・ユニコード統合漢字 U+91C6「釆」)
 釉 u91c9 (釉) - GlyphWiki u91c9 (国際符号化文字集合・ユニコード統合漢字 U+91C9「釉」)
-釋 u91cb (釋) - GlyphWiki u91cb (国際符号化文字集合・ユニコード統合漢字 U+91CB「釋」)
+釋 u91cb (釈) - GlyphWiki u91cb (国際符号化文字集合・ユニコード統合漢字 U+91CB「釋」)
 里 u91cc (里) - GlyphWiki u91cc (国際符号化文字集合・ユニコード統合漢字 U+91CC「里」)
 重 u91cd (重) - GlyphWiki u91cd (国際符号化文字集合・ユニコード統合漢字 U+91CD「重」)
 野 u91ce (野) - GlyphWiki u91ce (国際符号化文字集合・ユニコード統合漢字 U+91CE「野」)
