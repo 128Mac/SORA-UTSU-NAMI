@@ -2596,7 +2596,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 賦 u8ce6 (賦) - GlyphWiki u8ce6 (国際符号化文字集合・ユニコード統合漢字 U+8CE6「賦」)
 質 u8cea (質) - GlyphWiki u8cea (国際符号化文字集合・ユニコード統合漢字 U+8CEA「質」)
 賭 u8ced (賭) - GlyphWiki u8ced (国際符号化文字集合・ユニコード統合漢字 U+8CED「賭」)
-賴 u8cf4 (賴) - GlyphWiki u8cf4 (国際符号化文字集合・ユニコード統合漢字 U+8CF4「賴」)
+賴 u8cf4 (頼) - GlyphWiki u8cf4 (国際符号化文字集合・ユニコード統合漢字 U+8CF4「賴」)
 賺 u8cfa (賺) - GlyphWiki u8cfa (国際符号化文字集合・ユニコード統合漢字 U+8CFA「賺」)
 購 u8cfc (購) - GlyphWiki u8cfc (国際符号化文字集合・ユニコード統合漢字 U+8CFC「購」)
 賽 u8cfd (賽) - GlyphWiki u8cfd (国際符号化文字集合・ユニコード統合漢字 U+8CFD「賽」)
