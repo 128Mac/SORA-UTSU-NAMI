@@ -753,7 +753,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 壜 u58dc (壜) - GlyphWiki u58dc (国際符号化文字集合・ユニコード統合漢字 U+58DC「壜」)
 壞 u58de (壊) - GlyphWiki u58de (国際符号化文字集合・ユニコード統合漢字 U+58DE「壞」)
 士 u58eb (士) - GlyphWiki u58eb (国際符号化文字集合・ユニコード統合漢字 U+58EB「士」)
-壯 u58ef (壯) - GlyphWiki u58ef (国際符号化文字集合・ユニコード統合漢字 U+58EF「壯」)
+壯 u58ef (壮) - GlyphWiki u58ef (国際符号化文字集合・ユニコード統合漢字 U+58EF「壯」)
 壺 u58fa (壺) - GlyphWiki u58fa (国際符号化文字集合・ユニコード統合漢字 U+58FA「壺」)
 壽 u58fd (壽) - GlyphWiki u58fd (国際符号化文字集合・ユニコード統合漢字 U+58FD「壽」)
 夏 u590f (夏) - GlyphWiki u590f (国際符号化文字集合・ユニコード統合漢字 U+590F「夏」)
