@@ -2714,7 +2714,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 邪 u90aa (邪) - GlyphWiki u90aa (国際符号化文字集合・ユニコード統合漢字 U+90AA「邪」)
 邸 u90b8 (邸) - GlyphWiki u90b8 (国際符号化文字集合・ユニコード統合漢字 U+90B8「邸」)
 郎 u90ce (郎) - GlyphWiki u90ce (国際符号化文字集合・ユニコード統合漢字 U+90CE「郎」)
-郞 u90de (郞) - GlyphWiki u90de (国際符号化文字集合・ユニコード統合漢字 U+90DE「郞」)
+郞 u90de (郎) - GlyphWiki u90de (国際符号化文字集合・ユニコード統合漢字 U+90DE「郞」)
 郡 u90e1 (郡) - GlyphWiki u90e1 (国際符号化文字集合・ユニコード統合漢字 U+90E1「郡」)
 部 u90e8 (部) - GlyphWiki u90e8 (国際符号化文字集合・ユニコード統合漢字 U+90E8「部」)
 郵 u90f5 (郵) - GlyphWiki u90f5 (国際符号化文字集合・ユニコード統合漢字 U+90F5「郵」)
