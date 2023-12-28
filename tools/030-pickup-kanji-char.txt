@@ -2939,7 +2939,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 骰 u9ab0 (骰) - GlyphWiki u9ab0 (国際符号化文字集合・ユニコード統合漢字 U+9AB0「骰」)
 骸 u9ab8 (骸) - GlyphWiki u9ab8 (国際符号化文字集合・ユニコード統合漢字 U+9AB8「骸」)
 髄 u9ac4 (髄) - GlyphWiki u9ac4 (国際符号化文字集合・ユニコード統合漢字 U+9AC4「髄」)
-體 u9ad4 (體) - GlyphWiki u9ad4 (国際符号化文字集合・ユニコード統合漢字 U+9AD4「體」)
+體 u9ad4 (体) - GlyphWiki u9ad4 (国際符号化文字集合・ユニコード統合漢字 U+9AD4「體」)
 高 u9ad8 (高) - GlyphWiki u9ad8 (国際符号化文字集合・ユニコード統合漢字 U+9AD8「高」)
 髪 u9aea (髪) - GlyphWiki u9aea (国際符号化文字集合・ユニコード統合漢字 U+9AEA「髪」)
 髭 u9aed (髭) - GlyphWiki u9aed (国際符号化文字集合・ユニコード統合漢字 U+9AED「髭」)
