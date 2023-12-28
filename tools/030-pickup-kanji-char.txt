@@ -3017,7 +3017,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 齦 u9f66 (齦) - GlyphWiki u9f66 (国際符号化文字集合・ユニコード統合漢字 U+9F66「齦」)
 齪 u9f6a (齪) - GlyphWiki u9f6a (国際符号化文字集合・ユニコード統合漢字 U+9F6A「齪」)
 齷 u9f77 (齷) - GlyphWiki u9f77 (国際符号化文字集合・ユニコード統合漢字 U+9F77「齷」)
-龍 u9f8d (龍) - GlyphWiki u9f8d (国際符号化文字集合・ユニコード統合漢字 U+9F8D「龍」)
+龍 u9f8d (竜) - GlyphWiki u9f8d (国際符号化文字集合・ユニコード統合漢字 U+9F8D「龍」)
 晴 ufa12 (晴) - GlyphWiki ufa12 (国際符号化文字集合・ユニコード互換漢字 U+FA12「晴」)
 神 ufa19 (神) - GlyphWiki ufa19 (国際符号化文字集合・ユニコード互換漢字 U+FA19「神」)
 祥 ufa1a (祥) - GlyphWiki ufa1a (国際符号化文字集合・ユニコード互換漢字 U+FA1A「祥」)
