@@ -350,7 +350,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 併 u4f75 (併) - GlyphWiki u4f75 (国際符号化文字集合・ユニコード統合漢字 U+4F75「併」)
 佼 u4f7c (佼) - GlyphWiki u4f7c (国際符号化文字集合・ユニコード統合漢字 U+4F7C「佼」)
 使 u4f7f (使) - GlyphWiki u4f7f (国際符号化文字集合・ユニコード統合漢字 U+4F7F「使」)
-來 u4f86 (來) - GlyphWiki u4f86 (国際符号化文字集合・ユニコード統合漢字 U+4F86「來」)
+來 u4f86 (来) - GlyphWiki u4f86 (国際符号化文字集合・ユニコード統合漢字 U+4F86「來」)
 例 u4f8b (例) - GlyphWiki u4f8b (国際符号化文字集合・ユニコード統合漢字 U+4F8B「例」)
 侑 u4f91 (侑) - GlyphWiki u4f91 (国際符号化文字集合・ユニコード統合漢字 U+4F91「侑」)
 供 u4f9b (供) - GlyphWiki u4f9b (国際符号化文字集合・ユニコード統合漢字 U+4F9B「供」)
