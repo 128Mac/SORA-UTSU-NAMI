@@ -870,7 +870,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 寡 u5be1 (寡) - GlyphWiki u5be1 (国際符号化文字集合・ユニコード統合漢字 U+5BE1「寡」)
 寢 u5be2 (寢) - GlyphWiki u5be2 (国際符号化文字集合・ユニコード統合漢字 U+5BE2「寢」)
 寥 u5be5 (寥) - GlyphWiki u5be5 (国際符号化文字集合・ユニコード統合漢字 U+5BE5「寥」)
-實 u5be6 (實) - GlyphWiki u5be6 (国際符号化文字集合・ユニコード統合漢字 U+5BE6「實」)
+實 u5be6 (実) - GlyphWiki u5be6 (国際符号化文字集合・ユニコード統合漢字 U+5BE6「實」)
 寧 u5be7 (寧) - GlyphWiki u5be7 (国際符号化文字集合・ユニコード統合漢字 U+5BE7「寧」)
 審 u5be9 (審) - GlyphWiki u5be9 (国際符号化文字集合・ユニコード統合漢字 U+5BE9「審」)
 寵 u5bf5 (寵) - GlyphWiki u5bf5 (国際符号化文字集合・ユニコード統合漢字 U+5BF5「寵」)
