@@ -2934,7 +2934,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 驕 u9a55 (驕) - GlyphWiki u9a55 (国際符号化文字集合・ユニコード統合漢字 U+9A55「驕」)
 驗 u9a57 (驗) - GlyphWiki u9a57 (国際符号化文字集合・ユニコード統合漢字 U+9A57「驗」)
 驚 u9a5a (驚) - GlyphWiki u9a5a (国際符号化文字集合・ユニコード統合漢字 U+9A5A「驚」)
-驛 u9a5b (驛) - GlyphWiki u9a5b (国際符号化文字集合・ユニコード統合漢字 U+9A5B「驛」)
+驛 u9a5b (駅) - GlyphWiki u9a5b (国際符号化文字集合・ユニコード統合漢字 U+9A5B「驛」)
 骨 u9aa8 (骨) - GlyphWiki u9aa8 (国際符号化文字集合・ユニコード統合漢字 U+9AA8「骨」)
 骰 u9ab0 (骰) - GlyphWiki u9ab0 (国際符号化文字集合・ユニコード統合漢字 U+9AB0「骰」)
 骸 u9ab8 (骸) - GlyphWiki u9ab8 (国際符号化文字集合・ユニコード統合漢字 U+9AB8「骸」)
