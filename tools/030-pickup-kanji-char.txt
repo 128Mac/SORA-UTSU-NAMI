@@ -1333,7 +1333,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 断 u65ad (断) - GlyphWiki u65ad (国際符号化文字集合・ユニコード統合漢字 U+65AD「断」)
 斯 u65af (斯) - GlyphWiki u65af (国際符号化文字集合・ユニコード統合漢字 U+65AF「斯」)
 新 u65b0 (新) - GlyphWiki u65b0 (国際符号化文字集合・ユニコード統合漢字 U+65B0「新」)
-斷 u65b7 (斷) - GlyphWiki u65b7 (国際符号化文字集合・ユニコード統合漢字 U+65B7「斷」)
+斷 u65b7 (断) - GlyphWiki u65b7 (国際符号化文字集合・ユニコード統合漢字 U+65B7「斷」)
 方 u65b9 (方) - GlyphWiki u65b9 (国際符号化文字集合・ユニコード統合漢字 U+65B9「方」)
 於 u65bc (於) - GlyphWiki u65bc (国際符号化文字集合・ユニコード統合漢字 U+65BC「於」)
 施 u65bd (施) - GlyphWiki u65bd (国際符号化文字集合・ユニコード統合漢字 U+65BD「施」)
