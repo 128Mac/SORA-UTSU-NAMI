@@ -2656,7 +2656,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 辟 u8f9f (辟) - GlyphWiki u8f9f (国際符号化文字集合・ユニコード統合漢字 U+8F9F「辟」)
 辨 u8fa8 (弁) - GlyphWiki u8fa8 (国際符号化文字集合・ユニコード統合漢字 U+8FA8「辨」)
 辭 u8fad (辭) - GlyphWiki u8fad (国際符号化文字集合・ユニコード統合漢字 U+8FAD「辭」)
-辯 u8faf (辯) - GlyphWiki u8faf (国際符号化文字集合・ユニコード統合漢字 U+8FAF「辯」)
+辯 u8faf (弁) - GlyphWiki u8faf (国際符号化文字集合・ユニコード統合漢字 U+8FAF「辯」)
 辰 u8fb0 (辰) - GlyphWiki u8fb0 (国際符号化文字集合・ユニコード統合漢字 U+8FB0「辰」)
 辱 u8fb1 (辱) - GlyphWiki u8fb1 (国際符号化文字集合・ユニコード統合漢字 U+8FB1「辱」)
 農 u8fb2 (農) - GlyphWiki u8fb2 (国際符号化文字集合・ユニコード統合漢字 U+8FB2「農」)
