@@ -3009,7 +3009,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 鼻 u9f3b (鼻) - GlyphWiki u9f3b (国際符号化文字集合・ユニコード統合漢字 U+9F3B「鼻」)
 鼾 u9f3e (鼾) - GlyphWiki u9f3e (国際符号化文字集合・ユニコード統合漢字 U+9F3E「鼾」)
 齊 u9f4a (斉) - GlyphWiki u9f4a (国際符号化文字集合・ユニコード統合漢字 U+9F4A「齊」)
-齋 u9f4b (齋) - GlyphWiki u9f4b (国際符号化文字集合・ユニコード統合漢字 U+9F4B「齋」)
+齋 u9f4b (斎) - GlyphWiki u9f4b (国際符号化文字集合・ユニコード統合漢字 U+9F4B「齋」)
 齎 u9f4e (齎) - GlyphWiki u9f4e (国際符号化文字集合・ユニコード統合漢字 U+9F4E「齎」)
 齒 u9f52 (齒) - GlyphWiki u9f52 (国際符号化文字集合・ユニコード統合漢字 U+9F52「齒」)
 齡 u9f61 (齡) - GlyphWiki u9f61 (国際符号化文字集合・ユニコード統合漢字 U+9F61「齡」)
