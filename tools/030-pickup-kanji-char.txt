@@ -2650,7 +2650,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 輪 u8f2a (輪) - GlyphWiki u8f2a (国際符号化文字集合・ユニコード統合漢字 U+8F2A「輪」)
 輿 u8f3f (輿) - GlyphWiki u8f3f (国際符号化文字集合・ユニコード統合漢字 U+8F3F「輿」)
 轄 u8f44 (轄) - GlyphWiki u8f44 (国際符号化文字集合・ユニコード統合漢字 U+8F44「轄」)
-轉 u8f49 (轉) - GlyphWiki u8f49 (国際符号化文字集合・ユニコード統合漢字 U+8F49「轉」)
+轉 u8f49 (転) - GlyphWiki u8f49 (国際符号化文字集合・ユニコード統合漢字 U+8F49「轉」)
 轟 u8f5f (轟) - GlyphWiki u8f5f (国際符号化文字集合・ユニコード統合漢字 U+8F5F「轟」)
 辛 u8f9b (辛) - GlyphWiki u8f9b (国際符号化文字集合・ユニコード統合漢字 U+8F9B「辛」)
 辟 u8f9f (辟) - GlyphWiki u8f9f (国際符号化文字集合・ユニコード統合漢字 U+8F9F「辟」)
