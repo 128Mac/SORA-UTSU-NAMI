@@ -3000,7 +3000,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 黒 u9ed2 (黒) - GlyphWiki u9ed2 (国際符号化文字集合・ユニコード統合漢字 U+9ED2「黒」)
 默 u9ed8 (默) - GlyphWiki u9ed8 (国際符号化文字集合・ユニコード統合漢字 U+9ED8「默」)
 黙 u9ed9 (黙) - GlyphWiki u9ed9 (国際符号化文字集合・ユニコード統合漢字 U+9ED9「黙」)
-點 u9ede (點) - GlyphWiki u9ede (国際符号化文字集合・ユニコード統合漢字 U+9EDE「點」)
+點 u9ede (点) - GlyphWiki u9ede (国際符号化文字集合・ユニコード統合漢字 U+9EDE「點」)
 黨 u9ee8 (党) - GlyphWiki u9ee8 (国際符号化文字集合・ユニコード統合漢字 U+9EE8「黨」)
 黯 u9eef (黯) - GlyphWiki u9eef (国際符号化文字集合・ユニコード統合漢字 U+9EEF「黯」)
 黴 u9ef4 (黴) - GlyphWiki u9ef4 (国際符号化文字集合・ユニコード統合漢字 U+9EF4「黴」)
