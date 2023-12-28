@@ -1658,7 +1658,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 滯 u6eef (滯) - GlyphWiki u6eef (国際符号化文字集合・ユニコード統合漢字 U+6EEF「滯」)
 滴 u6ef4 (滴) - GlyphWiki u6ef4 (国際符号化文字集合・ユニコード統合漢字 U+6EF4「滴」)
 滾 u6efe (滾) - GlyphWiki u6efe (国際符号化文字集合・ユニコード統合漢字 U+6EFE「滾」)
-滿 u6eff (滿) - GlyphWiki u6eff (国際符号化文字集合・ユニコード統合漢字 U+6EFF「滿」)
+滿 u6eff (満) - GlyphWiki u6eff (国際符号化文字集合・ユニコード統合漢字 U+6EFF「滿」)
 漁 u6f01 (漁) - GlyphWiki u6f01 (国際符号化文字集合・ユニコード統合漢字 U+6F01「漁」)
 漂 u6f02 (漂) - GlyphWiki u6f02 (国際符号化文字集合・ユニコード統合漢字 U+6F02「漂」)
 漆 u6f06 (漆) - GlyphWiki u6f06 (国際符号化文字集合・ユニコード統合漢字 U+6F06「漆」)
