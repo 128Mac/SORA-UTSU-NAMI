@@ -2835,7 +2835,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 雑 u96d1 (雑) - GlyphWiki u96d1 (国際符号化文字集合・ユニコード統合漢字 U+96D1「雑」)
 雖 u96d6 (雖) - GlyphWiki u96d6 (国際符号化文字集合・ユニコード統合漢字 U+96D6「雖」)
 雛 u96db (雛) - GlyphWiki u96db (国際符号化文字集合・ユニコード統合漢字 U+96DB「雛」)
-雜 u96dc (雜) - GlyphWiki u96dc (国際符号化文字集合・ユニコード統合漢字 U+96DC「雜」)
+雜 u96dc (雑) - GlyphWiki u96dc (国際符号化文字集合・ユニコード統合漢字 U+96DC「雜」)
 雞 u96de (雞) - GlyphWiki u96de (国際符号化文字集合・ユニコード統合漢字 U+96DE「雞」)
 離 u96e2 (離) - GlyphWiki u96e2 (国際符号化文字集合・ユニコード統合漢字 U+96E2「離」)
 難 u96e3 (難) - GlyphWiki u96e3 (国際符号化文字集合・ユニコード統合漢字 U+96E3「難」)
