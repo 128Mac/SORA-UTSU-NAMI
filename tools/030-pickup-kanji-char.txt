@@ -749,7 +749,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 墮 u58ae (墮) - GlyphWiki u58ae (国際符号化文字集合・ユニコード統合漢字 U+58AE「墮」)
 壁 u58c1 (壁) - GlyphWiki u58c1 (国際符号化文字集合・ユニコード統合漢字 U+58C1「壁」)
 壊 u58ca (壊) - GlyphWiki u58ca (国際符号化文字集合・ユニコード統合漢字 U+58CA「壊」)
-壓 u58d3 (壓) - GlyphWiki u58d3 (国際符号化文字集合・ユニコード統合漢字 U+58D3「壓」)
+壓 u58d3 (圧) - GlyphWiki u58d3 (国際符号化文字集合・ユニコード統合漢字 U+58D3「壓」)
 壜 u58dc (壜) - GlyphWiki u58dc (国際符号化文字集合・ユニコード統合漢字 U+58DC「壜」)
 壞 u58de (壞) - GlyphWiki u58de (国際符号化文字集合・ユニコード統合漢字 U+58DE「壞」)
 士 u58eb (士) - GlyphWiki u58eb (国際符号化文字集合・ユニコード統合漢字 U+58EB「士」)
