@@ -2899,7 +2899,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 颶 u98b6 (颶) - GlyphWiki u98b6 (国際符号化文字集合・ユニコード統合漢字 U+98B6「颶」)
 飄 u98c4 (飄) - GlyphWiki u98c4 (国際符号化文字集合・ユニコード統合漢字 U+98C4「飄」)
 飛 u98db (飛) - GlyphWiki u98db (国際符号化文字集合・ユニコード統合漢字 U+98DB「飛」)
-飜 u98dc (飜) - GlyphWiki u98dc (国際符号化文字集合・ユニコード統合漢字 U+98DC「飜」)
+飜 u98dc (翻) - GlyphWiki u98dc (国際符号化文字集合・ユニコード統合漢字 U+98DC「飜」)
 食 u98df (食) - GlyphWiki u98df (国際符号化文字集合・ユニコード統合漢字 U+98DF「食」)
 飮 u98ee (飮) - GlyphWiki u98ee (国際符号化文字集合・ユニコード統合漢字 U+98EE「飮」)
 飯 u98ef (飯) - GlyphWiki u98ef (国際符号化文字集合・ユニコード統合漢字 U+98EF「飯」)
