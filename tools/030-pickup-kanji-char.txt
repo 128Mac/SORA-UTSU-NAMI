@@ -2024,7 +2024,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 窮 u7aae (窮) - GlyphWiki u7aae (国際符号化文字集合・ユニコード統合漢字 U+7AAE「窮」)
 窶 u7ab6 (窶) - GlyphWiki u7ab6 (国際符号化文字集合・ユニコード統合漢字 U+7AB6「窶」)
 窺 u7aba (窺) - GlyphWiki u7aba (国際符号化文字集合・ユニコード統合漢字 U+7ABA「窺」)
-竊 u7aca (竊) - GlyphWiki u7aca (国際符号化文字集合・ユニコード統合漢字 U+7ACA「竊」)
+竊 u7aca (窃) - GlyphWiki u7aca (国際符号化文字集合・ユニコード統合漢字 U+7ACA「竊」)
 立 u7acb (立) - GlyphWiki u7acb (国際符号化文字集合・ユニコード統合漢字 U+7ACB「立」)
 竟 u7adf (竟) - GlyphWiki u7adf (国際符号化文字集合・ユニコード統合漢字 U+7ADF「竟」)
 章 u7ae0 (章) - GlyphWiki u7ae0 (国際符号化文字集合・ユニコード統合漢字 U+7AE0「章」)
