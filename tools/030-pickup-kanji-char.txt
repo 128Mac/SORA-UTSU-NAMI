@@ -2949,7 +2949,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 鬢 u9b22 (鬢) - GlyphWiki u9b22 (国際符号化文字集合・ユニコード統合漢字 U+9B22「鬢」)
 鬨 u9b28 (鬨) - GlyphWiki u9b28 (国際符号化文字集合・ユニコード統合漢字 U+9B28「鬨」)
 鬩 u9b29 (鬩) - GlyphWiki u9b29 (国際符号化文字集合・ユニコード統合漢字 U+9B29「鬩」)
-鬪 u9b2a (鬪) - GlyphWiki u9b2a (国際符号化文字集合・ユニコード統合漢字 U+9B2A「鬪」)
+鬪 u9b2a (闘) - GlyphWiki u9b2a (国際符号化文字集合・ユニコード統合漢字 U+9B2A「鬪」)
 鬮 u9b2e (鬮) - GlyphWiki u9b2e (国際符号化文字集合・ユニコード統合漢字 U+9B2E「鬮」)
 鬱 u9b31 (鬱) - GlyphWiki u9b31 (国際符号化文字集合・ユニコード統合漢字 U+9B31「鬱」)
 鬼 u9b3c (鬼) - GlyphWiki u9b3c (国際符号化文字集合・ユニコード統合漢字 U+9B3C「鬼」)
