@@ -288,7 +288,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 九 u4e5d (九) - GlyphWiki u4e5d (国際符号化文字集合・ユニコード統合漢字 U+4E5D「九」)
 乞 u4e5e (乞) - GlyphWiki u4e5e (国際符号化文字集合・ユニコード統合漢字 U+4E5E「乞」)
 乾 u4e7e (乾) - GlyphWiki u4e7e (国際符号化文字集合・ユニコード統合漢字 U+4E7E「乾」)
-亂 u4e82 (亂) - GlyphWiki u4e82 (国際符号化文字集合・ユニコード統合漢字 U+4E82「亂」)
+亂 u4e82 (乱) - GlyphWiki u4e82 (国際符号化文字集合・ユニコード統合漢字 U+4E82「亂」)
 了 u4e86 (了) - GlyphWiki u4e86 (国際符号化文字集合・ユニコード統合漢字 U+4E86「了」)
 事 u4e8b (事) - GlyphWiki u4e8b (国際符号化文字集合・ユニコード統合漢字 U+4E8B「事」)
 二 u4e8c (二) - GlyphWiki u4e8c (国際符号化文字集合・ユニコード統合漢字 U+4E8C「二」)
