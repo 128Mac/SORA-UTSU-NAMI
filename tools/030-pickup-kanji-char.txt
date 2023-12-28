@@ -2987,7 +2987,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 鷺 u9dfa (鷺) - GlyphWiki u9dfa (国際符号化文字集合・ユニコード統合漢字 U+9DFA「鷺」)
 鹵 u9e75 (鹵) - GlyphWiki u9e75 (国際符号化文字集合・ユニコード統合漢字 U+9E75「鹵」)
 鹹 u9e79 (鹹) - GlyphWiki u9e79 (国際符号化文字集合・ユニコード統合漢字 U+9E79「鹹」)
-鹽 u9e7d (鹽) - GlyphWiki u9e7d (国際符号化文字集合・ユニコード統合漢字 U+9E7D「鹽」)
+鹽 u9e7d (塩) - GlyphWiki u9e7d (国際符号化文字集合・ユニコード統合漢字 U+9E7D「鹽」)
 鹿 u9e7f (鹿) - GlyphWiki u9e7f (国際符号化文字集合・ユニコード統合漢字 U+9E7F「鹿」)
 麁 u9e81 (麁) - GlyphWiki u9e81 (国際符号化文字集合・ユニコード統合漢字 U+9E81「麁」)
 麗 u9e97 (麗) - GlyphWiki u9e97 (国際符号化文字集合・ユニコード統合漢字 U+9E97「麗」)
