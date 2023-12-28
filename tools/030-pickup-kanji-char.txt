@@ -1026,7 +1026,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 微 u5fae (微) - GlyphWiki u5fae (国際符号化文字集合・ユニコード統合漢字 U+5FAE「微」)
 徳 u5fb3 (徳) - GlyphWiki u5fb3 (国際符号化文字集合・ユニコード統合漢字 U+5FB3「徳」)
 徴 u5fb4 (徴) - GlyphWiki u5fb4 (国際符号化文字集合・ユニコード統合漢字 U+5FB4「徴」)
-德 u5fb7 (德) - GlyphWiki u5fb7 (国際符号化文字集合・ユニコード統合漢字 U+5FB7「德」)
+德 u5fb7 (徳) - GlyphWiki u5fb7 (国際符号化文字集合・ユニコード統合漢字 U+5FB7「德」)
 徹 u5fb9 (徹) - GlyphWiki u5fb9 (国際符号化文字集合・ユニコード統合漢字 U+5FB9「徹」)
 心 u5fc3 (心) - GlyphWiki u5fc3 (国際符号化文字集合・ユニコード統合漢字 U+5FC3「心」)
 必 u5fc5 (必) - GlyphWiki u5fc5 (国際符号化文字集合・ユニコード統合漢字 U+5FC5「必」)
