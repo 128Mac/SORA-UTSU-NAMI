@@ -882,7 +882,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 尉 u5c09 (尉) - GlyphWiki u5c09 (国際符号化文字集合・ユニコード統合漢字 U+5C09「尉」)
 尊 u5c0a (尊) - GlyphWiki u5c0a (国際符号化文字集合・ユニコード統合漢字 U+5C0A「尊」)
 尋 u5c0b (尋) - GlyphWiki u5c0b (国際符号化文字集合・ユニコード統合漢字 U+5C0B「尋」)
-對 u5c0d (對) - GlyphWiki u5c0d (国際符号化文字集合・ユニコード統合漢字 U+5C0D「對」)
+對 u5c0d (対) - GlyphWiki u5c0d (国際符号化文字集合・ユニコード統合漢字 U+5C0D「對」)
 導 u5c0e (導) - GlyphWiki u5c0e (国際符号化文字集合・ユニコード統合漢字 U+5C0E「導」)
 小 u5c0f (小) - GlyphWiki u5c0f (国際符号化文字集合・ユニコード統合漢字 U+5C0F「小」)
 少 u5c11 (少) - GlyphWiki u5c11 (国際符号化文字集合・ユニコード統合漢字 U+5C11「少」)
