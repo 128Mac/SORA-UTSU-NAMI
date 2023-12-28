@@ -1539,7 +1539,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 死 u6b7b (死) - GlyphWiki u6b7b (国際符号化文字集合・ユニコード統合漢字 U+6B7B「死」)
 殆 u6b86 (殆) - GlyphWiki u6b86 (国際符号化文字集合・ユニコード統合漢字 U+6B86「殆」)
 殊 u6b8a (殊) - GlyphWiki u6b8a (国際符号化文字集合・ユニコード統合漢字 U+6B8A「殊」)
-殘 u6b98 (殘) - GlyphWiki u6b98 (国際符号化文字集合・ユニコード統合漢字 U+6B98「殘」)
+殘 u6b98 (残) - GlyphWiki u6b98 (国際符号化文字集合・ユニコード統合漢字 U+6B98「殘」)
 殪 u6baa (殪) - GlyphWiki u6baa (国際符号化文字集合・ユニコード統合漢字 U+6BAA「殪」)
 段 u6bb5 (段) - GlyphWiki u6bb5 (国際符号化文字集合・ユニコード統合漢字 U+6BB5「段」)
 殷 u6bb7 (殷) - GlyphWiki u6bb7 (国際符号化文字集合・ユニコード統合漢字 U+6BB7「殷」)
