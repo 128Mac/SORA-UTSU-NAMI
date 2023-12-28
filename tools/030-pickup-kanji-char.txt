@@ -2079,7 +2079,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 粗 u7c97 (粗) - GlyphWiki u7c97 (国際符号化文字集合・ユニコード統合漢字 U+7C97「粗」)
 粛 u7c9b (粛) - GlyphWiki u7c9b (国際符号化文字集合・ユニコード統合漢字 U+7C9B「粛」)
 粧 u7ca7 (粧) - GlyphWiki u7ca7 (国際符号化文字集合・ユニコード統合漢字 U+7CA7「粧」)
-粹 u7cb9 (粹) - GlyphWiki u7cb9 (国際符号化文字集合・ユニコード統合漢字 U+7CB9「粹」)
+粹 u7cb9 (粋) - GlyphWiki u7cb9 (国際符号化文字集合・ユニコード統合漢字 U+7CB9「粹」)
 精 u7cbe (精) - GlyphWiki u7cbe (国際符号化文字集合・ユニコード統合漢字 U+7CBE「精」)
 糊 u7cca (糊) - GlyphWiki u7cca (国際符号化文字集合・ユニコード統合漢字 U+7CCA「糊」)
 糞 u7cde (糞) - GlyphWiki u7cde (国際符号化文字集合・ユニコード統合漢字 U+7CDE「糞」)
