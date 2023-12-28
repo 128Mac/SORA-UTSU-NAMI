@@ -2377,7 +2377,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 藍 u85cd (藍) - GlyphWiki u85cd (国際符号化文字集合・ユニコード統合漢字 U+85CD「藍」)
 藏 u85cf (藏) - GlyphWiki u85cf (国際符号化文字集合・ユニコード統合漢字 U+85CF「藏」)
 藐 u85d0 (藐) - GlyphWiki u85d0 (国際符号化文字集合・ユニコード統合漢字 U+85D0「藐」)
-藝 u85dd (藝) - GlyphWiki u85dd (国際符号化文字集合・ユニコード統合漢字 U+85DD「藝」)
+藝 u85dd (芸) - GlyphWiki u85dd (国際符号化文字集合・ユニコード統合漢字 U+85DD「藝」)
 藤 u85e4 (藤) - GlyphWiki u85e4 (国際符号化文字集合・ユニコード統合漢字 U+85E4「藤」)
 藥 u85e5 (藥) - GlyphWiki u85e5 (国際符号化文字集合・ユニコード統合漢字 U+85E5「藥」)
 藪 u85ea (藪) - GlyphWiki u85ea (国際符号化文字集合・ユニコード統合漢字 U+85EA「藪」)
