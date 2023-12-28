@@ -1626,7 +1626,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 混 u6df7 (混) - GlyphWiki u6df7 (国際符号化文字集合・ユニコード統合漢字 U+6DF7「混」)
 淸 u6df8 (淸) - GlyphWiki u6df8 (国際符号化文字集合・ユニコード統合漢字 U+6DF8「淸」)
 淹 u6df9 (淹) - GlyphWiki u6df9 (国際符号化文字集合・ユニコード統合漢字 U+6DF9「淹」)
-淺 u6dfa (淺) - GlyphWiki u6dfa (国際符号化文字集合・ユニコード統合漢字 U+6DFA「淺」)
+淺 u6dfa (浅) - GlyphWiki u6dfa (国際符号化文字集合・ユニコード統合漢字 U+6DFA「淺」)
 添 u6dfb (添) - GlyphWiki u6dfb (国際符号化文字集合・ユニコード統合漢字 U+6DFB「添」)
 清 u6e05 (清) - GlyphWiki u6e05 (国際符号化文字集合・ユニコード統合漢字 U+6E05「清」)
 減 u6e1b (減) - GlyphWiki u6e1b (国際符号化文字集合・ユニコード統合漢字 U+6E1B「減」)
