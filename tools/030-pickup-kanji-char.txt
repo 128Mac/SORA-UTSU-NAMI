@@ -2591,7 +2591,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 賛 u8cdb (賛) - GlyphWiki u8cdb (国際符号化文字集合・ユニコード統合漢字 U+8CDB「賛」)
 賞 u8cde (賞) - GlyphWiki u8cde (国際符号化文字集合・ユニコード統合漢字 U+8CDE「賞」)
 賢 u8ce2 (賢) - GlyphWiki u8ce2 (国際符号化文字集合・ユニコード統合漢字 U+8CE2「賢」)
-賣 u8ce3 (賣) - GlyphWiki u8ce3 (国際符号化文字集合・ユニコード統合漢字 U+8CE3「賣」)
+賣 u8ce3 (売) - GlyphWiki u8ce3 (国際符号化文字集合・ユニコード統合漢字 U+8CE3「賣」)
 賤 u8ce4 (賤) - GlyphWiki u8ce4 (国際符号化文字集合・ユニコード統合漢字 U+8CE4「賤」)
 賦 u8ce6 (賦) - GlyphWiki u8ce6 (国際符号化文字集合・ユニコード統合漢字 U+8CE6「賦」)
 質 u8cea (質) - GlyphWiki u8cea (国際符号化文字集合・ユニコード統合漢字 U+8CEA「質」)
