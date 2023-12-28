@@ -2445,7 +2445,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 裏 u88cf (裏) - GlyphWiki u88cf (国際符号化文字集合・ユニコード統合漢字 U+88CF「裏」)
 裕 u88d5 (裕) - GlyphWiki u88d5 (国際符号化文字集合・ユニコード統合漢字 U+88D5「裕」)
 補 u88dc (補) - GlyphWiki u88dc (国際符号化文字集合・ユニコード統合漢字 U+88DC「補」)
-裝 u88dd (裝) - GlyphWiki u88dd (国際符号化文字集合・ユニコード統合漢字 U+88DD「裝」)
+裝 u88dd (装) - GlyphWiki u88dd (国際符号化文字集合・ユニコード統合漢字 U+88DD「裝」)
 裟 u88df (裟) - GlyphWiki u88df (国際符号化文字集合・ユニコード統合漢字 U+88DF「裟」)
 裸 u88f8 (裸) - GlyphWiki u88f8 (国際符号化文字集合・ユニコード統合漢字 U+88F8「裸」)
 裹 u88f9 (裹) - GlyphWiki u88f9 (国際符号化文字集合・ユニコード統合漢字 U+88F9「裹」)
