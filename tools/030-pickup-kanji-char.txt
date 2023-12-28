@@ -657,7 +657,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 喩 u55a9 (喩) - GlyphWiki u55a9 (国際符号化文字集合・ユニコード統合漢字 U+55A9「喩」)
 喪 u55aa (喪) - GlyphWiki u55aa (国際符号化文字集合・ユニコード統合漢字 U+55AA「喪」)
 喫 u55ab (喫) - GlyphWiki u55ab (国際符号化文字集合・ユニコード統合漢字 U+55AB「喫」)
-單 u55ae (單) - GlyphWiki u55ae (国際符号化文字集合・ユニコード統合漢字 U+55AE「單」)
+單 u55ae (単) - GlyphWiki u55ae (国際符号化文字集合・ユニコード統合漢字 U+55AE「單」)
 喰 u55b0 (喰) - GlyphWiki u55b0 (国際符号化文字集合・ユニコード統合漢字 U+55B0「喰」)
 嗄 u55c4 (嗄) - GlyphWiki u55c4 (国際符号化文字集合・ユニコード統合漢字 U+55C4「嗄」)
 嗅 u55c5 (嗅) - GlyphWiki u55c5 (国際符号化文字集合・ユニコード統合漢字 U+55C5「嗅」)
