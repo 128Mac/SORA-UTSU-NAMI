@@ -1675,7 +1675,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 漸 u6f38 (漸) - GlyphWiki u6f38 (国際符号化文字集合・ユニコード統合漢字 U+6F38「漸」)
 潑 u6f51 (潑) - GlyphWiki u6f51 (国際符号化文字集合・ユニコード統合漢字 U+6F51「潑」)
 潔 u6f54 (潔) - GlyphWiki u6f54 (国際符号化文字集合・ユニコード統合漢字 U+6F54「潔」)
-潛 u6f5b (潛) - GlyphWiki u6f5b (国際符号化文字集合・ユニコード統合漢字 U+6F5B「潛」)
+潛 u6f5b (潜) - GlyphWiki u6f5b (国際符号化文字集合・ユニコード統合漢字 U+6F5B「潛」)
 潜 u6f5c (潜) - GlyphWiki u6f5c (国際符号化文字集合・ユニコード統合漢字 U+6F5C「潜」)
 潤 u6f64 (潤) - GlyphWiki u6f64 (国際符号化文字集合・ユニコード統合漢字 U+6F64「潤」)
 潬 u6f6c (潬) - GlyphWiki u6f6c (国際符号化文字集合・ユニコード統合漢字 U+6F6C「潬」)
