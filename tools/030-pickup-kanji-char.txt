@@ -2546,7 +2546,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 警 u8b66 (警) - GlyphWiki u8b66 (国際符号化文字集合・ユニコード統合漢字 U+8B66「警」)
 譫 u8b6b (譫) - GlyphWiki u8b6b (国際符号化文字集合・ユニコード統合漢字 U+8B6B「譫」)
 譬 u8b6c (譬) - GlyphWiki u8b6c (国際符号化文字集合・ユニコード統合漢字 U+8B6C「譬」)
-譯 u8b6f (譯) - GlyphWiki u8b6f (国際符号化文字集合・ユニコード統合漢字 U+8B6F「譯」)
+譯 u8b6f (訳) - GlyphWiki u8b6f (国際符号化文字集合・ユニコード統合漢字 U+8B6F「譯」)
 議 u8b70 (議) - GlyphWiki u8b70 (国際符号化文字集合・ユニコード統合漢字 U+8B70「議」)
 譲 u8b72 (譲) - GlyphWiki u8b72 (国際符号化文字集合・ユニコード統合漢字 U+8B72「譲」)
 護 u8b77 (護) - GlyphWiki u8b77 (国際符号化文字集合・ユニコード統合漢字 U+8B77「護」)
