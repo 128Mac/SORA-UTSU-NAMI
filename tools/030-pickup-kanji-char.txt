@@ -1018,7 +1018,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 徒 u5f92 (徒) - GlyphWiki u5f92 (国際符号化文字集合・ユニコード統合漢字 U+5F92「徒」)
 従 u5f93 (従) - GlyphWiki u5f93 (国際符号化文字集合・ユニコード統合漢字 U+5F93「従」)
 得 u5f97 (得) - GlyphWiki u5f97 (国際符号化文字集合・ユニコード統合漢字 U+5F97「得」)
-從 u5f9e (從) - GlyphWiki u5f9e (国際符号化文字集合・ユニコード統合漢字 U+5F9E「從」)
+從 u5f9e (従) - GlyphWiki u5f9e (国際符号化文字集合・ユニコード統合漢字 U+5F9E「從」)
 御 u5fa1 (御) - GlyphWiki u5fa1 (国際符号化文字集合・ユニコード統合漢字 U+5FA1「御」)
 徨 u5fa8 (徨) - GlyphWiki u5fa8 (国際符号化文字集合・ユニコード統合漢字 U+5FA8「徨」)
 復 u5fa9 (復) - GlyphWiki u5fa9 (国際符号化文字集合・ユニコード統合漢字 U+5FA9「復」)
