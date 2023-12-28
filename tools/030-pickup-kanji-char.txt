@@ -2119,7 +2119,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 經 u7d93 (経) - GlyphWiki u7d93 (国際符号化文字集合・ユニコード統合漢字 U+7D93「經」)
 継 u7d99 (継) - GlyphWiki u7d99 (国際符号化文字集合・ユニコード統合漢字 U+7D99「継」)
 続 u7d9a (続) - GlyphWiki u7d9a (国際符号化文字集合・ユニコード統合漢字 U+7D9A「続」)
-綠 u7da0 (綠) - GlyphWiki u7da0 (国際符号化文字集合・ユニコード統合漢字 U+7DA0「綠」)
+綠 u7da0 (緑) - GlyphWiki u7da0 (国際符号化文字集合・ユニコード統合漢字 U+7DA0「綠」)
 維 u7dad (維) - GlyphWiki u7dad (国際符号化文字集合・ユニコード統合漢字 U+7DAD「維」)
 綱 u7db1 (綱) - GlyphWiki u7db1 (国際符号化文字集合・ユニコード統合漢字 U+7DB1「綱」)
 網 u7db2 (網) - GlyphWiki u7db2 (国際符号化文字集合・ユニコード統合漢字 U+7DB2「網」)
