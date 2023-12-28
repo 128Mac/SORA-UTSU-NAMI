@@ -2471,7 +2471,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 親 u89aa (親) - GlyphWiki u89aa (国際符号化文字集合・ユニコード統合漢字 U+89AA「親」)
 観 u89b3 (観) - GlyphWiki u89b3 (国際符号化文字集合・ユニコード統合漢字 U+89B3「観」)
 覺 u89ba (覚) - GlyphWiki u89ba (国際符号化文字集合・ユニコード統合漢字 U+89BA「覺」)
-覽 u89bd (覽) - GlyphWiki u89bd (国際符号化文字集合・ユニコード統合漢字 U+89BD「覽」)
+覽 u89bd (覧) - GlyphWiki u89bd (国際符号化文字集合・ユニコード統合漢字 U+89BD「覽」)
 覿 u89bf (覿) - GlyphWiki u89bf (国際符号化文字集合・ユニコード統合漢字 U+89BF「覿」)
 觀 u89c0 (觀) - GlyphWiki u89c0 (国際符号化文字集合・ユニコード統合漢字 U+89C0「觀」)
 角 u89d2 (角) - GlyphWiki u89d2 (国際符号化文字集合・ユニコード統合漢字 U+89D2「角」)
