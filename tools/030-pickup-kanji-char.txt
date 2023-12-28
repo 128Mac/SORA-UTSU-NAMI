@@ -2166,7 +2166,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 纔 u7e94 (纔) - GlyphWiki u7e94 (国際符号化文字集合・ユニコード統合漢字 U+7E94「纔」)
 纖 u7e96 (纖) - GlyphWiki u7e96 (国際符号化文字集合・ユニコード統合漢字 U+7E96「纖」)
 纜 u7e9c (纜) - GlyphWiki u7e9c (国際符号化文字集合・ユニコード統合漢字 U+7E9C「纜」)
-缺 u7f3a (缺) - GlyphWiki u7f3a (国際符号化文字集合・ユニコード統合漢字 U+7F3A「缺」)
+缺 u7f3a (欠) - GlyphWiki u7f3a (国際符号化文字集合・ユニコード統合漢字 U+7F3A「缺」)
 罅 u7f45 (罅) - GlyphWiki u7f45 (国際符号化文字集合・ユニコード統合漢字 U+7F45「罅」)
 罎 u7f4e (罎) - GlyphWiki u7f4e (国際符号化文字集合・ユニコード統合漢字 U+7F4E「罎」)
 罐 u7f50 (罐) - GlyphWiki u7f50 (国際符号化文字集合・ユニコード統合漢字 U+7F50「罐」)
