@@ -981,7 +981,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 廃 u5ec3 (廃) - GlyphWiki u5ec3 (国際符号化文字集合・ユニコード統合漢字 U+5EC3「廃」)
 廉 u5ec9 (廉) - GlyphWiki u5ec9 (国際符号化文字集合・ユニコード統合漢字 U+5EC9「廉」)
 廓 u5ed3 (廓) - GlyphWiki u5ed3 (国際符号化文字集合・ユニコード統合漢字 U+5ED3「廓」)
-廢 u5ee2 (廢) - GlyphWiki u5ee2 (国際符号化文字集合・ユニコード統合漢字 U+5EE2「廢」)
+廢 u5ee2 (廃) - GlyphWiki u5ee2 (国際符号化文字集合・ユニコード統合漢字 U+5EE2「廢」)
 廣 u5ee3 (広) - GlyphWiki u5ee3 (国際符号化文字集合・ユニコード統合漢字 U+5EE3「廣」)
 延 u5ef6 (延) - GlyphWiki u5ef6 (国際符号化文字集合・ユニコード統合漢字 U+5EF6「延」)
 建 u5efa (建) - GlyphWiki u5efa (国際符号化文字集合・ユニコード統合漢字 U+5EFA「建」)
