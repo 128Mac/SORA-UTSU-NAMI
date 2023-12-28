@@ -2130,7 +2130,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 緊 u7dca (緊) - GlyphWiki u7dca (国際符号化文字集合・ユニコード統合漢字 U+7DCA「緊」)
 緋 u7dcb (緋) - GlyphWiki u7dcb (国際符号化文字集合・ユニコード統合漢字 U+7DCB「緋」)
 緒 u7dd2 (緒) - GlyphWiki u7dd2 (国際符号化文字集合・ユニコード統合漢字 U+7DD2「緒」)
-緖 u7dd6 (緖) - GlyphWiki u7dd6 (国際符号化文字集合・ユニコード統合漢字 U+7DD6「緖」)
+緖 u7dd6 (緒) - GlyphWiki u7dd6 (国際符号化文字集合・ユニコード統合漢字 U+7DD6「緖」)
 線 u7dda (線) - GlyphWiki u7dda (国際符号化文字集合・ユニコード統合漢字 U+7DDA「線」)
 緞 u7dde (緞) - GlyphWiki u7dde (国際符号化文字集合・ユニコード統合漢字 U+7DDE「緞」)
 締 u7de0 (締) - GlyphWiki u7de0 (国際符号化文字集合・ユニコード統合漢字 U+7DE0「締」)
