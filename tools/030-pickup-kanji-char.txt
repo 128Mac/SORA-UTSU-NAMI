@@ -2163,7 +2163,7 @@ zihai-113941 zihai-113941 (窃) - GlyphWiki zihai-113941 (『中華字海』1139
 續 u7e8c (続) - GlyphWiki u7e8c (国際符号化文字集合・ユニコード統合漢字 U+7E8C「續」)
 纎 u7e8e (纎) - GlyphWiki u7e8e (国際符号化文字集合・ユニコード統合漢字 U+7E8E「纎」)
 纏 u7e8f (纏) - GlyphWiki u7e8f (国際符号化文字集合・ユニコード統合漢字 U+7E8F「纏」)
-纒 u7e92 (纒) - GlyphWiki u7e92 (国際符号化文字集合・ユニコード統合漢字 U+7E92「纒」)
+纒 u7e92 (纏) - GlyphWiki u7e92 (国際符号化文字集合・ユニコード統合漢字 U+7E92「纒」)
 纔 u7e94 (纔) - GlyphWiki u7e94 (国際符号化文字集合・ユニコード統合漢字 U+7E94「纔」)
 纖 u7e96 (繊) - GlyphWiki u7e96 (国際符号化文字集合・ユニコード統合漢字 U+7E96「纖」)
 纜 u7e9c (纜) - GlyphWiki u7e9c (国際符号化文字集合・ユニコード統合漢字 U+7E9C「纜」)
