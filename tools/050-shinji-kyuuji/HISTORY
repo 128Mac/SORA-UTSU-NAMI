@@ -1,0 +1,78 @@
+set agent 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0'
+set url   https://www.ritsumei.ac.jp/acd/cg/lt/cl/koten/newold.htm
+curl --silent --location -H "$agent" $url |
+   nkf -Lu -w |
+   perl -Mutf8 -CSD -npe '
+        s/ *<[^<>]*> *//g;
+        s/[[:blank"]]+$//;
+   ' |
+   awk -v RS= '{$1=$1}/新字/{print ""}NR' |
+   rg -e '^$' -e ^新字 -e ^旧字 |
+   awk -v RS= '{for ( i =2 ; i <= NF/2; i++) printf "\\\\旧字登録{%s}{%s}\n", $i, $(i+NF/2)}' |
+   LANG=C sort |
+   tee shinji-kyuuji-table-1.sty
+
+rga -N -I -B 1 '（[\p{sc=han}]）' kaitei_kanji_toshin.pdf |
+   nkf -w -Lu |
+   sed '1,/備考欄にある/d;/○/,$d;
+        s/Page [0-9][0-9]*: *//;
+        s/^--*//;
+        s/）.*/）/;
+        s/ *（/ （/;
+        s/［餅］ ヘイ//;
+        s/餅屋，尻//;' |
+   awk -v RS= '{$1=$1}NR' |
+   awk '{printf "\\\\旧字登録{%s}{%s}\n",  $(NF-1), $NF}' |
+   sed 's/[（）]//g' |
+   LANG=C sort |
+   tee shinji-kyuuji-table-2.sty
+
+set url https://www.benricho.org/moji_conv/13-kyuji.html
+curl --silent --location $url |
+    rg shinkyu |
+    perl -Mutf8 -CSD -npe 's/<[^<>]*>/ /g' |
+    rg '[(]' |
+    perl -Mutf8 -CSD -npe 's/[()× ]+/ /g' |
+    awk '{printf "\\\\旧字登録{%s}{%s}\n", $1, $2}' |
+    perl -Mutf8 -CSD -npe '
+        s/&#x85E5;/藥/;
+        s/&#x2F81A;/冬/;
+        s/&#x2F822;/割/;
+        s/&#x2F83F;/周/;
+        s/&#x2F852;/城/;
+        s/&#x2F8A6;/慈/;
+        s/&#x22894;/𢢔/;
+        s/&#x2F8AC;/憲/;
+        s/&#x2F8B2;/成/;
+        s/&#x230BA;/𣂺/;
+        s/&#x2F90F;/潮/;
+        s/&#x25535;/𥔵/;
+        s/&#x25CD1;/𥳑/;
+        s/&#x2F9D0;/諭/;
+        s/&#x2F9DF;/輸/;
+        s/&#x9B2A;/鬪/;' |
+    LANG=C sort |
+    tee shinji-kyuuji-table-3.sty
+
+# shinji-kyuuji-table-4.sty
+rg --glob '*.tex' GWI |
+    tr '\\\\}' '\n' |
+    rg GW |
+    perl -Mutf8 -CSD -npe 's/GWI.//' |
+    awk -F- '{X=$0} /^u/ { X= $1 } { print X, $0}' |
+    LANG=C sort |
+    uniq -c |
+    ruby -ane 'printf("%s %s %s %s \n", $F[0], $F[1].sub(/^u/, "").to_i(16).chr("UTF-8"), $F[1], $F[2]) ' |
+    perl -Mutf8 -CSD -npe 's/  / -- /;' > shinji-kyuuji-table-4.sty
+
+echo  姉  姊 -姉  | tee shinji-kyuuji-table-5.sty
+
+rg  -N -I '^\\\\旧字登録' shinji-kyuuji-table-* |
+    awk -F'[{}]+' '$2 != $3 { print } ' |
+    LANG=C sort -u|
+    ruby -ane '
+       mm = $F[0].match(/[{](.)[}][{](.)[}]/);
+       print $F[0], " %",
+             " 新字", mm[1].codepoints.map{|v| v.to_s(16)},
+             " 旧字", mm[2].codepoints.map{|v| v.to_s(16)}, "\n"
+       ' | tee shinji-kyuuji-table.sty
