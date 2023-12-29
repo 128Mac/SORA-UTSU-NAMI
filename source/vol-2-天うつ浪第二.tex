@@ -1,7 +1,7 @@
 \RequirePackage{plautopatch}
 \RequirePackage{exppl2e}
 % upLaTeX文書
-\documentclass[dvipdfmx,uplatex-dev,tate,book,paper=a5,jafontsize=12pt,
+\documentclass[dvipdfmx,uplatex,tate,book,paper=a5paper,jafontsize=13pt,
     open_bracket_pos=nibu_tentsuki,hanging_punctuation]{jlreq}
 \usepackage{bxpapersize}
 \usepackage{pxrubrica}
@@ -14,7 +14,9 @@
 \usepackage{bxglyphwiki}
 \usepackage{indent}
 \usepackage{tabularray}
-\rubysetup{<hj>}
+\usepackage{CJK-char-convert}
+% \rubysetup{<hj>}% 無指定時のルビ：（<）前進入大、（h）肩付き、（j）熟語、（>）後進入大
+\rubysetup{h>}% 無指定時のルビ：（h）肩付き、（>）後進入大
 \title{\Huge 天うつ浪　{\Large 第二}}
 \author{幸田露伴}
 \date{　　　　　　　　　{\small 明治四十年一月}　春陽{\換字{堂}}}
