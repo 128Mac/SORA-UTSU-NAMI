@@ -1,0 +1,54 @@
+* dvipdfmx で Glyph missing と言われる
+
+- 以下のようなメッセージが表示された場合は、恐らく ipa がカレントファミリーになっているからであろう
+
+    #+BEGIN_SRC
+    dvipdfmx:warning: Glyph missing in font. (CID=13706 , code=0x20bb7 ) vol-2
+
+    dvipdfmx:warning: Glyph missing in font. (CID=13760 , code=0x5433  ) vol-1
+    dvipdfmx:warning: Glyph missing in font. (CID=13760 , code=0x5433  ) vol-3
+
+    dvipdfmx:warning: Glyph missing in font. (CID=14449 , code=0x59ca  ) vol-1
+    dvipdfmx:warning: Glyph missing in font. (CID=14449 , code=0x59ca  ) vol-3
+
+    dvipdfmx:warning: Glyph missing in font. (CID=19372 , code=0x617f  ) vol-2
+
+    dvipdfmx:warning: Glyph missing in font. (CID=19913 , code=0x91c5  ) vol-1
+    dvipdfmx:warning: Glyph missing in font. (CID=19913 , code=0x91c5  ) vol-2
+
+    dvipdfmx:warning: Glyph missing in font. (CID=21907 , code=0x6f6c  ) vol-2
+    dvipdfmx:warning: Glyph missing in font. (CID=22052 , code=0x771c  ) vol-2
+    dvipdfmx:warning: Glyph missing in font. (CID=22331 , code=0x83be  ) vol-1
+    dvipdfmx:warning: Glyph missing in font. (CID=7665  , code=0x2f8ed ) vol-2
+    dvipdfmx:warning: Glyph missing in font. (CID=7750  , code=0xf9ec  ) vol-3
+    dvipdfmx:warning: Glyph missing in font. (CID=7809  , code=0xf992  ) vol-3
+    #+END_SRC
+
+  - 確認
+
+    #+BEGIN_SRC
+    kanji-config-updmap status
+    #+END_SRC
+    #+BEGIN_SRC
+    CURRENT family for ja: ipa (variant: <empty>)
+    Standby family : bizud
+    Standby family : haranoaji
+    Standby family : ipaex
+    Standby family : ms
+    Standby family : yu-win10
+    #+END_SRC
+
+ - mac と同じように haranoaji に変更
+
+    #+BEGIN_SRC
+    kanji-config-updmap -user haranoaji
+    #+END_SRC
+
+** 手紙を興って　→　てがみをやつて　。。。 手紙を興す
+
+   「興・輿・與」
+
+** 幸田露伴「天うつ浪」現代語勝手訳
+
+- [[https://ncode.syosetu.com/n3823hs/][幸田露伴「天うつ浪」（前篇）現代語勝手訳]]
+- [[https://ncode.syosetu.com/n3540hw/][幸田露伴「天うつ浪」（後篇）現代語勝手
