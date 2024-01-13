@@ -77,3 +77,29 @@ function goodic
         ' | uniq
     end
 end
+
+function kanjipedia
+    set url1 'https://www.kanjipedia.jp/search/?k='
+    set url2 'URLエンコードされた情報を入れる'
+    set url3 '&kt=1&wt=1&ky=1&wy=1&sk=partial&t=kotoba'
+    # https://www.kanjipedia.jp/search/?k=%E8%A8%BA%E6%96%AD&kt=1&wt=1&ky=1&wy=1&sk=partial&t=kotoba
+
+    for t in $argv
+        set url2 (
+        ruby -r uri -e '
+        ARGV.each{|c|puts URI.encode_www_form_component(c)}
+        ' $t
+        )
+        curl --silent --location "$url1$url2$url3" |
+        nkf -w -Lu |
+        pandoc -f html -t plain 2>/dev/null |
+        sed '
+        1,/検索条件：「～を含む」/d;
+
+        /^\[\]/d;
+
+        /^絞り込む/,$d
+
+        ' | uniq
+    end
+end
