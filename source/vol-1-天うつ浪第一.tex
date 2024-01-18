@@ -1,3 +1,9 @@
+%! ptex2pdf -l -u           --shell-escape -output-directory=myout vol-1-天うつ浪第一
+%! cluttex --engine=uplatex --shell-escape -output-directory=myout vol-1-天うつ浪第一
+%  ptex2pdf でビルド時に必要なディレクトリ mycache と myout
+%  cluttex  でビルド時に必要なディレクトリ myout と myout/mycache
+%           また　--includeonly=NAMEs  を指定すると '\includeonly{NAMEs}' を仮挿入してくれる
+%%
 \RequirePackage{plautopatch}
 \RequirePackage{exppl2e}
 % upLaTeX文書
@@ -10,7 +16,7 @@
 \usepackage[directunicode*, noalphabet]{pxchfon}[2017/04/08]
 \usepackage{plext}
 \usepackage{graphicx}
-\usepackage{bxglyphwiki}
+\usepackage[dir=mycashe]{bxglyphwiki}
 \usepackage{indent}
 \usepackage{CJK-char-convert}
 % \rubysetup{<hj>}% 無指定時のルビ：（<）前進入大、（h）肩付き、（j）熟語、（>）後進入大
