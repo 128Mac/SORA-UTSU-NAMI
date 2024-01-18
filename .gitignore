@@ -1,5 +1,7 @@
-*.aux
-*.log
 build/
-bxgw_*.def
-bxgw_*.pdf
+# BXglyphwiki パッケージでダウンロードする情報のキャッシュファイルを置くディレクトリ
+source/mycashe/
+# ptex2pdf / cluttex で発生する中間ファイル置き場
+source/myout/
+source/vol-*.pdf
+source/vol-*.synctex.gz
