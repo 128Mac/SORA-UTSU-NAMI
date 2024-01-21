@@ -12,6 +12,7 @@ uplatex                                   ,
 dvipdfmx                                  ,
 book                                      ,
 tate                                      ,
+twoside                                   , % even_running_head 有効化
 %%%%
 jafontsize                = 12pt          ,
 fontsize                  = 12pt          ,
@@ -92,14 +93,10 @@ number_of_lines           = 15            ,
 
 % ノンブル、柱の設定
 \ModifyPageStyle{myheadings}{
-  nombre_position       = bottom-left     , % ノンブル出力位置
-  running_head_position = top-left        , % 柱出力位置
-  odd_running_head      = {_chapter}      , % 柱に章内容を出力
-  even_running_head     = {_section}      , % 柱に章内容を出力
-  %mark_format           = {
-  %  _section            = {其\thesection} ,
-  %  _chapter            = {第\thechapter} ,
-  %}                                       ,
+  nombre_position       = bottom-left , % ノンブル出力位置
+  running_head_position = top-left    , % 柱出力位置
+  odd_running_head      = {\其の番号} , % see also \SECTION
+  even_running_head     = {\巻の番号} , % see also \CHAPTER
 }
 
 \setlength\parindent{0pt}
@@ -108,20 +105,21 @@ number_of_lines           = 15            ,
 \author{幸田露伴}
 \date{　　　　　　　　　{\small 明治四十年一月}　春陽{\換字{堂}}}
 
+\gdef\巻の番号{}
 \newcommand{\CHAPTER}[1]{
   \clearpage
   \thispagestyle{empty}
   \chapter*{\ruby{天}{そら}うつ\ruby{浪}{なみ}　{\normalsize #1}}
+  \gdef\巻の番号{{#1}巻}
   \thispagestyle{empty}
   \addcontentsline{toc}{chapter}{天うつ浪　#1}
-  \markboth{#1}{#1}% TODO 「巻」情報が欲しい
-  %\thispagestyle{empty}
 }
+
+\gdef\其の番号{}
 \newcommand{\SECTION}[4]{
   %\needspace{5cm}
   \section{#4}
-  \thispagestyle{empty}
-  \markboth{#4}{#4}% TODO 「巻」情報が欲しい
+  \gdef\其の番号{#4}
   \input{#1-#2-#3-#4}
 }
 \newcommand{\Entry}[1]{
