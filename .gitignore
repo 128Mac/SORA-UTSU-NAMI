@@ -6,3 +6,7 @@ source/myout/
 source/vol-*.pdf
 source/vol-*.synctex.gz
 auto
+org/
+html/
+2024-0*
+.*.swp
