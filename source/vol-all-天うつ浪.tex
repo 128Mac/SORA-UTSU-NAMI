@@ -1,11 +1,11 @@
-% ! ptex2pdf -l -u           --shell-escape -output-directory=myout vol-1-天うつ浪第一
-% ! cluttex --engine=uplatex --shell-escape -output-directory=myout vol-1-天うつ浪第一
+% ! ptex2pdf -l -u           --shell-escape -output-directory=myout vol-all-天うつ浪
+% ! cluttex --engine=uplatex --shell-escape -output-directory=myout vol-all-天うつ浪
 % ptex2pdf でビルド時に必要なディレクトリ mycache と myout
 % cluttex  でビルド時に必要なディレクトリ myout と myout/mycache
 % また　--includeonly=NAMEs  を指定すると '\includeonly{NAMEs}' を仮挿入してくれる
 %%
 \RequirePackage{plautopatch}
-\RequirePackage{exppl2e}
+%\RequirePackage{exppl2e}% 警告メッセージ削減のためコメントアウト
 
 \documentclass[
 uplatex                                   ,
