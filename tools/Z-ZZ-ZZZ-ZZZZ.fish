@@ -39,3 +39,23 @@ function ZZZZ
         git show
     end
 end
+
+function Y
+    rg -n --glob '*.tex' --sort path -e $argv[1] | tr ':' '\t' | rg $argv[1]
+end
+
+# グリフ変更
+function TTTT
+    set ch1 "$argv[1]"
+    ZZZZ '(ruby[{][^'$ch1']*)('$ch1')(\p{sc=han}*)' '$1\{\\\\換字\{$2\}\}$3' 「$ch1」のグリフ変更""
+end
+
+function TTT
+    set ch1 "$argv[1]"
+    ZZZ '(ruby[{][^'$ch1']*)('$ch1')(\p{sc=han}*)' '$1\{\\\\換字\{$2\}\}$3' 「$ch1」のグリフ変更""
+end
+
+function TT
+    set ch1 "$argv[1]"
+    ZZ '(ruby[{][^'$ch1']*)('$ch1')(\p{sc=han}*)' '$1\{\\\\換字\{$2\}\}$3' 「$ch1」のグリフ変更""
+end
