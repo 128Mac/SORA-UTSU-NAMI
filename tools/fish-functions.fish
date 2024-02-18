@@ -1,9 +1,64 @@
 function CHAR-2-UNICODEEPOINT
-    for str in $argv
-        echo "$str" | ruby -ane '
-        $F[0].each_codepoint { |c|
-        $stdout << c.chr(Encoding::UTF_8) << " "  << "U+" << c.to_s(16) << " "
-        }'
+    ruby -e '
+        ARGV.each do | av |
+            av.each_codepoint do | ch |
+                puts ch.chr(Encoding::UTF_8) + " " +  ch.to_s(16)
+            end
+        end
+    ' $argv
+end
+
+function UNICODEEPOINT-2-CHAR
+    ruby -e 'ARGV.each do | av |
+        puts av.downcase + " " + av.hex.chr(Encoding::UTF_8) + " "
+    end
+    ' $argv
+end
+
+function PANDOC-0g0-org
+    set cpcp (
+        ruby -e '
+            BEGIN { array = [] }
+            ARGV.each do | av |
+                av.each_codepoint do | ch |
+                    array.push( ch.to_s(16) )
+                end
+            end
+            END { puts array.uniq }
+        ' $argv
+    )
+    for cp in $cpcp
+        [ -d PANDOC-0g0-org ] || mkdir PANDOC-0g0-org
+        set html PANDOC-0g0-org/(UNICODEEPOINT-2-CHAR $cp | xargs | tr ' ' '-').html
+        set org  PANDOC-0g0-org/(UNICODEEPOINT-2-CHAR $cp | xargs | tr ' ' '-').org
+        set url https://0g0.org/unicode/$cp/
+        [ -f "$html" ] || curl --silent --location -o $html $url
+        [ -f "$html" ] || continue
+        echo
+        pandoc -f html -t org $html |
+              rg -v -e '^:'\
+                    -e 文字をクリップボードにコピー \
+                    -e 'https://' \
+                    -e 一覧とURLエンコード検索・変換サイト \
+                    -e このサイトについて \
+                    -e お問い合わせフォーム \
+                    -e '^__' \
+                    -e '0g0.org' |
+              uniq |
+              perl -Mutf8 -CSD -0777 -npe '
+                  my $re = join( "|"
+                               , "Unicode"
+                               , "分類"
+                               , "数値文字参照"
+                               , "URLエンコード[(]UTF-8[)]"
+                               , "URLエンコード[(]EUC-JP[)]"
+                               , "URLエンコード[(]SHIFT_JIS[)]"
+                               , "ユニコード名"
+                               , "一般カテゴリ－"
+                               );
+                  s/($re)\n+([^\n]+)\n+/| $1 | $2 |\n/g;
+                  ' | tee $org
+        echo "<<< $url >>><<< file://$org >>>"
     end
 end
 
