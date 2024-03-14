@@ -134,8 +134,14 @@ number_of_lines           = 15            , % TODO 原本は 11 行なので行�
 \makeatletter
 \def\全三巻@一括ビルド{}
 \makeatother
-\newcommand{\原本頁}[1]{\marginpar{\hfill p-#1}}%%%%% デバッグ用／本番は「空」
+%%%\newcommand{\原本頁}[1]{\marginpar{\hfill p-#1}}%%%%% デバッグ用／本番は「空」
 \setlength{\marginparwidth}{20mm}%% 傍注欄の大きさ%%%%% デバッグ用／本番は「空」
+
+\newcommand*\原本頁[1][]{%
+  \if\relax\detokenize\expandafter{\expanded{#1}}\relax%
+  \else\marginpar{\hfill p-#1}%
+  \fi
+}
 
 \begin{document}
 \maketitle
