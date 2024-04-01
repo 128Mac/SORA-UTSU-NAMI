@@ -48,8 +48,8 @@ number_of_lines           = 15            ,
 %         hyperref を読み込むと縦書き時の目次のページが横書きになる
 
 \usepackage{pxrubrica}
-% \rubysetup{<hj>}% 無指定時のルビ：（<）前進入大、（h）肩付き、（j）熟語、（>）後進入大
-\rubysetup{|h>}% 無指定時のルビ：（|）前進入禁止、（h）肩付き、（>）後進入大
+\rubysetup{<hj>}% 無指定時のルビ：（<）前進入大、（h）肩付き、（j）熟語、（>）後進入大
+% \rubysetup{|h>}% 無指定時のルビ：（|）前進入禁止、（h）肩付き、（>）後進入大
 \newcommand{\詰めruby}[2]{\ruby[g]{#1}{{\kanjiskip=0pt plus 0pt minus 0pt #2}}}
 \newcommand{\g詰めruby}[2]{\ruby[g]{#1}{{\kanjiskip=0pt plus 0pt minus 0pt #2}}}
 \usepackage{tabularray}
