@@ -25,7 +25,7 @@ paper                     = a5paper       ,
 head_space                = 36mm          ,
 gutter                    = 18mm          ,
 headfoot_verticalposition = 24mm          ,
-line_length               = 28zw          , % TODO デフォルトはコメントアウトすべし
+line_length               = 27zw          , % TODO デフォルトはコメントアウトすべし
 number_of_lines           = 11            , % TODO デフォルトはコメントアウトすべし
 ]{jlreq}
 
@@ -135,8 +135,8 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
 \def\全三巻@一括ビルド{}
 \makeatother
 \newcommand{\原本頁}[1]{\marginpar{\hfill p-#1}}%%%%% デバッグ用／本番は「空」
-\setlength{\marginparwidth}{20mm}%% 傍注欄の大きさ%%%%% デバッグ用／本番は「空」
-
+\setlength{\marginparwidth}{20mm}%% 傍注欄の大きさ%%% デバッグ用／本番はコメントアウト
+\newcommand{\改行}{\par}%%%%%%%%%%%%%%%%%%%%%%%%%%%%% デバッグ用／本番は「空」
 %%\newcommand*\原本頁[1][]{%
 %%  \if\relax\detokenize\expandafter{\expanded{#1}}\relax%
 %%  \else\marginpar{\hfill p-#1}%
