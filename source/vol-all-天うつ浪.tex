@@ -103,7 +103,22 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
 
 \title{\Huge 天うつ浪}
 \author{幸田露伴}
-\date{　　　　　　　　　{\small 明治四十年一月}　春陽{\換字{堂}}}
+%\date{　　　　　　　　　{\small 明治四十年一月}　春陽{\換字{堂}}}
+\newcommand{\初版発行日}[5]{%
+  \makebox{#1}\makebox{巻~ }%
+  \makebox{#2}% 元号
+  \makebox[3.75zw]{~ #3\hfill}\makebox{年}%
+  \makebox[1.75zw]{~ \hfill#4}\makebox{月}%
+  \makebox[2.75zw]{~ #5\hfill}\makebox{日}%
+  \makebox{~ 初版発行}
+}
+\date{
+  \small%
+  \hfill \初版発行日{第一}{明治}{三十九}{一}{一}\\
+  \hfill \初版発行日{第二}{明治}{三十九}{六}{十五}\\
+  \hfill \初版発行日{第三}{明治}{四十  }{一}{一}\\
+  \hfill 春陽{\換字{堂}}~ 発行\\
+}
 
 \gdef\巻の番号{}
 \newcommand{\CHAPTER}[1]{
