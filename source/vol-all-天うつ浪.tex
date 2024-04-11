@@ -158,6 +158,19 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
 %%  \fi
 %%}
 
+% 背景にグリッドを表示させる
+\plautopatchdisable{eso-pic}% https://okumuralab.org/tex/mod/forum/discuss.php?d=2956
+\usepackage{xcolor}
+\usepackage[
+  colorgrid    = true    ,
+  gridBG       = true    ,
+  gridunit     = mm      , % mm, in, bp, pt
+  gridcolor    = red!25  ,
+  subgridcolor = lime!75 ,
+  texcoord     = true    ,
+  ]{eso-pic}
+
+
 \begin{document}
 \maketitle
 
