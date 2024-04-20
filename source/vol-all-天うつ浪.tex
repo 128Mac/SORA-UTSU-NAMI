@@ -160,7 +160,7 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
 
 % 背景にグリッドを表示させる
 \plautopatchdisable{eso-pic}% https://okumuralab.org/tex/mod/forum/discuss.php?d=2956
-\usepackage{xcolor}
+% \usepackage{xcolor} は eso-pic.sty 内部で呼び出している
 \usepackage[
   colorgrid    = true    ,
   gridBG       = true    ,
@@ -169,7 +169,6 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
   subgridcolor = lime!75 ,
   texcoord     = true    ,
   ]{eso-pic}
-
 
 \begin{document}
 \maketitle
