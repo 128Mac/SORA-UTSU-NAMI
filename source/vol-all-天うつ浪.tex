@@ -54,9 +54,8 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
 \newcommand{\g詰めruby}[2]{\ruby[g]{#1}{{\kanjiskip=0pt plus 0pt minus 0pt #2}}}
 \usepackage{tabularray}
 
-
 % 非標準パッケージ --- ダウンロードしたら nkf -Lu --overwrite しておく
-\usepackage[dir=mygwi]{%
+\usepackage{%
   bxglyphwiki % https://raw.githubusercontent.com/zr-tex8r/BXglyphwiki/master/bxglyphwiki.sty
   %%%%%%%%%%%%% https://raw.githubusercontent.com/zr-tex8r/BXglyphwiki/master/bxglyphwiki.lua
   %%%%%%%%%%%%% for unix user
@@ -65,10 +64,10 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
   %%%%%%%%%%%%% # add to PATH for bxglyphwiki
   }
 \usepackage{ % 入手先情報＆要 utf-8 変換
-  % indent, %%% https://ctan.org/macros/latex209/contrib/misc/indent.sty
-  jdkintou, %%% http://xymtex.com/fujitas2/texlatex/tateyoko/jdkintou.sty
-  sfkanbun, %%% http://xymtex.com/fujitas2/texlatex/tategumi/sfkanbun.sty
-  warichu   %%% http://xymtex.com/fujitas2/texlatex/tategumi/warichu.sty
+  % indent   , %%% https://ctan.org/macros/latex209/contrib/misc/indent.sty
+  % jdkintou , %%% http://xymtex.com/fujitas2/texlatex/tateyoko/jdkintou.sty
+  sfkanbun   , %%% http://xymtex.com/fujitas2/texlatex/tategumi/sfkanbun.sty
+  % warichu    %%% http://xymtex.com/fujitas2/texlatex/tategumi/warichu.sty
 }
 
 % 自作パッケージ
@@ -113,11 +112,12 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
   \makebox{~ 初版発行}
 }
 \date{
-  \small%
-  \hfill \初版発行日{第一}{明治}{三十九}{一}{一}\\
-  \hfill \初版発行日{第二}{明治}{三十九}{六}{十五}\\
-  \hfill \初版発行日{第三}{明治}{四十  }{一}{一}\\
-  \hfill 春陽{\換字{堂}}~ 発行\\
+  \scriptsize{%
+    \hfill \初版発行日{第一}{明治}{三十九}{一  }{一}\\
+    \hfill \初版発行日{第二}{明治}{三十九}{六  }{十五}\\
+    \hfill \初版発行日{第三}{明治}{四十  }{一  }{一}\\
+    \hfill 春陽{\換字{堂}}~ 発行\\
+  }
 }
 
 \gdef\巻の番号{}
