@@ -27,7 +27,13 @@
 %\includeonly{其四十}
 \newcommand{\詰めruby}[2]{\ruby[g]{#1}{{\kanjiskip=0pt plus 0pt minus 0pt #2}}}
 \newcommand{\g詰めruby}[2]{\ruby[g]{#1}{{\kanjiskip=0pt plus 0pt minus 0pt #2}}}
-\newcommand{\原本頁}[1]{}
+
+\makeatletter
+% \def\全三巻@一括ビルド{}
+% \def\デバッグ@ビルド{}
+\input{sora-utsu-name-debug.sty}
+\makeatother
+
 \begin{document}
 \maketitle
 \pagestyle{myheadings}

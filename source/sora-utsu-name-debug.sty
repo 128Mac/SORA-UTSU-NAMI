@@ -1,0 +1,20 @@
+\@ifundefined{デバッグ@ビルド}{%
+  \newcommand{\原本頁}[1]{}% デバッグ用／本番は「空」
+  \newcommand{\改行}{}%%%%%% デバッグ用／本番は「空」
+}{%
+  \newcommand{\原本頁}[1]{\marginpar{\hfill p-#1}}%%%%% デバッグ用／本番は「空」
+  \setlength{\marginparwidth}{20mm}%% 傍注欄の大きさ%%% デバッグ用／本番はコメントアウト
+  \newcommand{\改行}{\par}%%%%%%%%%%%%%%%%%%%%%%%%%%%%% デバッグ用／本番は「空」
+  %
+  % 背景にグリッドを表示させる
+  \plautopatchdisable{eso-pic}% https://okumuralab.org/tex/mod/forum/discuss.php?d=2956
+  % \usepackage{xcolor} は eso-pic.sty 内部で呼び出している
+  \usepackage[
+  colorgrid    = true    ,
+  gridBG       = true    ,
+  gridunit     = mm      , % mm, in, bp, pt
+  gridcolor    = red!25  ,
+  subgridcolor = lime!75 ,
+  texcoord     = true    ,
+  ]{eso-pic}
+}

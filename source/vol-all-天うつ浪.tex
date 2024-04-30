@@ -148,28 +148,11 @@ number_of_lines           = 11            , % TODO デフォルトはコメン�
 
 \makeatletter
 \def\全三巻@一括ビルド{}
+\def\デバッグ@ビルド{}
+\input{sora-utsu-name-debug.sty}
 \makeatother
-\newcommand{\原本頁}[1]{\marginpar{\hfill p-#1}}%%%%% デバッグ用／本番は「空」
-\setlength{\marginparwidth}{20mm}%% 傍注欄の大きさ%%% デバッグ用／本番はコメントアウト
-\newcommand{\改行}{\par}%%%%%%%%%%%%%%%%%%%%%%%%%%%%% デバッグ用／本番は「空」
-%%\newcommand*\原本頁[1][]{%
-%%  \if\relax\detokenize\expandafter{\expanded{#1}}\relax%
-%%  \else\marginpar{\hfill p-#1}%
-%%  \fi
-%%}
 
-% 背景にグリッドを表示させる
-\plautopatchdisable{eso-pic}% https://okumuralab.org/tex/mod/forum/discuss.php?d=2956
-% \usepackage{xcolor} は eso-pic.sty 内部で呼び出している
-\usepackage[
-  colorgrid    = true    ,
-  gridBG       = true    ,
-  gridunit     = mm      , % mm, in, bp, pt
-  gridcolor    = red!25  ,
-  subgridcolor = lime!75 ,
-  texcoord     = true    ,
-  ]{eso-pic}
-
+\makeatother
 \begin{document}
 \maketitle
 
