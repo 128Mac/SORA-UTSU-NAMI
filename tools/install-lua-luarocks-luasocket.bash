@@ -16,13 +16,14 @@ fi
     # t="$HOMEBREW_PREFIX/Cellar/luarocks"
     # [ -d "$t" ] && sudo chown -R $USER $t
 
-    brew uninstall luarocks
-    brew uninstall lua
+    brew uninstall luarocks || sudo rm -rf /opt/homebrew/Cellar/luarocks/
+    brew uninstall lua      || brew uninstall --ignore-dependencies lua
 
     CHK_DIR=$(
         echo $HOMEBREW_PREFIX/etc/luarocks
         echo $HOMEBREW_PREFIX/lib/lua
         echo $HOMEBREW_PREFIX/lib/luarocks
+        echo $HOMEBREW_PREFIX/share/lua
            )
 
     for t in $CHK_DIR ; do
@@ -31,8 +32,8 @@ fi
         fi
     done
 
-    brew install lua
-    brew install luarocks
+    brew reinstall lua
+    brew reinstall luarocks
 
     # luarocks が HOMEBREW_PREFIX 以下に書き込めるか不安なので
     # 失敗したら sudo 付きで再試行してみる
@@ -41,4 +42,6 @@ fi
     find $CHK_DIR
     which -a lua luarocks
 
+    t=$HOMEBREW_PREFIX/share/lua
+    ls -l $t
 }
