@@ -17,13 +17,13 @@ twoside                                   , % even_running_head 有効化
 jafontsize                = 12pt          ,
 fontsize                  = 12pt          ,
 %%%%
-hanging_punctuation                       ,
-% open_bracket_pos        = nibu_tentsuki , % TODO 『 が nibu_tensuki だと見比べにくいので
+open_bracket_pos          = nibu_tentsuki , % zenkaku_tentsuki zenkakunibbu_nibu
+hanging_punctuation                       , % 行頭に句読点等の禁則約物を前行に追い込む
 %%%%
 paper                     = a5paper       ,
 %%%%
-head_space                = 36mm          ,
-gutter                    = 18mm          ,
+head_space                = 36mm          , % 天の空き量
+gutter                    = 18mm          , % のどの余白の大きさ
 headfoot_verticalposition = 24mm          ,
 line_length               = 27zw          , % TODO デフォルトはコメントアウトすべし
 % number_of_lines         = 11            , % TODO デフォルトはコメントアウトすべし
@@ -73,27 +73,26 @@ line_length               = 27zw          , % TODO デフォルトはコメン�
 
 %%% 別行見出しを新しく定義
 \ModifyHeading{chapter}{
-  after_label_space = 1zw      ,
-  font              = {\LARGE} ,
-  % indent          = 2zw      ,
-  label_format      = {}       ,
-  lines             = 3        ,
+  font                = {\LARGE}            ,
+  % indent            = 2zw                 ,
+  label_format        = {}                  ,
+  lines               = 3                   ,
+  pagebreak           = begin_with_odd_page , % 奇数ページ起こし（日本語・縦書き・右閉じ）
 }
 
 \ModifyHeading{section}{
-  after_label_space = 1zw      ,
-  font              = {\Large} ,
-  indent            = 2zw      ,
-  label_format      = {}       ,
-  lines             = 3        ,
+  font                = {\Large} ,
+  indent              = 2zw      ,
+  label_format        = {}       ,
+  lines               = 3        ,
 }
 
 % ノンブル、柱の設定
 \ModifyPageStyle{myheadings}{
   nombre_position       = bottom-left , % ノンブル出力位置
   running_head_position = top-left    , % 柱出力位置
-  odd_running_head      = {\其の番号} , % see also \SECTION
-  even_running_head     = {\巻の番号} , % see also \CHAPTER
+  odd_running_head      = {\巻の番号} , % see also \CHAPTER（日本語、縦書き）
+  even_running_head     = {\其の番号} , % see also \SECTION（日本語、縦書き）
 }
 
 \setlength\parindent{0pt}
@@ -124,7 +123,6 @@ line_length               = 27zw          , % TODO デフォルトはコメン�
   \thispagestyle{empty}
   \chapter*{\ruby{天}{そら}うつ\ruby{浪}{なみ}　{\normalsize #1}}
   \gdef\巻の番号{{#1}巻}
-  \thispagestyle{empty}
   \addcontentsline{toc}{chapter}{天うつ浪　#1}
 }
 
