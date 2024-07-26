@@ -1,0 +1,319 @@
+% +++
+% sequence = ["cluttex"]
+% [programs.cluttex]
+% command = "cluttex"
+% opts = [
+% "--engine=uplatex",
+% "--shell-escape"
+% "--output-directory=myout"
+% ]
+% +++
+
+% https://okumuralab.org/tex/mod/forum/discuss.php?d=3551 を参考に下記
+% を上記のように変更
+% #! cluttex --engine=uplatex --shell-escape --output-directory=myout
+%    cluttex でビルド時に必要なディレクトリ myout と myout/mycache
+
+\RequirePackage{plautopatch}
+%\RequirePackage{exppl2e}% 警告メッセージ削減のためコメントアウト
+
+\documentclass[
+uplatex                                   ,
+dvipdfmx                                  ,
+book                                      ,
+tate                                      ,
+twoside                                   , % even_running_head 有効化
+%%%%
+jafontsize                = 12pt          ,
+fontsize                  = 12pt          ,
+%%%%
+% open_bracket_pos        = nibu_tentsuki , % zenkaku_tentsuki zenkakunibbu_nibu
+% hanging_punctuation                     , % 行頭に句読点等の禁則約物を前行に追い込む
+%%%%
+paper                     = a5paper       ,
+%%%%
+head_space                = 36mm          , % 天の空き量
+gutter                    = 18mm          , % のどの余白の大きさ
+headfoot_verticalposition = 24mm          ,
+line_length               = 27zw          , % TODO デフォルトはコメントアウトすべし
+% number_of_lines         = 11            , % TODO デフォルトはコメントアウトすべし
+]{jlreq}
+
+\usepackage{bxpapersize}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} % 文字コードはUTF-8
+\usepackage{multicol}% 目次を二段書きする
+\usepackage{needspace}
+\usepackage[deluxe, multi, jis2004]{otf}
+\usepackage{plext}
+\usepackage[haranoaji, directunicode*, noalphabet]{pxchfon}[2017/04/08]
+
+\usepackage{bookmark}
+%%\usepackage{hyperref, pxjahyper}
+\patchcmd{\addcontentsline}{\thepage}{\tatechuyoko{\thepage}}{}{}
+
+% 縦書きで bookmark \or hyperref + pxjahyper を利用すると目次で横向き
+% ページ番号になる対処方法は、 \patchcmd で対応する
+% 参考 URL https://github.com/abenori/jlreq/issues/75
+%         hyperref を読み込むと縦書き時の目次のページが横書きになる
+
+\usepackage{pxrubrica}
+\rubysetup{||h>}% 無指定時のルビ：（||）前進入禁止、（h）肩付き、（>）後進入大
+% \rubysetup{|h>}% 無指定時のルビ：（|）前進入禁止、（h）肩付き、（>）後進入大
+\usepackage{tabularray}
+
+% 非標準パッケージ --- ダウンロードしたら nkf -Lu --overwrite しておく
+\usepackage[dir=mygwi,cache=108000]{%
+  bxglyphwiki % https://raw.githubusercontent.com/zr-tex8r/BXglyphwiki/master/bxglyphwiki.sty
+  %%%%%%%%%%%%% https://raw.githubusercontent.com/zr-tex8r/BXglyphwiki/master/bxglyphwiki.lua
+  %%%%%%%%%%%%% for unix user
+  %%%%%%%%%%%%% # sed '1{s/^--//;}' bxglyphwiki.lua > bxglyphwiki
+  %%%%%%%%%%%%% # chmod +x bxglyphwiki
+  %%%%%%%%%%%%% # add to PATH for bxglyphwiki
+  }
+\usepackage{ % 入手先情報＆要 utf-8 変換
+  % indent   , %%% https://ctan.org/macros/latex209/contrib/misc/indent.sty
+  % jdkintou , %%% http://xymtex.com/fujitas2/texlatex/tateyoko/jdkintou.sty
+  sfkanbun   , %%% http://xymtex.com/fujitas2/texlatex/tategumi/sfkanbun.sty
+  % warichu    %%% http://xymtex.com/fujitas2/texlatex/tategumi/warichu.sty
+}
+
+% 自作パッケージ
+\usepackage{CJK-char-convert}
+
+%%% 別行見出しを新しく定義
+\ModifyHeading{chapter}{
+  font                = {\LARGE}            ,
+  % indent            = 2zw                 ,
+  label_format        = {}                  ,
+  lines               = 3                   ,
+  pagebreak           = begin_with_odd_page , % 奇数ページ起こし（日本語・縦書き・右閉じ）
+}
+
+\ModifyHeading{section}{
+  font                = {\Large} ,
+  indent              = 2zw      ,
+  label_format        = {}       ,
+  lines               = 3        ,
+}
+
+% ノンブル、柱の設定
+\ModifyPageStyle{myheadings}{
+  nombre_position       = bottom-left , % ノンブル出力位置
+  running_head_position = top-left    , % 柱出力位置
+  odd_running_head      = {\巻の番号} , % see also \CHAPTER（日本語、縦書き）
+  even_running_head     = {\其の番号} , % see also \SECTION（日本語、縦書き）
+}
+
+\setlength\parindent{0pt}
+
+\title{\Huge 天うつ浪}
+\author{幸田露伴}
+%\date{　　　　　　　　　{\small 明治四十年一月}　春陽{\換字{堂}}}
+\newcommand{\初版発行日}[5]{%
+  \makebox{#1}\makebox{巻~ }%
+  \makebox{#2}% 元号
+  \makebox[3.75zw]{~ #3\hfill}\makebox{年}%
+  \makebox[1.75zw]{~ \hfill#4}\makebox{月}%
+  \makebox[2.75zw]{~ #5\hfill}\makebox{日}%
+  \makebox{~ 初版発行}
+}
+\date{
+  \scriptsize{%
+    \hfill \初版発行日{第一}{明治}{三十九}{一  }{一}\\
+    \hfill \初版発行日{第二}{明治}{三十九}{六  }{十五}\\
+    \hfill \初版発行日{第三}{明治}{四十  }{一  }{一}\\
+    \hfill 春陽{\換字{堂}}~ 発行\\
+  }
+}
+
+\gdef\巻の番号{}
+\newcommand{\CHAPTER}[1]{
+  \clearpage
+  \thispagestyle{empty}
+  \chapter*{\ruby{天}{そら}うつ\ruby{浪}{なみ}　{\normalsize #1}}
+  \gdef\巻の番号{{#1}巻}
+  \addcontentsline{toc}{chapter}{天うつ浪　#1}
+}
+
+\gdef\其の番号{}
+\newcommand{\SECTION}[4]{
+  \needspace{2\baselineskip}
+  \section{#4}
+  \gdef\其の番号{#4}
+  %% \begin{indentation}{4zw}{3zw}
+  %%   \parindent=0pt
+  \input{#1-#2-#3-#4}
+  %% \end{input}
+}
+\newcommand{\Entry}[1]{
+  % \section{#1}
+  % \markboth{#1}{#1}
+  % \setcounter{equation}{0}
+}
+
+\makeatletter
+\def\全三巻@一括ビルド{}
+\def\デバッグ@ビルド{}
+\input{sora-utsu-nami-debug.sty}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\pagestyle{myheadings}
+% \setlength{\columnsep}{0mm}
+\clearpage\setcounter{page}{0}\pagenumbering{roman}
+\begin{multicols}{2}\tableofcontents\end{multicols}
+\clearpage\setcounter{page}{0}\pagenumbering{arabic}
+
+\CHAPTER{第一}
+
+\SECTION{001}{1}{01}{其一}
+\SECTION{002}{1}{02}{其二}
+\SECTION{003}{1}{03}{其三}
+\SECTION{004}{1}{04}{其四}
+\SECTION{005}{1}{05}{其五}
+\SECTION{006}{1}{06}{其六}
+\SECTION{007}{1}{07}{其七}
+\SECTION{008}{1}{08}{其八}
+\SECTION{009}{1}{09}{其九}
+\SECTION{010}{1}{10}{其十}
+\SECTION{011}{1}{11}{其十一}
+\SECTION{012}{1}{12}{其十二}
+\SECTION{013}{1}{13}{其十三}
+\SECTION{014}{1}{14}{其十四}
+\SECTION{015}{1}{15}{其十五}
+\SECTION{016}{1}{16}{其十六}
+\SECTION{017}{1}{17}{其十七}
+\SECTION{018}{1}{18}{其十八}
+\SECTION{019}{1}{19}{其十九}
+\SECTION{020}{1}{20}{其二十}
+\SECTION{021}{1}{21}{其二十一}
+\SECTION{022}{1}{22}{其二十二}
+\SECTION{023}{1}{23}{其二十三}
+\SECTION{024}{1}{24}{其二十四}
+\SECTION{025}{1}{25}{其二十五}
+\SECTION{026}{1}{26}{其二十六}
+\SECTION{027}{1}{27}{其二十七}
+\SECTION{028}{1}{28}{其二十八}
+\SECTION{029}{1}{29}{其二十九}
+\SECTION{030}{1}{30}{其三十}
+\SECTION{031}{1}{31}{其三十一}
+\SECTION{032}{1}{32}{其三十二}
+\SECTION{033}{1}{33}{其三十三}
+\SECTION{034}{1}{34}{其三十四}
+\SECTION{035}{1}{35}{其三十五}
+\SECTION{036}{1}{36}{其三十六}
+\SECTION{037}{1}{37}{其三十七}
+\SECTION{038}{1}{38}{其三十八}
+\SECTION{039}{1}{39}{其三十九}
+\SECTION{040}{1}{40}{其四十}
+
+\CHAPTER{第二}
+
+\SECTION{041}{2}{01}{其一}
+\SECTION{042}{2}{02}{其二}
+\SECTION{043}{2}{03}{其三}
+\SECTION{044}{2}{04}{其四}
+\SECTION{045}{2}{05}{其五}
+\SECTION{046}{2}{06}{其六}
+\SECTION{047}{2}{07}{其七}
+\SECTION{048}{2}{08}{其八}
+\SECTION{049}{2}{09}{其九}
+\SECTION{050}{2}{10}{其十}
+\SECTION{051}{2}{11}{其十一}
+\SECTION{052}{2}{12}{其十二}
+\SECTION{053}{2}{13}{其十三}
+\SECTION{054}{2}{14}{其十四}
+\SECTION{055}{2}{15}{其十五}
+\SECTION{056}{2}{16}{其十六}
+\SECTION{057}{2}{17}{其十七}
+\SECTION{058}{2}{18}{其十八}
+\SECTION{059}{2}{19}{其十九}
+\SECTION{060}{2}{20}{其二十}
+\SECTION{061}{2}{21}{其二十一}
+\SECTION{062}{2}{22}{其二十二}
+\SECTION{063}{2}{23}{其二十三}
+\SECTION{064}{2}{24}{其二十四}
+\SECTION{065}{2}{25}{其二十五}
+\SECTION{066}{2}{26}{其二十六}
+\SECTION{067}{2}{27}{其二十七}
+\SECTION{068}{2}{28}{其二十八}
+\SECTION{069}{2}{29}{其二十九}
+\SECTION{070}{2}{30}{其三十}
+\SECTION{071}{2}{31}{其三十一}
+\SECTION{072}{2}{32}{其三十二}
+\SECTION{073}{2}{33}{其三十三}
+\SECTION{074}{2}{34}{其三十四}
+\SECTION{075}{2}{35}{其三十五}
+\SECTION{076}{2}{36}{其三十六}
+\SECTION{077}{2}{37}{其三十七}
+\SECTION{078}{2}{38}{其三十八}
+\SECTION{079}{2}{39}{其三十九}
+\SECTION{080}{2}{40}{其四十}
+\SECTION{081}{2}{41}{其四十一}
+\SECTION{082}{2}{42}{其四十二}
+\SECTION{083}{2}{43}{其四十三}
+\SECTION{084}{2}{44}{其四十四}
+\SECTION{085}{2}{45}{其四十五}
+\SECTION{086}{2}{46}{其四十六}
+\SECTION{087}{2}{47}{其四十七}
+\SECTION{088}{2}{48}{其四十八}
+\SECTION{089}{2}{49}{其四十九}
+\SECTION{090}{2}{50}{其五十}
+\SECTION{091}{2}{51}{其五十一}
+
+\CHAPTER{第三}
+
+\SECTION{092}{3}{01}{其一}
+\SECTION{093}{3}{02}{其二}
+\SECTION{094}{3}{03}{其三}
+\SECTION{095}{3}{04}{其四}
+\SECTION{096}{3}{05}{其五}
+\SECTION{097}{3}{06}{其六}
+\SECTION{098}{3}{07}{其七}
+\SECTION{099}{3}{08}{其八}
+\SECTION{100}{3}{09}{其九}
+\SECTION{101}{3}{10}{其十}
+\SECTION{102}{3}{11}{其十一}
+\SECTION{103}{3}{12}{其十二}
+\SECTION{104}{3}{13}{其十三}
+\SECTION{105}{3}{14}{其十四}
+\SECTION{106}{3}{15}{其十五}
+\SECTION{107}{3}{16}{其十六}
+\SECTION{108}{3}{17}{其十七}
+\SECTION{109}{3}{18}{其十八}
+\SECTION{110}{3}{19}{其十九}
+\SECTION{111}{3}{20}{其二十}
+\SECTION{112}{3}{21}{其二十一}
+\SECTION{113}{3}{22}{其二十二}
+\SECTION{114}{3}{23}{其二十三}
+\SECTION{115}{3}{24}{其二十四}
+\SECTION{116}{3}{25}{其二十五}
+\SECTION{117}{3}{26}{其二十六}
+\SECTION{118}{3}{27}{其二十七}
+\SECTION{119}{3}{28}{其二十八}
+\SECTION{120}{3}{29}{其二十九}
+\SECTION{121}{3}{30}{其三十}
+\SECTION{122}{3}{31}{其三十一}
+\SECTION{123}{3}{32}{其三十二}
+\SECTION{124}{3}{33}{其三十三}
+\SECTION{125}{3}{34}{其三十四}
+\SECTION{126}{3}{35}{其三十五}
+\SECTION{127}{3}{36}{其三十六}
+\SECTION{128}{3}{37}{其三十七}
+\SECTION{129}{3}{38}{其三十八}
+\SECTION{130}{3}{39}{其三十九}
+\SECTION{131}{3}{40}{其四十}
+\SECTION{132}{3}{41}{其四十一}
+\SECTION{133}{3}{42}{其四十二}
+\SECTION{134}{3}{43}{其四十三}
+\SECTION{135}{3}{44}{其四十四}
+\SECTION{136}{3}{45}{其四十五}
+\SECTION{137}{3}{46}{其四十六}
+\SECTION{138}{3}{47}{其四十七}
+\SECTION{139}{3}{48}{其四十八}
+\SECTION{140}{3}{49}{其四十九}
+
+\end{document}
