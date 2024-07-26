@@ -63,18 +63,18 @@ all : $(VOL1TARGET).pdf $(VOL2TARGET).pdf $(VOL3TARGET).pdf
 .PHONY : allall
 allall : $(VOL1TARGET).pdf $(VOL2TARGET).pdf $(VOL3TARGET).pdf $(VOLALLTARGET).pdf
 
-$(VOL1TARGET).pdf			: $(VOL1FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<
-$(VOL2TARGET).pdf			: $(VOL2FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<
-$(VOL3TARGET).pdf			: $(VOL3FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<
+$(VOL1TARGET).pdf			: $(VOL1FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
+$(VOL2TARGET).pdf			: $(VOL2FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<	; open $(VOL2TARGET).pdf
+$(VOL3TARGET).pdf			: $(VOL3FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<	; open $(VOL3TARGET).pdf
 
-$(VOLALLTARGET).pdf			: $(VOLALLFILES)       ; $(CLUTTEX) $<
-$(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUG) ; $(CLUTTEX) $<
+$(VOLALLTARGET).pdf			: $(VOLALLFILES)		; $(CLUTTEX)                         $<	; open $(VOLALLTARGET).pdf
+$(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUG)		; $(CLUTTEX)                         $< ; open $(VOLALLDEBUGTARGET).pdf
 
-$(VOL1TARGET)				: $(VOL1TEXFILE)	   ; $(CLUTTEX) $(ADDOPTIONS) $<
-$(VOL2TARGET)				: $(VOL2TEXFILE)	   ; $(CLUTTEX) $(ADDOPTIONS) $<
-$(VOL3TARGET)				: $(VOL3TEXFILE)	   ; $(CLUTTEX) $(ADDOPTIONS) $<
-$(VOLALLTARGET)				: $(VOLALLTEXFILE)	   ; $(CLUTTEX)               $<
-$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGTARGET) ; $(CLUTTEX)               $<
+$(VOL1TARGET)				: $(VOL1TEXFILE)		; $(CLUTTEX)           $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
+$(VOL2TARGET)				: $(VOL2TEXFILE)		; $(CLUTTEX)           $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
+$(VOL3TARGET)				: $(VOL3TEXFILE)		; $(CLUTTEX)           $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
+$(VOLALLTARGET)				: $(VOLALLTEXFILE)		; $(CLUTTEX)                         $< ; open $(VOLALLTARGET).pdf
+$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGTARGET)	; $(CLUTTEX)                         	$< ; open $(VOLALLDEBUGTARGET).pdf
 
 $(VOL1TARGET)-diff			: $(VOL1TEXFILE)
 	touch $(VOL1TARGET).pdf
@@ -109,3 +109,32 @@ $(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGTARGET)
 .PHONY : clean
 clean :
 	- find . -maxdepth 1 -iname '*.pdf' -delete
+
+help:
+	@ echo make
+	@ echo make all
+	@ echo make allall
+	@ echo
+	@ echo 個別に（作成日付に応じて） .pdf を作成
+	@ echo make vol-1-天うつ浪第一.pdf
+	@ echo make vol-2-天うつ浪第二.pdf
+	@ echo make vol-3-天うつ浪第三.pdf
+	@ echo make vol-all-天うつ浪.pdf
+	@ echo make vol-all-天うつ浪-debug.pdf
+	@ echo
+	@ echo 個別に強制的に .pdf を作成
+	@ echo make vol-1-天うつ浪第一
+	@ echo make vol-2-天うつ浪第二
+	@ echo make vol-3-天うつ浪第三
+	@ echo make vol-all-天うつ浪
+	@ echo make vol-all-天うつ浪-debug
+	@ echo
+	@ echo pdf の差分表示
+	@ echo make vol-1-天うつ浪第一-diff
+	@ echo make vol-2-天うつ浪第二-diff
+	@ echo make vol-3-天うつ浪第三-diff
+	@ echo make vol-all-天うつ浪-diff
+	@ echo make vol-all-天うつ浪-debug-diff
+	@ echo
+	@ echo includeonly を使用した例
+	@ echo make vol-1-天うつ浪第一 ADDOPTIONS="--includeonly=001-1-01-其一"
