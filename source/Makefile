@@ -1,7 +1,6 @@
 CLUTTEX = cluttex --engine uplatex --shell-escape -output-directory myout
 ADDOPTIONS = # as like as ... --includeonly
 
-
 VOL1STYFILES   = CJK-char-convert.sty sora-utsu-nami-debug.sty bxglyphwiki.sty jdkintou.sty sfkanbun.sty indent.sty
 VOL2STYFILES   = CJK-char-convert.sty sora-utsu-nami-debug.sty bxglyphwiki.sty jdkintou.sty sfkanbun.sty indent.sty warichu.sty
 VOL3STYFILES   = CJK-char-convert.sty sora-utsu-nami-debug.sty bxglyphwiki.sty jdkintou.sty sfkanbun.sty indent.sty
@@ -63,56 +62,58 @@ all : $(VOL1TARGET).pdf $(VOL2TARGET).pdf $(VOL3TARGET).pdf
 .PHONY : allall
 allall : $(VOL1TARGET).pdf $(VOL2TARGET).pdf $(VOL3TARGET).pdf $(VOLALLTARGET).pdf
 
-$(VOL1TARGET).pdf			: $(VOL1FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
-$(VOL2TARGET).pdf			: $(VOL2FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<	; open $(VOL2TARGET).pdf
-$(VOL3TARGET).pdf			: $(VOL3FILES) ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $<	; open $(VOL3TARGET).pdf
+$(VOL1TARGET).pdf			: $(VOL1FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
+$(VOL2TARGET).pdf			: $(VOL2FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
+$(VOL3TARGET).pdf			: $(VOL3FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
+$(VOLALLTARGET).pdf			: $(VOLALLFILES)       ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
+$(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUG)       ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
 
-$(VOLALLTARGET).pdf			: $(VOLALLFILES)		; $(CLUTTEX)                         $<	; open $(VOLALLTARGET).pdf
-$(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUG)		; $(CLUTTEX)                         $< ; open $(VOLALLDEBUGTARGET).pdf
-
-$(VOL1TARGET)				: $(VOL1TEXFILE)		; $(CLUTTEX)           $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
-$(VOL2TARGET)				: $(VOL2TEXFILE)		; $(CLUTTEX)           $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
-$(VOL3TARGET)				: $(VOL3TEXFILE)		; $(CLUTTEX)           $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
-$(VOLALLTARGET)				: $(VOLALLTEXFILE)		; $(CLUTTEX)                         $< ; open $(VOLALLTARGET).pdf
-$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGTARGET)	; $(CLUTTEX)                         	$< ; open $(VOLALLDEBUGTARGET).pdf
+$(VOL1TARGET)				: $(VOL1TEXFILE)       ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
+$(VOL2TARGET)				: $(VOL2TEXFILE)       ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
+$(VOL3TARGET)				: $(VOL3TEXFILE)       ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
+$(VOLALLTARGET)				: $(VOLALLTEXFILE)     ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
+$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGTARGET) ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
 
 $(VOL1TARGET)-diff			: $(VOL1TEXFILE)
 	touch $(VOL1TARGET).pdf
 	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL1TARGET)-temp.pdf $(VOL1TARGET).tex
-	diff-pdf -s -m --output-diff=$(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET).pdf
-	open $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf $(VOL1TARGET)-diff.pdf
+	diff-pdf -s -m --output-diff=$(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf
+	open                         $(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf
 
 $(VOL2TARGET)-diff			: $(VOL2TEXFILE)
 	touch $(VOL2TARGET).pdf
 	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL2TARGET)-temp.pdf $(VOL2TARGET).tex
-	diff-pdf -s -m --output-diff=$(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET).pdf
-	open $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf $(VOL2TARGET)-diff.pdf
+	diff-pdf -s -m --output-diff=$(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf
+	open                         $(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf
 
 $(VOL3TARGET)-diff			: $(VOL3TEXFILE)
 	touch $(VOL3TARGET).pdf
 	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL3TARGET)-temp.pdf $(VOL3TARGET).tex
-	diff-pdf -s -m --output-diff=$(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET).pdf
-	open $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf $(VOL3TARGET)-diff.pdf
+	diff-pdf -s -m --output-diff=$(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf
+	open                         $(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf
 
 $(VOLALLTARGET)-diff		: $(VOLALLTEXFILE)
 	touch $(VOLALLTARGET).pdf
 	$(CLUTTEX) --output $(VOLALLTARGET)-temp.pdf $(VOLALLTARGET).tex
-	diff-pdf -s -m --output-diff=$(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET).pdf
-	open $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf $(VOLALLTARGET)-diff.pdf
+	diff-pdf -s -m --output-diff=$(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf
+	open                         $(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf
 
 $(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGTARGET)
 	touch $(VOLALLDEBUGTARGET).pdf
 	$(CLUTTEX) --output $(VOLALLDEBUGTARGET)-temp.pdf $(VOLALLDEBUGTARGET).tex
-	diff-pdf -s -m --output-diff=$(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET).pdf
-	open $(VOLALLDEBUGTARGET).pdf  $(VOLALLDEBUGTARGET)-temp.pdf $(VOLALLDEBUGTARGET)-diff.pdf
+	diff-pdf -s -m --output-diff=$(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf
+	open                         $(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf
 
 .PHONY : clean
 clean :
 	- find . -maxdepth 1 -iname '*.pdf' -delete
 
 help:
+	@ echo 各分冊ごとに .pdf を作成
 	@ echo make
 	@ echo make all
+	@ echo
+	@ echo 各分冊ごとに加え全三巻を一冊とした .pdf を作成
 	@ echo make allall
 	@ echo
 	@ echo 個別に（作成日付に応じて） .pdf を作成
@@ -120,21 +121,23 @@ help:
 	@ echo make vol-2-天うつ浪第二.pdf
 	@ echo make vol-3-天うつ浪第三.pdf
 	@ echo make vol-all-天うつ浪.pdf
-	@ echo make vol-all-天うつ浪-debug.pdf
 	@ echo
 	@ echo 個別に強制的に .pdf を作成
 	@ echo make vol-1-天うつ浪第一
 	@ echo make vol-2-天うつ浪第二
 	@ echo make vol-3-天うつ浪第三
 	@ echo make vol-all-天うつ浪
-	@ echo make vol-all-天うつ浪-debug
 	@ echo
-	@ echo pdf の差分表示
+	@ echo pdf の差分の pdf 作成
 	@ echo make vol-1-天うつ浪第一-diff
 	@ echo make vol-2-天うつ浪第二-diff
 	@ echo make vol-3-天うつ浪第三-diff
 	@ echo make vol-all-天うつ浪-diff
-	@ echo make vol-all-天うつ浪-debug-diff
 	@ echo
 	@ echo includeonly を使用した例
 	@ echo make vol-1-天うつ浪第一 ADDOPTIONS="--includeonly=001-1-01-其一"
+	@ echo
+	@ echo デバッグ用
+	@ echo make vol-all-天うつ浪-debug.pdf
+	@ echo make vol-all-天うつ浪-debug
+	@ echo make vol-all-天うつ浪-debug-diff
