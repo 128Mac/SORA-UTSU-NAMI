@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP.UTF-8" xml:lang="ja_JP.UTF-8">
+<head>
+<!-- 2024-07-30 火 22:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>『天うつ浪』校正作業</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">『天うつ浪』校正作業</h1>
+<div id="outline-container-orgb0b83b7" class="outline-2">
+<h2 id="orgb0b83b7"><span class="section-number-2">1.</span> git リポジトリから</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+以下のリポジトリから `git clone` で作業ディレクトリにダウンロードして
+ください。なお、以前の SORA-UTSU-NAMI ディレクトリがあった場合は削除し
+てからダウンロードしてください。
+</p>
+
+<p>
+以下は、macOS で、ダウンロードから３分冊をタイプセットする手順です。
+各分冊毎に .pdf が作成された時点で open コマンドで pdf をプレビュー
+します。
+</p>
+
+<p>
+なお、大賀さんの環境では、`PATH=$(pwd)/source/BXglyphwiki:$PATH` は
+スキップしても良いです。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-zsh"><span style="color: #F0DFAF; font-weight: bold;">git</span> clone https://github.com/128Mac/SORA-UTSU-NAMI.git
+<span style="color: #DCDCCC; font-weight: bold;">cd</span> SORA-UTSU-NAMI
+<span style="color: #D0BF8F; font-weight: bold; font-style: italic;">PATH</span>=<span style="color: #F0DFAF; font-weight: bold;">$(</span><span style="color: #DCDCCC; background-color: #3F3F3F; font-weight: bold;">pwd</span><span style="color: #F0DFAF; font-weight: bold;">)</span>/source/BXglyphwiki:<span style="color: #F0DFAF; font-weight: bold;">$</span><span style="color: #D0BF8F; font-weight: bold; font-style: italic;">PATH</span>
+<span style="color: #DCDCCC; font-weight: bold;">cd</span> source
+<span style="color: #F0DFAF; font-weight: bold;">make</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org13e7002" class="outline-2">
+<h2 id="org13e7002"><span class="section-number-2">2.</span> タイプセット</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgb724bd6" class="outline-3">
+<h3 id="orgb724bd6"><span class="section-number-3">2.1.</span> 基本的なタイプセット方法</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+タイプセットは cluttex / llmk / make を利用したコマンドベースで検証しています。
+TeXworks や TeXshop のタイプセットルールに追加する際の参考になればと思います。
+</p>
+</div>
+<div id="outline-container-orgff04b8e" class="outline-4">
+<h4 id="orgff04b8e"><span class="section-number-4">2.1.1.</span> cluttex</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li><p>
+コマンドラインイメージ
+</p>
+
+<p>
+本システムのタイプセットに必須のオプションは `--engine uplatex` と `--shell-escape`
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil">cluttex --engine uplatex --shell-escape vol-1-天うつ浪第一
+</pre>
+</div></li>
+
+<li><p>
+利用する主なオプションの説明
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">--engine=uplatex</td>
+<td class="org-left">本システムでは必須（省略系は -e ）</td>
+</tr>
+
+<tr>
+<td class="org-left">--shell-escape</td>
+<td class="org-left">本システムでは必須</td>
+</tr>
+
+<tr>
+<td class="org-left">--output-directory=myout</td>
+<td class="org-left">多数の生成される中間作業ファイル置き場</td>
+</tr>
+
+<tr>
+<td class="org-left">--max-iterations 1</td>
+<td class="org-left">処理時間短縮のためvol-1 vol-2 vol-3 のみ利用</td>
+</tr>
+
+<tr>
+<td class="org-left">--includeonly=NAMEs</td>
+<td class="org-left">vol-1 vol-2 vol-3 の部分タイプセット用</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>
+`--includeonly=NAMEs` について
+</p>
+
+<p>
+`\include` を利用してタイプセットするよう記述されている各巻ごとの
+vol-1 vol-2 vol-3 は、以下のようにして部分的な処理を行うことができ
+ます。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #F0DFAF; font-weight: bold;">cluttex</span> <span style="color: #BFEBBF;">--engine</span> uplatex <span style="color: #BFEBBF;">--shell-escape</span> <span style="color: #94BFF3;">--includeonly=001-1-01-&#20854;&#19968;</span> vol-1-&#22825;&#12358;&#12388;&#28010;&#31532;&#19968;
+</pre>
+</div>
+
+<p>
+複数を対象にするには '--includeonly=001-1-01-其一,002-1-02-其二`
+のように指定します。
+</p>
+
+<p>
+なお、`\include` では、その都度改ページが発生しますので vol-all は
+`\input` に変更していますので --includeonly オプションは指定しても
+効果はありません。
+</p></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2624bd7" class="outline-4">
+<h4 id="org2624bd7"><span class="section-number-4">2.1.2.</span> llmk</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li><p>
+コマンドラインイメージ
+</p>
+
+<p>
+「llmk と cluttex 連携情報」を設定しておくことによって、以下のような
+コマンドでタイプセットできます。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil">llmk vol-1-天うつ浪第一
+</pre>
+</div></li>
+
+<li><p>
+llmk と cluttex 連携情報
+</p>
+
+<p>
+連携情報は、タイプセットするファイルの先頭に必要な情報を書き込んでお
+きます。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-toml">% +++
+<span style="color: #DFAF8F;">% sequence</span> = [<span style="color: #CC9393;">"cluttex"</span>]
+% [programs.cluttex]
+<span style="color: #DFAF8F;">% command</span> = <span style="color: #CC9393;">"cluttex"</span>
+<span style="color: #DFAF8F;">% opts</span> = [
+% <span style="color: #CC9393;">"--engine=uplatex"</span>,
+% <span style="color: #CC9393;">"--shell-escape"</span>
+% <span style="color: #CC9393;">"--output-directory=myout"</span>
+% ]
+% +++
+</pre>
+</div></li>
+
+<li>`\includeonly` をコマンドラインからは今の所指定できません。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org101402c" class="outline-4">
+<h4 id="org101402c"><span class="section-number-4">2.1.3.</span> make</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<blockquote>
+<p>
+この項は、windows で make 関連プログラムをインストールしていないと利用
+できません。
+</p>
+</blockquote>
+
+<p>
+LaTeX 環境でタイプセットが必要な条件は、成果物である .pdf は、素材であ
+る .tex や .sty のファイル作成日付より古い場合です。
+</p>
+
+<p>
+このルールを Makefile に記述することで、対応できるようにしました。
+</p>
+
+<ul class="org-ul">
+<li><p>
+第一巻、第二巻、第三巻の .pdf を作成したい
+</p>
+
+<p>
+単に `make` とするか、 `make all` とすることで、第一巻、第二巻、第三巻
+のそれぞれの .pdf を作成されます。
+</p>
+
+<p>
+その後、例えば第一巻に属する .tex ファイルを変更した場合に `make`す
+ると第一巻の .pdf のみ再作成されます。
+</p></li>
+
+<li><p>
+三分冊のほか全三巻を一冊とした .pdf も作成したい
+</p>
+
+<p>
+`make allall` としてください。
+</p></li>
+
+<li><p>
+分冊ごとや全三巻を一冊とした .pdf を個別に作成
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">関連ファイルが更新時のみ再作成</th>
+<th scope="col" class="org-left">とにかく再作成</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">make vol-1-天うつ浪第一.pdf</td>
+<td class="org-left">make vol-1-天うつ浪第一</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-2-天うつ浪第二.pdf</td>
+<td class="org-left">make vol-2-天うつ浪第二</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-3-天うつ浪第三.pdf</td>
+<td class="org-left">make vol-3-天うつ浪第三</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-all-天うつ浪.pdf</td>
+<td class="org-left">make vol-all-天うつ浪</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>
+make で作業できること
+</p>
+
+<p>
+いろいろな操作が可能ですが、詳しくは make help の結果を参考にしてください。
+</p></li>
+
+<li><p>
+\includeonly 機能を利用したい
+</p>
+
+<blockquote>
+<p>
+vol-1-天うつ浪第一 vol-2-天うつ浪第二 vol-3-天うつ浪第三 限定機能です。
+</p>
+</blockquote>
+
+<div class="org-src-container">
+<pre class="src src-nil">make -n vol-1-天うつ浪第一 ADDOPTIONS=--includeonly=001-1-01-其一
+</pre>
+</div>
+
+<p>
+複数を対象にするには `ADDOPTIONS=--includeonly=001-1-01-其一,002-1-02-其二`
+のように連結して指定する。
+</p></li>
+
+<li><p>
+diff-pdf の利用
+</p>
+
+<blockquote>
+<p>
+pdf の差分をチェックするための diff-pdf を homebrew などで導入すると、
+過去の pdf と比較し、修正内容を視覚的にチェックできるようになります。
+</p>
+</blockquote>
+
+<p>
+ただしコマンドラインベースで、今の所以下のものを提供します。
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">make vol-1-天うつ浪第一-diff</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-2-天うつ浪第二-diff</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-3-天うつ浪第三-diff</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-all-天うつ浪-diff</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+差分を取る都合上、修正前に上記を実行しておく必要があります。
+</p></li>
+
+<li><p>
+デバッグ機能
+</p>
+
+<p>
+原本と見比べるため、一行を 28 文字として基本の組版機能を利用している。
+しかし、二重カギ括弧開始の（『）の取り扱いや、行頭行末禁則の取り扱い
+の違いで強制改行をデバッグ行として組み込んだ。また、注目している箇所
+を素早く探し出すため、強制改行をした箇所の頁番号と行番号も表示した。
+</p>
+
+<p>
+これを利用するためには、以下のようにする。
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">make vol-all-天うつ浪-debug</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">make vol-all-天うつ浪-debug-diff</td>
+<td class="org-left">PDF 差分表示のため</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>
+ファイルのクリーニング
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">make clean</td>
+<td class="org-left">.pdf を削除</td>
+</tr>
+
+<tr>
+<td class="org-left">make clean-myout</td>
+<td class="org-left">myout ディレクトリ以下を削除</td>
+</tr>
+
+<tr>
+<td class="org-left">make clean-mygwi</td>
+<td class="org-left">mygwi ディレクトリ以下を削除</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>clean-mygwi は、時々修正以外の場所で bxglyphwiki による障害が発生
+することがあります。そんな時、 `make clean-mygwi` することで、キャッ
+シュした情報を一旦削除することができます。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4f2f003" class="outline-2">
+<h2 id="org4f2f003"><span class="section-number-2">3.</span> 第一次校正作業報告</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+電子化作業によって入力された内容を、以下の点に注目して第一次の校正作業を実施しました。
+</p>
+
+<ul class="org-ul">
+<li><p>
+参照した原本情報について
+</p>
+
+<p>
+原本は、「 <a href="https://okumuralab.org/tex/mod/forum/discuss.php?d=3656&amp;parent=22787">長文原稿の入力を省力化、露伴「天うつ浪」のOCRからtextを抽出出來るか?</a> 」
+の情報を元に、以下の URL を参考にしました。
+</p>
+
+<ul class="org-ul">
+<li>国立国会図書館デジタルコレクション
+<ul class="org-ul">
+<li><a href="https://dl.ndl.go.jp/pid/887083">幸田露伴 著『天うつ浪』第１巻,春陽堂,明39-40. 国立国会図書館デジタルコレクション</a></li>
+<li><a href="https://dl.ndl.go.jp/pid/887084">幸田露伴 著『天うつ浪』第２巻,春陽堂,明39-40. 国立国会図書館デジタルコレクション</a></li>
+<li><a href="https://dl.ndl.go.jp/pid/887085">幸田露伴 著『天うつ浪』第３巻,春陽堂,明39-40. 国立国会図書館デジタルコレクション</a></li>
+</ul></li>
+<li>国書データベース（2024.04.01 から）（旧 国文学研究資料館 )
+<ul class="org-ul">
+<li><a href="https://school.nijl.ac.jp/kindai/CKMR/CKMR-00910#1">国書データベース 天うつ浪 第１巻</a></li>
+<li><a href="https://school.nijl.ac.jp/kindai/CKMR/CKMR-00911#1">国書データベース 天うつ浪 第２巻</a></li>
+<li><a href="https://school.nijl.ac.jp/kindai/CKMR/CKMR-00912#1">国書データベース 天うつ浪 第３巻</a></li>
+</ul></li>
+</ul></li>
+
+<li>基本は「原本」を基準にしました。
+<ul class="org-ul">
+<li>明らかに誤植と思われるものも「原本通り」ですが、一部補完したものも
+あり、その旨極力コメントを付してしてあります。
+<ul class="org-ul">
+<li>例えば、会話部分で、会話の終了を示す閉じ二重カギ括弧</li>
+</ul></li>
+</ul></li>
+
+<li>「〻（二の字点／揺すり点）」のように見える踊り字
+<ul class="org-ul">
+<li>第二巻の殆ど、及び、第一巻の一部の平仮名の「踊り字」として利用して
+いるが、大賀さんが「ゝ」としていたものを踏襲
+<ul class="org-ul">
+<li>もしも 「〻」あるいは相当の平仮名用踊り字に変換可能なように、コ
+メントで特定できるようにしてあります。</li>
+</ul></li>
+</ul></li>
+
+<li><p>
+親文字２字に対してルビが（計５文字（２文字３文字／３文字２文字））は
+熟語ルビ処理ではなく、分割して、全角空白を前突き出し・後突き出しとし
+て、以下のように調整しています。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil">\ruby[||j&gt;]{心}{こゝろ}
+\ruby[||j&gt;]{持}{　もち}
+% \ruby{心持}{こゝろ|もち} ← 元々のイメージを保全してあります。
+</pre>
+</div></li>
+
+<li>同じ親文字でも、数行違いや巻により異なっているケースが多々ありますが、
+「原本通り」を原則としています。</li>
+<li><p>
+熟語ルビ vs グループルビ
+</p>
+
+<p>
+第一巻、第二巻では熟語ルビ扱いのものでも、第三巻ではグループルビの
+ような配置になってい流ものがありますが、原本通りにしました。
+</p></li>
+
+<li>一次校正では、出来るだけ原本と同じ行送りになるようにすることで、行単
+位に見比べられるように調整して行ました。
+
+<ul class="org-ul">
+<li><p>
+一行を 28 文字で open_bracket_pos hanging_punctuation はコメント
+アウトした状態で実施
+</p>
+
+<div class="org-src-container">
+<pre class="src src-diff"><span style="background-color: #5F5F5F;">--- </span><span style="color: #DCDCCC; background-color: #5F5F5F; font-weight: bold;">vol-all-&#22825;&#12358;&#12388;&#28010;.tex</span>
+<span style="background-color: #5F5F5F;">+++ </span><span style="color: #DCDCCC; background-color: #5F5F5F; font-weight: bold;">vol-all-&#22825;&#12358;&#12388;&#28010;-debug.tex</span>
+<span style="background-color: #5F5F5F;">@@ -27,8 +27,8 @@</span>
+ jafontsize                = 12pt          ,
+ fontsize                  = 12pt          ,
+ %%%%
+<span style="color: #aa2222; background-color: #553333;">-</span><span style="color: #AC7373; background-color: #553333;">open_bracket_pos          = nibu_tentsuki , % zenkaku_tentsuki zenkakunibbu_nibu</span>
+<span style="color: #aa2222; background-color: #553333;">-</span><span style="color: #AC7373; background-color: #553333;">hanging_punctuation                       , % &#34892;&#38957;&#12395;&#21477;&#35501;&#28857;&#31561;&#12398;&#31105;&#21063;&#32004;&#29289;&#12434;&#21069;&#34892;&#12395;&#36861;&#12356;&#36796;&#12416;</span>
+<span style="color: #22aa22; background-color: #335533;">+</span><span style="color: #BFEBBF; background-color: #338833;">%</span><span style="color: #7F9F7F; background-color: #335533;"> open_bracket_pos        = nibu_tentsuki , % zenkaku_tentsuki zenkakunibbu_nibu</span>
+<span style="color: #22aa22; background-color: #335533;">+</span><span style="color: #BFEBBF; background-color: #338833;">%</span><span style="color: #7F9F7F; background-color: #335533;"> hanging_punctuation                     , % &#34892;&#38957;&#12395;&#21477;&#35501;&#28857;&#31561;&#12398;&#31105;&#21063;&#32004;&#29289;&#12434;&#21069;&#34892;&#12395;&#36861;&#12356;&#36796;&#12416;</span>
+ %%%%
+ paper                     = a5paper       ,
+ %%%%
+</pre>
+</div></li>
+
+<li>会話の始まる行や、役物などの関係で原本通りの行送りができない場合は、
+デバッグ用の強制改行を挿入</li>
+
+<li>この処置による弊害
+<ul class="org-ul">
+<li>nibu_tentsuki にすることで、会話の始まりの二重カギ括弧（『）
+が行頭で吐出してしまうので、原本とは体裁がやや異なる</li>
+<li>それにより半文字ズレが生じ、さらに複数の役物がある場合、原本の組
+版と jlreq のそれとの違いにより行送りが異なってしまう</li>
+<li>その影響で行末、行頭付近のルビの配置や踊り字の処理があまりよくな
+くなるケースが発生すると思います。→未チェックですので、どうする
+か要相談です。</li>
+</ul></li>
+</ul></li>
+<li>連続する平仮名は意味あるところで分かち書きとし改行を入れています
+<ul class="org-ul">
+<li>形態要素処理を行った上の方がよかったのですが、旧仮名使いでもあるの
+で手動で分解しましたので、組版上は影響はないのですが、ソースを見る
+と、時に細切れにワケすぎた嫌いのところがあります。</li>
+</ul></li>
+
+<li>縦書き、右閉じ対応
+<ul class="org-ul">
+<li>分冊の三つは、\include を用いていることから、そこで改ページが発生
+しているようで縦書き、右閉じに対応した頁番号やヘッダーの表示になっ
+ているようです。</li>
+<li>全三巻を一括でタイプセットする場合は \include を \input に置き換え
+た他、各巻を \chapter で対応しました。この変更に伴い \chapter の開
+始ページを基数ページから始めるよう変更しています。</li>
+</ul></li>
+<li><p>
+新字と旧字が混在していますが「原本通り」にしています
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">場(5834)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">塲(5872)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">姉(59c9)</td>
+<td class="org-left">市</td>
+<td class="org-left">姊(59ca)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">婿(5a7f)</td>
+<td class="org-left">女</td>
+<td class="org-left">聟(805f)</td>
+<td class="org-left">知+耳</td>
+</tr>
+
+<tr>
+<td class="org-left">潜(6f5c)</td>
+<td class="org-left">夫夫</td>
+<td class="org-left">潛(6f5b)</td>
+<td class="org-left">先先</td>
+</tr>
+
+<tr>
+<td class="org-left">蓮(84ee)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">蓮(f999)</td>
+<td class="org-left">採用</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>
+漢数字のルビ
+</p>
+
+<p>
+例の読み方以外の読みの漢数字に関しては原本に記されていますが、それ以
+外は文脈を考慮したルビ表記にしました。
+</p>
+
+<ul class="org-ul">
+<li>特に苦慮したのは「四」「七」
+<ul class="org-ul">
+<li>赤穂四十七士は通例通り「しじゅうしち」</li>
+<li>「四人」や「七人」は「しにん」「しちにん」でなく基本「よにん」
+「ななにん」にしました
+<ul class="org-ul">
+<li>少なくとも「しにん」とすると「死人」につながるので私見ですが、
+そうは読ませたくなかったと思います。</li>
+</ul></li>
+<li>でも年齢の話題の箇所の「十七八」は「じふしちはち」かな？「じふな
+なはち」でもいいけど</li>
+</ul></li>
+<li>「十」は状況に応じて「じふ」「とほ」「とを」</li>
+<li>「五十」「六十」を時に「いそじ」「むそじ」とも読む場合がありますが、
+「ごじふ」「ろくじふ」にしました。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5fd2fb5" class="outline-2">
+<h2 id="org5fd2fb5"><span class="section-number-2">4.</span> チェックしていただきたいこと</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>対象は、分冊毎のものか、全三巻まとめてタイプセットのどちらかで実施してください</li>
+<li>ざっとと読み返していただき
+<ul class="org-ul">
+<li>誤字・誤植・行送り・踊り字表記...等々を気になる点をお知らせください
+<ul class="org-ul">
+<li>伝達方法は .pdf に書き込んでいただいても良いです</li>
+<li>ソースを修正していただいて diff を送っていただいても良いです。</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb1a3827" class="outline-2">
+<h2 id="orgb1a3827"><span class="section-number-2">5.</span> 旧字対応検討中</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+以下の件に関しては、検討中です。
+もちろん、ご意見も歓迎します。
+</p>
+</div>
+<div id="outline-container-org926bd2c" class="outline-3">
+<h3 id="org926bd2c"><span class="section-number-3">5.1.</span> 「古」のように→「ナ」+「口」に「十」を造りの一部にもつ字のグリフ変更</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>舌 ... 要検討</li>
+<li>苦 ... 要検討</li>
+<li>故 ... 要検討</li>
+<li>直 ... 要検討</li>
+<li>真 ... 要検討 さらにしたの造り「ー」「ハ」→「｜」「ー」「ハ」</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdcafe0f" class="outline-3">
+<h3 id="orgdcafe0f"><span class="section-number-3">5.2.</span> 刀へん「刀」 ネ」</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>グリフ変更検討
+<ul class="org-ul">
+<li>初 ... 示刀？</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2361ba0" class="outline-3">
+<h3 id="org2361ba0"><span class="section-number-3">5.3.</span> ころもへんしめすへん「示」 vs 「ネ」</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>unicode 変更検討
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 祕 vs 秘</li>
+<li class="off"><code>[&#xa0;]</code> 祖 vs 祖</li>
+</ul></li>
+<li>unicode 既に対応
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 神 vs 神</li>
+<li class="on"><code>[X]</code> 祥 vs 祥</li>
+<li class="on"><code>[X]</code> 福 vs 福</li>
+<li class="on"><code>[X]</code> 社 vs 社</li>
+<li class="on"><code>[X]</code> 祈 vs 祈</li>
+<li class="on"><code>[X]</code> 祝 vs 祝</li>
+<li class="on"><code>[X]</code> 禍 vs 禍</li>
+</ul></li>
+<li>該当文字なし
+<ul class="org-ul">
+<li class="trans"><code>[-]</code> 祿 vs 禄</li>
+<li class="trans"><code>[-]</code> 祉 vs 祉</li>
+<li class="trans"><code>[-]</code> 祐 vs 祐</li>
+<li class="trans"><code>[-]</code> 禎 vs 禎</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcc0ba37" class="outline-3">
+<h3 id="orgcc0ba37"><span class="section-number-3">5.4.</span> 「叱」 「口ヒ」の「ヒ」の「ノ」の扱い</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+でも「ノ」が「口」の下まで伸びているグリフは見当たらない
+</p>
+</div>
+</div>
+<div id="outline-container-org143b2f4" class="outline-3">
+<h3 id="org143b2f4"><span class="section-number-3">5.5.</span> 「巨」の上下の「ー」が左に「｜」を突き出ている</h3>
+<div class="outline-text-3" id="text-5-5">
+<ul class="org-ul">
+<li>(u5de8-t) (=u5de8-h)</li>
+<li>(u5de8-ue0101) (=aj1-13714) (=dkw-08722) (=jmj-010776) (=zihai-000338) (=u5de8-ue0103) (=koseki-098730) (=hkcs_u5de8)</li>
+<li>(u5de8-var-001)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 日付を指定する</p>
+<p class="date">Created: 2024-07-30 火 22:54</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
