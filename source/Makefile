@@ -157,3 +157,12 @@ help:
 	@ echo make vol-all-天うつ浪-debug.pdf
 	@ echo make vol-all-天うつ浪-debug
 	@ echo make vol-all-天うつ浪-debug-diff
+	@ echo
+	@ echo .pdf ファイルを削除
+	@ echo make clean
+	@ echo
+	@ echo myout 以下のファイルを削除
+	@ echo make clean-myout
+	@ echo
+	@ echo mygwi 以下のファイルを削除
+	@ echo make clean-mygwi
