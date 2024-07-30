@@ -75,38 +75,54 @@ $(VOLALLTARGET)				: $(VOLALLTEXFILES)    ; $(CLUTTEX)                          
 $(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
 
 $(VOL1TARGET)-diff 			: $(VOL1TEXFILES)
-	touch $(VOL1TARGET).pdf
-	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL1TARGET)-temp.pdf $(VOL1TARGET).tex
-	diff-pdf -s -m --output-diff=$(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf
-	open                         $(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf
+	$(CLUTTEX) --output $(VOL1TARGET)-temp.pdf $(VOL1TARGET).tex
+	@if [ test -f $(VOL1TARGET).pdf ] ; then \
+		diff-pdf -s -m --output-diff=$(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf ; \
+		open                         $(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf                        ; \
+	fi
+	open $(VOL1TARGET)-temp.pdf
 
 $(VOL2TARGET)-diff			: $(VOL2TEXFILES)
-	touch $(VOL2TARGET).pdf
-	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL2TARGET)-temp.pdf $(VOL2TARGET).tex
-	diff-pdf -s -m --output-diff=$(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf
-	open                         $(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf
+	$(CLUTTEX) --output $(VOL2TARGET)-temp.pdf $(VOL2TARGET).tex
+	@if [ test -f $(VOL2TARGET).pdf ] ; then \
+		diff-pdf -s -m --output-diff=$(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf ; \
+		open                         $(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf                        ; \
+	fi
+	open $(VOL2TARGET)-temp.pdf
 
 $(VOL3TARGET)-diff			: $(VOL3TEXFILES)
-	touch $(VOL3TARGET).pdf
-	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL3TARGET)-temp.pdf $(VOL3TARGET).tex
-	diff-pdf -s -m --output-diff=$(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf
-	open                         $(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf
+	$(CLUTTEX) --output $(VOL3TARGET)-temp.pdf $(VOL3TARGET).tex
+	@if [ test -f $(VOL3TARGET).pdf ] ; then \
+		diff-pdf -s -m --output-diff=$(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf ; \
+		open                         $(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf                        ; \
+	fi
+	open $(VOL3TARGET)-temp.pdf
 
 $(VOLALLTARGET)-diff		: $(VOLALLTEXFILES)
-	touch $(VOLALLTARGET).pdf
 	$(CLUTTEX) --output $(VOLALLTARGET)-temp.pdf $(VOLALLTARGET).tex
-	diff-pdf -s -m --output-diff=$(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf
-	open                         $(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf
+	@if [ test -f $(VOLALLTARGET).pdf ] ; then \
+		diff-pdf -s -m --output-diff=$(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf ; \
+		open                         $(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf                               ; \
+	fi
+	open $(VOLALLTARGET)-temp.pdf
 
 $(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGFILES)
-	touch $(VOLALLDEBUGTARGET).pdf
 	$(CLUTTEX) --output $(VOLALLDEBUGTARGET)-temp.pdf $(VOLALLDEBUGTARGET).tex
-	diff-pdf -s -m --output-diff=$(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf
-	open                         $(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf
+	@if [ test -f $(VOLALLDEBUGTARGET).pdf ] ; then \
+		diff-pdf -s -m --output-diff=$(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf ; \
+		open                         $(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf                               ; \
+	fi
+	open $(VOLALLDEBUGTARGET)-temp.pdf
 
 .PHONY : clean
 clean :
-	- find . -maxdepth 1 -iname '*.pdf' -print -delete
+	- $(shell find . -maxdepth 1 -iname '*.pdf' -print -delete)
+
+clean-myout:
+	- $(shell find myout -depth -type f -not -iname do-not-remove -print -delete)
+
+clean-mygwi:
+	- $(shell find mygwi -depth -type f -not -iname do-not-remove -print -delete)
 
 help:
 	@ echo 各分冊ごとに .pdf を作成
