@@ -50,11 +50,11 @@ VOL3TEXFILES =	092-3-01-其一.tex     093-3-02-其二.tex     094-3-03-其三.t
 				132-3-41-其四十一.tex 133-3-42-其四十二.tex 134-3-43-其四十三.tex 135-3-44-其四十四.tex 136-3-45-其四十五.tex	\
 				137-3-46-其四十六.tex 138-3-47-其四十七.tex 139-3-48-其四十八.tex 140-3-49-其四十九.tex
 
-VOL1FILES		 = $(VOL1TEXFILE)        $(VOL1STYFILES)   $(VOL1TEXFILES)
-VOL2FILES		 = $(VOL2TEXFILE)        $(VOL2STYFILES)   $(VOL2TEXFILES)
-VOL3FILES		 = $(VOL3TEXFILE)        $(VOL3STYFILES)   $(VOL3TEXFILES)
-VOLALLFILES		 = $(VOLALLTEXFILE)      $(VOLALLSTYFILES) $(VOL1TEXFILES) $(VOL2TEXFILES) $(VOL3TEXFILES)
-VOLALLDEBUGFILES = $(VOLALLDEBUGTEXFILE) $(VOLALLSTYFILES) $(VOL1TEXFILES) $(VOL2TEXFILES) $(VOL3TEXFILES)
+VOL1FILES			= $(VOL1TEXFILE)        $(VOL1STYFILES)   $(VOL1TEXFILES)
+VOL2FILES			= $(VOL2TEXFILE)        $(VOL2STYFILES)   $(VOL2TEXFILES)
+VOL3FILES			= $(VOL3TEXFILE)        $(VOL3STYFILES)   $(VOL3TEXFILES)
+VOLALLFILES			= $(VOLALLTEXFILE)      $(VOLALLSTYFILES) $(VOL1TEXFILES) $(VOL2TEXFILES) $(VOL3TEXFILES)
+VOLALLDEBUGFILES	= $(VOLALLDEBUGTEXFILE) $(VOLALLSTYFILES) $(VOL1TEXFILES) $(VOL2TEXFILES) $(VOL3TEXFILES)
 
 .PHONY : all
 all : $(VOL1TARGET).pdf $(VOL2TARGET).pdf $(VOL3TARGET).pdf
@@ -66,39 +66,39 @@ $(VOL1TARGET).pdf			: $(VOL1FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADD
 $(VOL2TARGET).pdf			: $(VOL2FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
 $(VOL3TARGET).pdf			: $(VOL3FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
 $(VOLALLTARGET).pdf			: $(VOLALLFILES)       ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
-$(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUG)       ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
+$(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
 
-$(VOL1TARGET)				: $(VOL1TEXFILE)       ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
-$(VOL2TARGET)				: $(VOL2TEXFILE)       ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
-$(VOL3TARGET)				: $(VOL3TEXFILE)       ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
-$(VOLALLTARGET)				: $(VOLALLTEXFILE)     ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
-$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGTARGET) ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
+$(VOL1TARGET)				: $(VOL1TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
+$(VOL2TARGET)				: $(VOL2TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
+$(VOL3TARGET)				: $(VOL3TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
+$(VOLALLTARGET)				: $(VOLALLTEXFILES)    ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
+$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
 
-$(VOL1TARGET)-diff			: $(VOL1TEXFILE)
+$(VOL1TARGET)-diff 			: $(VOL1TEXFILES)
 	touch $(VOL1TARGET).pdf
 	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL1TARGET)-temp.pdf $(VOL1TARGET).tex
 	diff-pdf -s -m --output-diff=$(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf
 	open                         $(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf
 
-$(VOL2TARGET)-diff			: $(VOL2TEXFILE)
+$(VOL2TARGET)-diff			: $(VOL2TEXFILES)
 	touch $(VOL2TARGET).pdf
 	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL2TARGET)-temp.pdf $(VOL2TARGET).tex
 	diff-pdf -s -m --output-diff=$(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf
 	open                         $(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf
 
-$(VOL3TARGET)-diff			: $(VOL3TEXFILE)
+$(VOL3TARGET)-diff			: $(VOL3TEXFILES)
 	touch $(VOL3TARGET).pdf
 	$(CLUTTEX) $(ADDOPTIONS) --output $(VOL3TARGET)-temp.pdf $(VOL3TARGET).tex
 	diff-pdf -s -m --output-diff=$(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf
 	open                         $(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf
 
-$(VOLALLTARGET)-diff		: $(VOLALLTEXFILE)
+$(VOLALLTARGET)-diff		: $(VOLALLTEXFILES)
 	touch $(VOLALLTARGET).pdf
 	$(CLUTTEX) --output $(VOLALLTARGET)-temp.pdf $(VOLALLTARGET).tex
 	diff-pdf -s -m --output-diff=$(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf
 	open                         $(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf
 
-$(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGTARGET)
+$(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGFILES)
 	touch $(VOLALLDEBUGTARGET).pdf
 	$(CLUTTEX) --output $(VOLALLDEBUGTARGET)-temp.pdf $(VOLALLDEBUGTARGET).tex
 	diff-pdf -s -m --output-diff=$(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf
@@ -106,7 +106,7 @@ $(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGTARGET)
 
 .PHONY : clean
 clean :
-	- find . -maxdepth 1 -iname '*.pdf' -delete
+	- find . -maxdepth 1 -iname '*.pdf' -print -delete
 
 help:
 	@ echo 各分冊ごとに .pdf を作成
