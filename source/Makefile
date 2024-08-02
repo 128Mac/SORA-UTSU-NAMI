@@ -76,7 +76,7 @@ $(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                       
 
 $(VOL1TARGET)-diff 			: $(VOL1TEXFILES)
 	$(CLUTTEX) --output $(VOL1TARGET)-temp.pdf $(VOL1TARGET).tex
-	@if [ test -f $(VOL1TARGET).pdf ] ; then \
+	@if test -f $(VOL1TARGET).pdf ; then \
 		diff-pdf -s -m --output-diff=$(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf $(VOL1TARGET)-temp.pdf ; \
 		open                         $(VOL1TARGET)-diff.pdf $(VOL1TARGET).pdf                        ; \
 	fi
@@ -84,7 +84,7 @@ $(VOL1TARGET)-diff 			: $(VOL1TEXFILES)
 
 $(VOL2TARGET)-diff			: $(VOL2TEXFILES)
 	$(CLUTTEX) --output $(VOL2TARGET)-temp.pdf $(VOL2TARGET).tex
-	@if [ test -f $(VOL2TARGET).pdf ] ; then \
+	@if test -f $(VOL2TARGET).pdf ; then \
 		diff-pdf -s -m --output-diff=$(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf $(VOL2TARGET)-temp.pdf ; \
 		open                         $(VOL2TARGET)-diff.pdf $(VOL2TARGET).pdf                        ; \
 	fi
@@ -92,7 +92,7 @@ $(VOL2TARGET)-diff			: $(VOL2TEXFILES)
 
 $(VOL3TARGET)-diff			: $(VOL3TEXFILES)
 	$(CLUTTEX) --output $(VOL3TARGET)-temp.pdf $(VOL3TARGET).tex
-	@if [ test -f $(VOL3TARGET).pdf ] ; then \
+	@if test -f $(VOL3TARGET).pdf ; then \
 		diff-pdf -s -m --output-diff=$(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf $(VOL3TARGET)-temp.pdf ; \
 		open                         $(VOL3TARGET)-diff.pdf $(VOL3TARGET).pdf                        ; \
 	fi
@@ -100,7 +100,7 @@ $(VOL3TARGET)-diff			: $(VOL3TEXFILES)
 
 $(VOLALLTARGET)-diff		: $(VOLALLTEXFILES)
 	$(CLUTTEX) --output $(VOLALLTARGET)-temp.pdf $(VOLALLTARGET).tex
-	@if [ test -f $(VOLALLTARGET).pdf ] ; then \
+	@if test -f $(VOLALLTARGET).pdf ; then \
 		diff-pdf -s -m --output-diff=$(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf $(VOLALLTARGET)-temp.pdf ; \
 		open                         $(VOLALLTARGET)-diff.pdf $(VOLALLTARGET).pdf                               ; \
 	fi
@@ -108,7 +108,7 @@ $(VOLALLTARGET)-diff		: $(VOLALLTEXFILES)
 
 $(VOLALLDEBUGTARGET)-diff	: $(VOLALLDEBUGFILES)
 	$(CLUTTEX) --output $(VOLALLDEBUGTARGET)-temp.pdf $(VOLALLDEBUGTARGET).tex
-	@if [ test -f $(VOLALLDEBUGTARGET).pdf ] ; then \
+	@if test -f $(VOLALLDEBUGTARGET).pdf ; then \
 		diff-pdf -s -m --output-diff=$(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf $(VOLALLDEBUGTARGET)-temp.pdf ; \
 		open                         $(VOLALLDEBUGTARGET)-diff.pdf $(VOLALLDEBUGTARGET).pdf                               ; \
 	fi
