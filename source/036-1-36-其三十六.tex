@@ -342,8 +342,15 @@
 \ruby{我}{わ}が
 \ruby{胸}{むね}の
 \ruby{中}{うち}の
-\ruby[||j>]{怪}{くわい}
-\ruby[||j>]{物}{　ぶつ}の、
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[<j||]{怪}{くわい}
+  \ruby[||j>]{物}{ぶつ}の、
+}{%
+  \ruby[||j>]{怪}{くわい}
+  \ruby[||j>]{物}{　ぶつ}の、
+}%
+\makeatother
 % \ruby{怪物}{くわい|ぶつ}の、
 %
 \ruby{化}{な}りて
