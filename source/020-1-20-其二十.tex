@@ -184,8 +184,15 @@
 \ruby{何}{なん}の
 \ruby{福}{ふく}のあつてか、
 %
-\ruby{自然}{し|ぜん}
-\ruby[g]{々々}{　〳〵　}に
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby{自然}{し|ぜん}
+  \ruby{自然}{し|ぜん}に
+}{%
+  \ruby{自然}{し|ぜん}
+  \ruby[g]{々々}{　〳〵　}に
+}%
+\makeatother
 \ruby{知}{し}り
 \原本頁{122-5}\改行%
 \ruby{合}{あ}つたる
