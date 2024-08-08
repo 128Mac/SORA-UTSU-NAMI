@@ -226,9 +226,18 @@
 とは
 \ruby{仕}{し}ない。
 %
-\ruby[<j||]{百}{ひやく}
-\ruby{年}{ねん}
-\ruby{千年}{せん|ねん}
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[||j>]{百}{ひやく}
+  \ruby[||j>]{年}{　ねん}
+  \ruby[||j>]{千}{　せん}
+  \ruby[||j>]{年}{　ねん}
+}{%
+  \ruby[<j||]{百}{ひやく}
+  \ruby{年}{ねん}
+  \ruby{千年}{せん|ねん}
+}%
+\makeatother
 にして
 \ruby{一}{ひ}ト
 \ruby{度}{たび}
