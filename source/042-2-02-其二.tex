@@ -833,7 +833,13 @@
 \ruby{一體}{いつ|たい}
 \ruby{流行}{はや|り}も
 \ruby{仕無}{し|な}い
-\ruby{三絃}{べん|〳〵}の
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby{三絃}{べん|べん}の
+}{%
+  \ruby{三絃}{べん|〳〵}の
+}%
+\makeatother
 \ruby{御師匠}{お|し|よ}さんで、
 %
 \ruby{澄}{す}まして
