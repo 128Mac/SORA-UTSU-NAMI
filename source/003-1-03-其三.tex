@@ -868,7 +868,13 @@
 ならないが、
 %
 \ruby{丁度}{ちやう|ど}
-\ruby{一昨年}{を|とゝ|し}の
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[|g|]{一昨年}{をとゝし}の
+}{%
+  \ruby{一昨年}{を|とゝ|し}の
+}%
+\makeatother
 \ruby{暮}{くれ}だつた。
 %
 \ruby{實}{じつ}は
