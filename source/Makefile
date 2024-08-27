@@ -68,11 +68,11 @@ $(VOL3TARGET).pdf			: $(VOL3FILES)         ; $(CLUTTEX) --max-iterations 1 $(ADD
 $(VOLALLTARGET).pdf			: $(VOLALLFILES)       ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
 $(VOLALLDEBUGTARGET).pdf	: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
 
-$(VOL1TARGET)				: $(VOL1TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL1TARGET).pdf
-$(VOL2TARGET)				: $(VOL2TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL2TARGET).pdf
-$(VOL3TARGET)				: $(VOL3TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $< ; open $(VOL3TARGET).pdf
-$(VOLALLTARGET)				: $(VOLALLTEXFILES)    ; $(CLUTTEX)                                  $< ; open $(VOLALLTARGET).pdf
-$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                                  $< ; open $(VOLALLDEBUGTARGET).pdf
+$(VOL1TARGET)				: $(VOL1TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $(VOL1TARGET).tex        ; open $(VOL1TARGET).pdf
+$(VOL2TARGET)				: $(VOL2TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $(VOL2TARGET).tex        ; open $(VOL2TARGET).pdf
+$(VOL3TARGET)				: $(VOL3TEXFILES)      ; $(CLUTTEX)                    $(ADDOPTIONS) $(VOL3TARGET).tex        ; open $(VOL3TARGET).pdf
+$(VOLALLTARGET)				: $(VOLALLTEXFILES)    ; $(CLUTTEX)                                  $(VOLALLTARGET).tex      ; open $(VOLALLTARGET).pdf
+$(VOLALLDEBUGTARGET)		: $(VOLALLDEBUGFILES)  ; $(CLUTTEX)                                  $(VOLALLDEBUGTARGET).tex ; open $(VOLALLDEBUGTARGET).pdf
 
 $(VOL1TARGET)-diff 			: $(VOL1TEXFILES)
 	$(CLUTTEX) --output $(VOL1TARGET)-temp.pdf $(VOL1TARGET).tex
