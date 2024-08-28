@@ -1,11 +1,11 @@
-#+TITLE:	『天うつ浪』二次校正作業結果
-#+AUTHOR:	和田勇
-#+DATE:	日付を指定する
-#+EMAIL:	メールアドレスを指定する
+#+TITLE:       『天うつ浪』二次校正作業結果
+#+AUTHOR:      和田勇
+#+DATE:        日付を指定する
+#+EMAIL:       メールアドレスを指定する
 #+DESCRIPTION:
 #+KEYWORDS:
-#+LANGUAGE:	ja_JP.UTF-8
-#+OPTIONS:	num:t toc:nil ::t |:t ^:nil -:nil author:nil creator:nil creator:nil
+#+LANGUAGE:    ja_JP.UTF-8
+#+OPTIONS:     num:t toc:t ::t |:t ^:nil -:nil author:nil creator:nil
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
@@ -34,7 +34,7 @@ CLOSED: [2024-08-21 Wed 17:21]
   - [X] 1巻 其01 p-006 l-01
   - [X] 1巻 其01 p-006 l-07
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c5b631cb6bb754b15331a9b48e1e60168abb8117
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Jul 31 11:54:26 2024 +0900
@@ -102,7 +102,7 @@ CLOSED: [2024-08-21 Wed 14:24]
 | commit     | d5333f24                                   |
 | 処置       | 採択                                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit d5333f2427a97c075313acc7c7a5eb9134a5053b
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Tue Aug 6 22:13:53 2024 +0900
@@ -142,7 +142,7 @@ CLOSED: [2024-08-23 Fri 22:49]
 | commit     | 2d79d856                    |
 | 処置       | 採択                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 2d79d856bd7811388dbbaef65878b3016c60029d
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 23 22:47:41 2024 +0900
@@ -174,7 +174,7 @@ CLOSED: [2024-08-21 Wed 17:21]
 | commit     | 17ed38cc                                           |
 | 処置       | 採択                                               |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 17ed38cc6c5201285efc612dcdf2ccf8a4a2fcc6
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 21 17:11:19 2024 +0900
@@ -208,7 +208,7 @@ CLOSED: [2024-08-21 Wed 17:20]
 | commit     | c5b631cb                                  |
 | 処置       | 採択                                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c5b631cb6bb754b15331a9b48e1e60168abb8117
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Jul 31 11:54:26 2024 +0900
@@ -249,7 +249,7 @@ CLOSED: [2024-08-21 Wed 14:27]
   | 075-2-35-其三十五.tex | 忠告 | ちう   | こく | も       |
   | 123-3-32-其三十二.tex | 忠義 | ちう   | ぎ   | ものゝ   |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 5c70b2e60004a925d23fda447752418ba258705d
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 22:55:22 2024 +0900
@@ -293,7 +293,7 @@ CLOSED: [2024-08-21 Wed 15:56]
 | commit     | 7b23cf11                                                   |
 | 処置       | 採択                                                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 7b23cf115f274a924025afc16bfc35af010f792a
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Tue Aug 6 22:31:31 2024 +0900
@@ -338,7 +338,7 @@ CLOSED: [2024-08-21 Wed 16:05]
 
 | 新PDF | 1巻
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 6d357c2ba6179b8a74ca1e7137337de0c2bb4bb0
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 22:30:38 2024 +0900
@@ -390,7 +390,7 @@ CLOSED: [2024-08-21 Wed 21:22]
 | commit     | c75b0b69                                |
 | 処置       | 採択                                    |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -425,7 +425,7 @@ CLOSED: [2024-08-21 Wed 21:28]
 | commit     | 0ca3631b                              |
 | 処置       | 採択                                  |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 0ca3631b67a79469cd07e16d5faaaf1d5574197b
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 16:51:09 2024 +0900
@@ -515,7 +515,7 @@ CLOSED: [2024-08-21 Wed 22:45]
 | commit     | 8942faa6                 |
 | 処置       | 採択                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 8942faa6927c10beb501d99732f9c2eb4c55d508
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Tue Aug 6 23:23:55 2024 +0900
@@ -560,7 +560,7 @@ CLOSED: [2024-08-21 Wed 22:47]
 
 原本は「一（を）」改行「昨年（とゝし）」と行末行頭付近であったことと、配置もよくない
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 128931508b405d24adc709d48018342fc1498341
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 21:59:48 2024 +0900
@@ -619,7 +619,7 @@ CLOSED: [2024-08-21 Wed 22:54]
   1. 「謹」の訓読みは（つつしむ）なので、原本通りにする。
   1. （つつましやか）であれば「慎ましやか」となる事例は多くあるが「謹」を使う用例は少ない
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 962c0a33dd762a117ee1ddcfadf4b0e57f17af87
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 21:29:53 2024 +0900
@@ -654,7 +654,7 @@ CLOSED: [2024-08-21 Wed 22:59]
 | commit     | c75b0b69                                    |
 | 処置       | 採択                                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -686,7 +686,7 @@ CLOSED: [2024-08-21 Wed 23:32]
 | 処置       | 採択                           |
 
 **** １回目の修正（エンバグ）
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 809235ca808691c10cc7a0de108d4d7ccf5d61e1
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Tue Aug 6 23:27:31 2024 +0900
@@ -721,7 +721,7 @@ index 0ee72ddc..38c14f12 100644
 
 **** ２回目の修正（１回目の補正）
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit df848bcf6c746b750d20e1f53f7f85d3ccfbfd61
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 21 23:07:55 2024 +0900
@@ -760,7 +760,7 @@ CLOSED: [2024-08-21 Wed 23:40]
 | commit     | 5969442b                                                    |
 | 処置       | 採択                                                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 5969442b2771d02852435c651d8f491fb2f9f0f2
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Tue Aug 6 23:48:38 2024 +0900
@@ -794,7 +794,7 @@ CLOSED: [2024-08-21 Wed 23:43]
 | commit     | 1009611c                                     |
 | 処置       | 採択                                         |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 1009611cf6c6aa357f9cc4adbe3ecc4becfd1859
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Tue Aug 6 23:52:14 2024 +0900
@@ -840,7 +840,7 @@ CLOSED: [2024-08-21 Wed 23:53]
 | commit     | c75b0b69                                          |
 | 処置       | 採択                                              |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -879,7 +879,7 @@ CLOSED: [2024-08-22 Thu 00:05]
 | commit     | 3c3fb6f554                |
 | 処置       | 採択                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 3c3fb6f554d66c9e0d965e414c1334cbbc94dc47
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 21 13:03:18 2024 +0900
@@ -929,7 +929,7 @@ CLOSED: [2024-08-22 Thu 08:42]
 | commit     | 72abd845                  |
 | 処置       | 採択                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 72abd845cc7579c36456cdb78da5a9737e5feb7a
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 14:42:15 2024 +0900
@@ -961,7 +961,7 @@ CLOSED: [2024-08-22 Thu 08:49]
 | commit     | 36d00d41                                       |
 | 処置       | 採択                                           |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 36d00d410d392ec46a1d12c5abf60f7f472d0e44
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 00:37:00 2024 +0900
@@ -993,7 +993,7 @@ CLOSED: [2024-08-22 Thu 08:51]
 | commit     | c75b0b69                                |
 | 処置       | 採択                                    |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -1024,7 +1024,7 @@ CLOSED: [2024-08-22 Thu 08:58]
 | commit     | 0e4322bc                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 0e4322bca14dfc2d552663227072809247225546
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 00:39:32 2024 +0900
@@ -1082,7 +1082,7 @@ CLOSED: [2024-08-22 Thu 10:54]
 | commit     | b17689da                       |
 | 処置       | 採択                           |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit b17689da1b00f6b360633db1fe25e6d252d61856
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 00:42:01 2024 +0900
@@ -1135,7 +1135,7 @@ CLOSED: [2024-08-22 Thu 11:03]
 | commit     | 2a15318d                                   |
 | 処置       |                                            |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 2a15318d614b524cd0447a0d26ef160f41706224
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 15:26:27 2024 +0900
@@ -1186,7 +1186,7 @@ CLOSED: [2024-08-22 Thu 11:13]
 | commit     | 0675e181                  |
 | 処置       | 採択                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 0675e181ed93f137c2bf69212a5cbd6d37e1624c
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sun Aug 18 15:18:16 2024 +0900
@@ -1229,7 +1229,7 @@ CLOSED: [2024-08-22 Thu 12:06]
 | commit     | 4b95df91                                     |
 | 処置       | 原本通り＆脚注(3) p-109                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 4b95df912602200af39ead1dfa10d1c764df9250
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 20:37:33 2024 +0900
@@ -1261,7 +1261,7 @@ CLOSED: [2024-08-22 Thu 12:10]
 | commit     | c75b0b69                          |
 | 処置       | 採択                              |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -1292,7 +1292,7 @@ CLOSED: [2024-08-22 Thu 12:12]
 | commit     | c61a3ef7                 |
 | 処置       | 採択                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c61a3ef7651e34c608fc47d62a51873fc516f7ac
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 14:23:39 2024 +0900
@@ -1349,7 +1349,7 @@ rg -n  --sort path -e  'ruby[{][一二三四五六七八九十][}].*つ' *.tex| 
 | 052-2-12-其十二.tex   | \ruby{三}{み}ツにして | 42/160 p-075 l-04 | 有り     |
 | 123-3-32-其三十二.tex | \ruby{三}{み}つや     | 95/146 p-182 l-04 | 無し     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 804c27b2401ea9014a09ed748af61d86402b8924
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 23 21:58:31 2024 +0900
@@ -1390,7 +1390,7 @@ CLOSED: [2024-08-22 Thu 12:49]
 | commit     | c5b631cb                                  |
 | 処置       | 採択                                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c5b631cb6bb754b15331a9b48e1e60168abb8117
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Jul 31 11:54:26 2024 +0900
@@ -1438,7 +1438,7 @@ CLOSED: [2024-08-22 Thu 13:06]
 | 記事       | 別解 \ruby[<g>]{忌々}{いま〳〵}        |
 
 以下は二つの要件が一つのコミットになっているが本件は上の部分
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit d96b267583afebbfa4336b21cbdfc3319d17890a
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 14:28:03 2024 +0900
@@ -1488,7 +1488,7 @@ CLOSED: [2024-08-22 Thu 13:08]
 | 処置       | 採択                                 |
 
 以下は二つの要件が一つのコミットになっているが本件は下の部分
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit d96b267583afebbfa4336b21cbdfc3319d17890a
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 14:28:03 2024 +0900
@@ -1537,7 +1537,7 @@ CLOSED: [2024-08-22 Thu 13:12]
 | commit     | eb54b43e                       |
 | 処置       | 採択                           |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit eb54b43efc771d8f3689cfa901bdded1e7b99c49
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 14:39:06 2024 +0900
@@ -1573,7 +1573,7 @@ CLOSED: [2024-08-22 Thu 13:17]
 | commit     | e93d487a                                       |
 | 処置       | 採択                                           |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit e93d487a968a44ba6f9ba8b08c0c9dac714105f3
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sun Aug 18 00:12:16 2024 +0900
@@ -1619,7 +1619,7 @@ CLOSED: [2024-08-22 Thu 13:25]
 | commit     | c5b631cb                                  |
 | 処置       | 採択                                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c5b631cb6bb754b15331a9b48e1e60168abb8117
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Jul 31 11:54:26 2024 +0900
@@ -1650,7 +1650,7 @@ CLOSED: [2024-08-22 Thu 13:28]
 | commit     | 73d0d8de                                 |
 | 処置       | 採択                                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 73d0d8deea58b4cfb5105fdc8c46e9dbcc8bb8e3
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 15:37:25 2024 +0900
@@ -1690,7 +1690,7 @@ CLOSED: [2024-08-22 Thu 13:31]
 | commit     | 896d2bb3                                 |
 | 処置       | 採択                                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 896d2bb35e273e7b4775772ea4dd822c0fc319fd
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 8 00:14:41 2024 +0900
@@ -1730,7 +1730,7 @@ CLOSED: [2024-08-22 Thu 13:36]
 | commit     | 459fc831                                                     |
 | 処置       | 採択                                                         |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 459fc8315ed67e0414236631665281aeb1e06643
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 15:41:02 2024 +0900
@@ -1773,7 +1773,7 @@ CLOSED: [2024-08-22 Thu 13:47]
 | commit     | 436df0d5                                                     |
 | 処置       | 採択                                                         |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 436df0d5cd3f9042ea1b2560dafb2af6b2c00f72
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 7 15:47:30 2024 +0900
@@ -1821,7 +1821,7 @@ CLOSED: [2024-08-22 Thu 13:49]
 | commit     | 3c3fb6f554                       |
 | 処置       | 採択                             |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 3c3fb6f554d66c9e0d965e414c1334cbbc94dc47
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Aug 21 13:03:18 2024 +0900
@@ -1852,7 +1852,7 @@ CLOSED: [2024-08-22 Thu 15:18]
 | commit     | 0ca3631b                  |
 | 処置       | TeX コメントのみ          |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 0ca3631b67a79469cd07e16d5faaaf1d5574197b
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 16:51:09 2024 +0900
@@ -1886,7 +1886,7 @@ CLOSED: [2024-08-22 Thu 21:28]
 | commit     | ea19c3a4 →補正→ 1640437a                 |
 | 処置       | 採択                                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit ea19c3a43840cb36fbef4a6307e3e4aad89e7f81
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 8 15:42:06 2024 +0900
@@ -1919,7 +1919,7 @@ index 495a1ff1..e895a514 100644
  \ruby[||j>]{食}{かゝり}% 踊り字調整「〻（二の字点、揺すり点）に見えるが（ゝ）」
 #+END_SRC
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 1640437a0954e78ac9fda5c4942ece9bd977fbbc
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 22 21:17:35 2024 +0900
@@ -1957,7 +1957,7 @@ CLOSED: [2024-08-22 Thu 21:39]
 | commit     | c2f5a7cc                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c2f5a7cca63725927822708bca9cf035b60a18e5
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 8 16:00:46 2024 +0900
@@ -2002,7 +2002,7 @@ CLOSED: [2024-08-22 Thu 21:41]
 | commit     | 037c2b68                                                              |
 | 処置       | 採択                                                                  |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 037c2b68cd28f4988ca45ff758280a336c8108ba
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 10:17:29 2024 +0900
@@ -2033,7 +2033,7 @@ CLOSED: [2024-08-22 Thu 21:45]
 | commit     | 4be8784a                                                 |
 | 処置       | 採択                                                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 4be8784af741f3833088967458fa9e2b77fe3316
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 12:21:32 2024 +0900
@@ -2073,7 +2073,7 @@ CLOSED: [2024-08-22 Thu 21:48]
 | commit     | e49e475b                                                                    |
 | 処置       | 採択                                                                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit e49e475bd5889d6961f48ba3bde3611440e5546f
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 12:38:39 2024 +0900
@@ -2107,7 +2107,7 @@ CLOSED: [2024-08-22 Thu 21:52]
 | commit     | bd73de1c                                    |
 | 処置       | 原本通り＆脚注(4) (p-215)                   |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit bd73de1cf3344c5b74e575397415a2f4363a54db
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 19:57:20 2024 +0900
@@ -2141,7 +2141,7 @@ CLOSED: [2024-08-22 Thu 23:08]
 | commit     | 53ebaf69
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 53ebaf690ba34be796c5454288690a528d0c8311
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 16:20:53 2024 +0900
@@ -2187,7 +2187,7 @@ CLOSED: [2024-08-22 Thu 23:14]
 転じて「若くて未熟な人を軽蔑していう語」で「青二才」「毛二才」「二才子」のような使い方もある。
 「青二才（にさい）」または「二才（にさい）」は「にいせ（新背）」の音変化と言う説もある。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 2ed4ebe2d081df7b5d9e110b6acc82da868087e0
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 16:46:05 2024 +0900
@@ -2223,7 +2223,7 @@ CLOSED: [2024-08-22 Thu 23:16]
 | commit     | 33f20c15                                            |
 | 処置       | 採択                                                |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 33f20c1521310fb587c69cf278b9b6d9184725e7
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 16:12:28 2024 +0900
@@ -2255,7 +2255,7 @@ CLOSED: [2024-08-22 Thu 23:19]
 | 処置       | 採択                                                                 |
 
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 1aa7247233d047607dfad9a81ffd966a76756ccd
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 15:54:33 2024 +0900
@@ -2289,7 +2289,7 @@ CLOSED: [2024-08-22 Thu 23:22]
 | commit     | dfb751e9                                            |
 | 処置       | 原本通り＆脚注(6) p-237                             |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit dfb751e926b35b5101f7f487b97ca0a9e61b3eda
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 16:23:04 2024 +0900
@@ -2361,7 +2361,7 @@ CLOSED: [2024-08-22 Thu 23:25]
 「とまれかくまれ」 《「ともあれかくもあれ」の音変化》
 「兎に角」から「兎まれ角まれ」と当て字したものと思われるので指摘は最もだが脚注にその旨記述。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 15ac572c2a8b342253670c14f9e451e7640f9fc1
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 15:35:38 2024 +0900
@@ -2397,7 +2397,7 @@ CLOSED: [2024-08-22 Thu 23:29]
 
     仮定の「前世の存在」をどう位置付けるかだと思うので、一概に誤植とは言えない
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 1abf735919c6629f032bc99bed3ef45347c9e0e7
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 14:26:55 2024 +0900
@@ -2431,7 +2431,7 @@ CLOSED: [2024-08-22 Thu 23:35]
 
     ニーチェ？「幻と謎と」の情報も調べる必要あるのかな？
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit d9889aa24496e68f7e87a344410e03e6be950e64
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 17 14:07:24 2024 +0900
@@ -2463,7 +2463,7 @@ CLOSED: [2024-08-22 Thu 23:40]
 | commit     | 91362acc                                                 |
 | 処置       | 原本通り＆脚注(10) p-243                                 |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 91362acc7375a643f8ff713256486aab4f1d7b7e
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 19:01:35 2024 +0900
@@ -2497,7 +2497,7 @@ CLOSED: [2024-08-22 Thu 23:47]
 | commit     | 73fc2f1c
 | 処置       | 採択 \GWI{hdic_hkrm-01037620} →徃
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 73fc2f1cef435a2e95bbb3ffbc600bb345b2f011
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 10 00:28:49 2024 +0900
@@ -2565,7 +2565,7 @@ CLOSED: [2024-08-22 Thu 23:55]
 | commit     | f1c65aa1                   |
 | 処置       | 原本通り＆脚注(11) p-243   |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit f1c65aa1e56012499d9c33ef0f119ae1af729128
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 17:35:17 2024 +0900
@@ -2639,7 +2639,7 @@ CLOSED: [2024-08-23 Fri 00:00]
 | commit     | 8472fc0d                                                 |
 | 処置       | 原本通り＆脚注(12) p-247                                 |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 8472fc0d2ad433e3fb8102402ca3ba8c89242d98
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 17:08:29 2024 +0900
@@ -2704,7 +2704,7 @@ CLOSED: [2024-08-23 Fri 00:06]
 | commit     | be5c987a
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit be5c987a6010b8ec14392284e42eb2eab5c848e7
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 15:05:35 2024 +0900
@@ -2736,7 +2736,7 @@ CLOSED: [2024-08-23 Fri 00:10]
 | 処置       | 採択                            |
 
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit d11033e6ca1b12eb51fc403b616b2bd3e1ed5ce6
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sun Aug 18 22:59:43 2024 +0900
@@ -2771,7 +2771,7 @@ CLOSED: [2024-08-23 Fri 00:16]
     なので、「\ruby{當}{あて}\ruby{當}{あて}つれば」とすると踊り字も意識せねばならない。
     一方、 [[https://kobun.weblio.jp/content/当つ][あ・つ 【当つ】]] によれば、活用形に「て／て／つ／つる／つれ／てよ」なので
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 48887c4b99a07ce1b9fe090db9509a89b2f5b2e6
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 16:11:45 2024 +0900
@@ -2808,7 +2808,7 @@ CLOSED: [2024-08-23 Fri 11:21]
 
 「刻」のルビは（ほひ）あるいは（はひ）に見えるが、同じページの（は）をもつルビと比較し（ほ）にした
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit ec87df7a8a99f41017f266bfc98f3db58b0b82d0
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 15:40:46 2024 +0900
@@ -2844,7 +2844,7 @@ CLOSED: [2024-08-23 Fri 11:23]
 | commit     | 95007e96                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 95007e96a108f21a45b84744d75a53a4369ffec1
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 14:52:52 2024 +0900
@@ -2882,7 +2882,7 @@ CLOSED: [2024-08-09 金 14:37]
 指摘通り「あ」とする。
 「較（あは）す」は「合（あは）す」の当て字かもしれない。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 67dd543d32c89d3625394dda027ed1ccca17eb80
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 14:33:28 2024 +0900
@@ -2918,7 +2918,7 @@ CLOSED: [2024-08-23 Fri 11:38]
 | commit     | a81bf321                                        |
 | 処置       | 原本通り＆脚注(15) p-281                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit a81bf321c363a3fd4b9c1ef4db9fcad442d9d159
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 15:11:15 2024 +0900
@@ -2952,7 +2952,7 @@ CLOSED: [2024-08-23 Fri 11:42]
 
     助詞「に」でも良いと思い、原本通りとします。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 52a6a2b167eee17ff9cfd7dca69a794e4528697c
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 14:46:31 2024 +0900
@@ -2986,7 +2986,7 @@ CLOSED: [2024-08-23 Fri 11:44]
 
     もっともな指摘だが、原本通りとする
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 25a5cbe496bea9985a5fd72aadd87f79faf8ad4f
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 14:32:31 2024 +0900
@@ -3023,7 +3023,7 @@ CLOSED: [2024-08-23 Fri 11:47]
 「きさ【×詭詐】」 うそをつくこと。偽ること。譎詐(きっさ)。
 水野が神佛を信ぜぬと言う自身の考えに偽っている様を示すと思うので原本通り。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit b4888afdc17e3acccf967289559a70d6039a93d3
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 16 12:47:47 2024 +0900
@@ -3075,7 +3075,7 @@ CLOSED: [2024-08-23 Fri 11:49]
 | commit     | 3525fd3c                                                                     |
 | 処置       | 採択                                                                         |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 3525fd3cc000d9b6a1b5f8afb458018644aec9a6
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 14:13:06 2024 +0900
@@ -3110,7 +3110,7 @@ CLOSED: [2024-08-23 Fri 11:51]
 それが（さる）であろうけれど（まる）と読ませたかったのではないかな？
 なので原本通りとする。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit f4153730745d1fdff1704a7fb6e56995dc2f8ff8
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 20:32:29 2024 +0900
@@ -3146,7 +3146,7 @@ CLOSED: [2024-08-23 Fri 11:53]
 ここは「御経も見ずに」ではなく「御経をご参考にして」の方が自然だと思う
 ので原本通りとする
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 979815fb2e539d80459128dd815e832fd5a2cd77
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 19:51:30 2024 +0900
@@ -3181,7 +3181,7 @@ CLOSED: [2024-08-23 Fri 12:07]
 | commit     | e744256f                                 |
 | 処置       | 採択                                     |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit e744256f3da606e62284dbf3963ff6b992a34770
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 13:56:01 2024 +0900
@@ -3222,7 +3222,7 @@ CLOSED: [2024-08-23 Fri 12:09]
 | commit     | 97319c28                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 97319c28834fef0339b1bf8b233eee88af2191b5
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 13:32:05 2024 +0900
@@ -3266,7 +3266,7 @@ CLOSED: [2024-08-23 Fri 12:12]
 
     「凱歌」は通常（がいか）、（かちどき）だが原本通り（とちどき）とした
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 9622775b77ca01901ab2ff28cd273b2ccb14a3e0
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 17:50:50 2024 +0900
@@ -3302,7 +3302,7 @@ CLOSED: [2024-08-23 Fri 12:15]
 | commit     | 9321a4fb                    |
 | 処置       | 採択                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 9321a4fb3ccb722a5bc081393ca77aa7b5a5ded4
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Mon Aug 19 18:00:15 2024 +0900
@@ -3333,7 +3333,7 @@ CLOSED: [2024-08-23 Fri 12:17]
 | commit     | fc8a443c
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit fc8a443c380d6791cab0d10005c5c1505d41e5fe
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 12:53:04 2024 +0900
@@ -3375,7 +3375,7 @@ CLOSED: [2024-08-23 Fri 12:21]
 | commit     | e6b3aedd
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit e6b3aedd7baae975f729c710318ef3ba7ebc0828
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 17:23:02 2024 +0900
@@ -3409,7 +3409,7 @@ CLOSED: [2024-08-23 Fri 12:25]
 | commit     | c75b0b69                                    |
 | 処置       | 採択                                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -3446,7 +3446,7 @@ CLOSED: [2024-08-07 水 22:38]
 
 杜甫の「https://www.gushiwen.cn/mingju/juv_585986773e4d.aspx」「李杜交遊攷」の一説か？
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 2dd977efbadc40cfd449c3ed4f8ffb4cc381c956
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 16:26:38 2024 +0900
@@ -3484,7 +3484,7 @@ CLOSED: [2024-08-23 Fri 12:37]
 | commit     | 6a79cfe7                               |
 | 処置       | 採択                                   |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 6a79cfe75e5bdb2b5a7e4506bb9e56925b7ed683
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 8 18:07:00 2024 +0900
@@ -3531,7 +3531,7 @@ CLOSED: [2024-08-23 Fri 12:40]
 | 処置       | 採択＆注釈(23) p-383        |
 
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit fab3973e6eedb943572e53103d9264b02cbec845
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 8 17:54:57 2024 +0900
@@ -3568,7 +3568,7 @@ CLOSED: [2024-08-23 Fri 12:43]
 | commit     | c5b631cb                                  |
 | 処置       | 採択                                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c5b631cb6bb754b15331a9b48e1e60168abb8117
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Wed Jul 31 11:54:26 2024 +0900
@@ -3610,7 +3610,7 @@ CLOSED: [2024-08-23 Fri 14:12]
 | 輝きいで　照らさせ給え                   |
 | そのみ靈（たま）　聖なるみたま           |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c24400e8f44072dfc2b85f68742f2740d2065e99
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 15:43:47 2024 +0900
@@ -3644,7 +3644,7 @@ CLOSED: [2024-08-23 Fri 14:19]
 | 処置       | 原本通り＆脚注(25) p-431                              |
 
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 2cf0e51c24a53d9ef88ac689ff2e4667ce75479b
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 15:13:59 2024 +0900
@@ -3681,7 +3681,7 @@ CLOSED: [2024-08-23 Fri 14:24]
 1. ぼんやりして注意が行き届かないさま。「うっかり（と）秘密をしゃべる」「うっかりして大事な物を置き忘れた」
 2. 心をひかれて他に注意の向かないさま。うっとり。
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit a84bd5bcb82ca941215bd2acb39c09004940e5d9
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 14:52:07 2024 +0900
@@ -3712,7 +3712,7 @@ CLOSED: [2024-08-23 Fri 14:26]
 | commit     | df50a671
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit df50a67158f65105d7b01f3dc4dc49e85310844d
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 14:23:34 2024 +0900
@@ -3754,7 +3754,7 @@ CLOSED: [2024-08-23 Fri 14:43]
 | commit     | 73fc2f1c                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 73fc2f1cef435a2e95bbb3ffbc600bb345b2f011
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Sat Aug 10 00:28:49 2024 +0900
@@ -3785,7 +3785,7 @@ CLOSED: [2024-08-23 Fri 14:46]
 | commit     | c75b0b69                                |
 | 処置       | 採択                                    |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit c75b0b692b9b87a97d0fcfe6ec45b6d73bb12b50
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 11:20:53 2024 +0900
@@ -3816,7 +3816,7 @@ CLOSED: [2024-08-23 Fri 14:48]
 | commit     | 0ca3631b                                  |
 | 処置       | 採択                                      |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 0ca3631b67a79469cd07e16d5faaaf1d5574197b
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 2 16:51:09 2024 +0900
@@ -3853,7 +3853,7 @@ CLOSED: [2024-08-23 Fri 14:52]
 CLOSED: [2024-08-15 木 13:41]
 
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 19ddf6ece62c7b1499deae1233ab327b9c6f2da3
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 13:39:52 2024 +0900
@@ -3888,7 +3888,7 @@ CLOSED: [2024-08-23 Fri 14:54]
 | commit     | 5396bbff                                                |
 | 処置       | 原本通り＆脚注(28) p-493                                |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 5396bbff076f0eb2cf6971f8add29b7171dade91
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 13:57:07 2024 +0900
@@ -3963,7 +3963,7 @@ CLOSED: [2024-08-23 Fri 14:57]
 | commit     | 1b9ab945                                              |
 | 処置       | 原本通り＆脚注(29) p-501                              |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 1b9ab945dd7d313fc0d6400ab6b3aa09d1efabea
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 12:50:02 2024 +0900
@@ -3996,7 +3996,7 @@ CLOSED: [2024-08-23 Fri 15:03]
 | commit     | 482cd6ee                                                         |
 | 処置       | 採択                                                             |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 482cd6eefdf8726de295c1da74e4b7392751caba
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 12:15:59 2024 +0900
@@ -4030,7 +4030,7 @@ CLOSED: [2024-08-23 Fri 15:07]
 | commit     | cecf4348                         |
 | 処置       | 採択                             |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit cecf434806f767a8f7a897fb9c004c96cf99367d
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 21:33:46 2024 +0900
@@ -4081,7 +4081,7 @@ CLOSED: [2024-08-23 Fri 15:10]
 | commit     | cecf4348                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit cecf434806f767a8f7a897fb9c004c96cf99367d
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 21:33:46 2024 +0900
@@ -4129,7 +4129,7 @@ CLOSED: [2024-08-23 Fri 15:13]
 
 「へ」よりも、原本は印刷不鮮明で「に」の一部に見えるが「空白」とする
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 858d2c2b150eca5d19163ec39b60e78e6147ceea
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 11:50:30 2024 +0900
@@ -4162,7 +4162,7 @@ CLOSED: [2024-08-23 Fri 15:16]
 | commit     | 8937bd57
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 8937bd57d25d00f9aafa9657d5be5f17efbb984f
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 10:03:52 2024 +0900
@@ -4208,7 +4208,7 @@ CLOSED: [2024-08-23 Fri 15:19]
 | commit     | 7bfe5ac9                                    |
 | 処置       | 原本通り＆脚注(31) p-543                    |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 7bfe5ac94d6c4193b505330ea17fd8e653f64138
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 09:14:16 2024 +0900
@@ -4241,7 +4241,7 @@ CLOSED: [2024-08-23 Fri 16:11]
 | commit     | 639b790b                   |
 | 処置       | 採択                       |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 639b790ba746bf5e660353f2332f3cf49f884e30
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 08:50:17 2024 +0900
@@ -4276,7 +4276,7 @@ CLOSED: [2024-08-23 Fri 16:13]
 「稍（Shāo）」の意味などは「少し、ちょっと、わずか、やや」なので
  指摘通り（やや）は妥当であるが、原本通りとします
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 6407ca6d1c002b6d186d0cd95c1c41d9b948ce75
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 08:32:37 2024 +0900
@@ -4457,7 +4457,7 @@ CLOSED: [2024-08-23 Fri 16:19]
 | commit     | cecf4348
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit cecf434806f767a8f7a897fb9c004c96cf99367d
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Fri Aug 9 21:33:46 2024 +0900
@@ -4503,7 +4503,7 @@ CLOSED: [2024-08-23 Fri 16:22]
 | commit     | 4aa0f053                                        |
 | 処置       | 原本通り＆脚注(33) p-589                        |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 4aa0f05381ded09997e673a9140f3846e0af0931
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 15 00:22:48 2024 +0900
@@ -4538,7 +4538,7 @@ CLOSED: [2024-08-23 Fri 16:25]
 | commit     | d31472f9
 | 処置       | 採択
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit d31472f9a9f1ab6e46088eb79c9f49a576e64cee
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Thu Aug 8 16:44:35 2024 +0900
@@ -4580,7 +4580,7 @@ CLOSED: [2024-08-23 Fri 16:27]
 | commit     | 89b59140                                        |
 | 処置       | 採択                                            |
 
-#+BEGIN_SRC diff
+#+BEGIN_SRC
 commit 89b59140544935a0e209b5722f0d14eba9936403
 Author: 128Mac <qaz_wada136@yahoo.co.jp>
 Date:   Mon Aug 19 18:01:31 2024 +0900
