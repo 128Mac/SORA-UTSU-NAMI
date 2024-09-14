@@ -54,6 +54,13 @@ jafontsize                  = 12pt          ,% 13pt 指定すると LaTeX Font W
 \input{sora-utsu-nami-debug.sty}
 \makeatother
 
+\def\footnote#1{\endnote{#1}}
+\jlreqsetup{
+  endnote_position      = {_chapter} , %後注の表示位置
+  endnote_second_indent = {3zw}      ,
+  mainmatter_pagebreak  = clearpage  ,
+}
+
 \begin{document}
 \maketitle
 \pagestyle{myheadings}
@@ -64,9 +71,10 @@ jafontsize                  = 12pt          ,% 13pt 指定すると LaTeX Font W
 \begin{indentation}{4zw}{3zw}
 \parindent=0pt
 
-\newpage
-\　% 全角空白
-\newpage
+\chapter*{}
+%\newpage
+%\　% 全角空白
+%\newpage
 
 \include{001-1-01-其一}
 \include{002-1-02-其二}
@@ -110,4 +118,8 @@ jafontsize                  = 12pt          ,% 13pt 指定すると LaTeX Font W
 \include{040-1-40-其四十}
 
 \end{indentation}
+
+\section*{後注}
+\theendnotes
+
 \end{document}
