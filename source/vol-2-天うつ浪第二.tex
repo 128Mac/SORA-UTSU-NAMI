@@ -13,9 +13,25 @@
 %%
 \RequirePackage{plautopatch}
 %\RequirePackage{exppl2e}% 警告メッセージ削減のためコメントアウト
-% upLaTeX文書
-\documentclass[dvipdfmx,uplatex,tate,book,paper=a5paper,jafontsize=13pt,
-    open_bracket_pos=nibu_tentsuki,hanging_punctuation]{jlreq}
+\documentclass[
+uplatex                                     ,% upLaTeX文書
+dvipdfmx                                    ,%
+book                                        ,%
+tate                                        ,%
+twoside                                     ,% even_running_head 有効化
+paper                       = a5paper       ,%
+open_bracket_pos            = nibu_tentsuki ,% 組み方 段落開始二分折り返し行頭天付き
+hanging_punctuation                         ,% 組み方 ぶら下げ組
+openany                                     ,%
+jafontsize                  = 12pt          ,% 13pt 指定すると LaTeX Font Warning が表示される
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 分冊版では以下は default 設定
+% head_space                = 36mm          ,% 天の空き量
+% gutter                    = 18mm          ,% のどの余白の大きさ
+% headfoot_verticalposition = 24mm          ,%
+% line_length               = 27zw          ,% 原本と比較するとき（自動で 30zw 位）
+% number_of_lines           = 11            ,% 原本と比較するとき（自動で 15行）
+]{jlreq}
+
 \usepackage{bxpapersize}
 \usepackage{pxrubrica}
 \usepackage{sfkanbun}

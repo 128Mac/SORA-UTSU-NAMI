@@ -12,27 +12,23 @@
 
 \RequirePackage{plautopatch}
 %\RequirePackage{exppl2e}% 警告メッセージ削減のためコメントアウト
-
 \documentclass[
-uplatex                                   ,
-dvipdfmx                                  ,
-book                                      ,
-tate                                      ,
-twoside                                   , % even_running_head 有効化
-%%%%
-jafontsize                = 12pt          ,
-fontsize                  = 12pt          ,
-%%%%
-open_bracket_pos          = nibu_tentsuki , % zenkaku_tentsuki zenkakunibbu_nibu
-hanging_punctuation                       , % 行頭に句読点等の禁則約物を前行に追い込む
-%%%%
-paper                     = a5paper       ,
-%%%%
-head_space                = 36mm          , % 天の空き量
-gutter                    = 18mm          , % のどの余白の大きさ
-headfoot_verticalposition = 24mm          ,
-line_length               = 27zw          , % TODO デフォルトはコメントアウトすべし
-% number_of_lines         = 11            , % TODO デフォルトはコメントアウトすべし
+uplatex                                     ,% upLaTeX文書
+dvipdfmx                                    ,%
+book                                        ,%
+tate                                        ,%
+twoside                                     ,% even_running_head 有効化
+paper                       = a5paper       ,%
+open_bracket_pos            = nibu_tentsuki ,% 組み方 段落開始二分折り返し行頭天付き
+hanging_punctuation                         ,% 組み方 ぶら下げ組
+openany                                     ,%
+jafontsize                  = 12pt          ,% 13pt 指定すると LaTeX Font Warning が表示される
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 以下は三巻合本用設定
+head_space                  = 36mm          ,% 天の空き量
+gutter                      = 18mm          ,% のどの余白の大きさ
+headfoot_verticalposition   = 24mm          ,%
+line_length                 = 30zw          ,% 原本と比較するとき 27zw
+% number_of_lines           = 11            ,% 原本と比較するとき
 ]{jlreq}
 
 \usepackage{bxpapersize}
