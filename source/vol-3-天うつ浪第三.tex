@@ -1,19 +1,15 @@
 % +++
 % sequence = ["cluttex"]
 % [programs.cluttex]
-% command = "cluttex"
-% opts = [
-% "--engine=uplatex",
-% "--shell-escape"
-% "--output-directory=myout"
-% ]
+% command  = "cluttex"
+% opts     = [ "--engine = uplatex", "--shell-escape", "--output-directory = myout" ]
 % +++
 
 % https://okumuralab.org/tex/mod/forum/discuss.php?d=3551 を参考に下記
 % を上記のように変更
-% #! cluttex --engine=uplatex --shell-escape --output-directory=myout
-%    cluttex でビルド時に必要なディレクトリ myout 、 mygwi と myout/mygwi
-%    また --includeonly=NAMEs を指定すると '\includeonly{NAMEs}' を仮挿入してくれる
+%#! cluttex --engine=uplatex --shell-escape --output-directory=myout
+%   cluttex でビルド時に必要なディレクトリ myout 、 mygwi と myout/mygwi
+%   また --includeonly=NAMEs を指定すると '\includeonly{NAMEs}' を仮挿入してくれる
 
 \RequirePackage{plautopatch}
 %\RequirePackage{exppl2e}% 警告メッセージ削減のためコメントアウト
