@@ -13,8 +13,14 @@
 %
 \ruby[g]{{\換字{所}}以}{ゆ　ゑ　}
 \ruby{知}{し}らぬ
-\ruby[||j>]{動}{むな}
-\ruby[||j>]{悸}{さわぎ}の
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[g]{動悸の}{むなさわぎ　}
+}{%
+  \ruby[||j>]{動}{むな}
+  \ruby[||j>]{悸}{さわぎ}の
+}%
+\makeatother
 % \ruby{動悸}{むな|さわぎ}の
 \ruby{烈}{はげ}しさに
 \ruby{其}{そ}の
@@ -235,7 +241,13 @@
 %
 \ruby{曇}{くも}れる
 \ruby{{\換字{空}}}{そら}に
-\ruby{微}{かすか}に
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[g]{微に}{かすか　}
+}{%
+  \ruby{微}{かすか}に
+}%
+\makeatother
 \ruby{{\換字{透}}}{す}きて
 \ruby{立}{た}てり。
 
