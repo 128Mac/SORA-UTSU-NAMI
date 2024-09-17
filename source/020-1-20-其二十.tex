@@ -127,7 +127,14 @@
 %
 \ruby{幼}{をさな}き
 \ruby{時}{とき}の
-\ruby{心}{こゝろ}にも
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[g]{心に}{こゝろ　}
+  も
+}{%
+  \ruby{心}{こゝろ}にも
+}%
+\makeatother
 \改行% 校正作業の簡略化のため
 、
 %
