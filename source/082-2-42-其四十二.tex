@@ -173,8 +173,14 @@
 %
 \ruby{怒}{おこ}り
 \ruby{出}{だ}して
-\ruby[||j>]{頂}{ちやう}
-\ruby[||j>]{戴}{　だい}よ、
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[g]{頂戴よ}{ちやうだい　}、
+}{%
+  \ruby[||j>]{頂}{ちやう}
+  \ruby[||j>]{戴}{　だい}よ、
+}%
+\makeatother
 % \ruby{頂戴}{ちやう|だい}よ、
 %
 エヽ
