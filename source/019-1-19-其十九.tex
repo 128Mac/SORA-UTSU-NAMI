@@ -737,7 +737,13 @@
 %
 \ruby{天}{てん}にも
 \ruby{地}{ち}にも
-\ruby[||j>]{唯}{たつた}
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[<j||]{唯}{たつた}
+}{%
+  \ruby[||j>]{唯}{たつた}
+}%
+\makeatother
 \ruby[g]{一人}{ひとり}の
 \ruby[g]{大切}{たいせつ}な
 \ruby[g]{朋友}{ともだち}に
