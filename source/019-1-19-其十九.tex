@@ -443,7 +443,13 @@
 \ruby[g]{一人}{ひとり　}も
 \ruby{無}{な}く、
 %
-\ruby[||j>]{皆}{みんな}
+\makeatletter
+\@ifundefined{デバッグ@ビルド}{%
+  \ruby[<j||]{皆}{みんな}
+}{%
+  \ruby[||j>]{皆}{みんな}
+}%
+\makeatother
 \ruby[g]{心氣}{し　ん　}の
 \ruby[g]{疲勞}{つかれ　}に
 \ruby{堪}{こら}へ
