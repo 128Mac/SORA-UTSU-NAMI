@@ -1,0 +1,293 @@
+#+TITLE:       『天うつ浪』三次校正作業結果
+#+AUTHOR:
+#+DATE:
+#+EMAIL:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:    ja_JP.UTF-8
+#+OPTIONS:     num:t toc:t ::t |:t ^:nil -:nil author:nil creator:nil
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+
+** [100%][15/15] check
+
+*** DONE 1巻 其3 ににん⇨ふたり                               :却下:
+CLOSED: [2024-10-11 金 20:56]
+
+| クレーム   | ににん⇨ふたり                                                  |          |
+|            | 前に話題となったことだが、今回あらためて通読すると、           |          |
+|            | やはり ここは「ふたり」と読んだほうが適当と思われる。          |          |
+|            | 念の為原典を確かめたが、原典でもそうなっている。               |          |
+| 旧PDF      | 1巻 其3 p-14 l-08                                              |          |
+| 新PDF      | 1巻 其3 p-14 l-08                                              |          |
+| 国会図書館 | コマ番号 13/134 p-19 l-11                                      |          |
+| commit     | 15f9be73 [fix] 「二人（ににん）」とした旨の注記                |          |
+|            | 93ba6049 [fix] 「一人（いちにん）」とした旨の注記              | 関連修正 |
+|            | 78f08ecd [fix] 「一人並（いちにんなみ）」とした旨の注記        | 関連修正 |
+|            | a0c51220 [fix] 「一人（いちにん）」とした旨の注記              | 関連修正 |
+| 処置       | 却下                                                           |          |
+|            | 和田も「二人」は（ふたり）としたいが「二人（にん）」           |          |
+|            | となっているので「ににん」としている。因みに「二人」           |          |
+|            | の読みは（ににん）（ふたあり）がそれぞれ一箇所、他は（ふたり） |          |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 15f9be73
+  #+END_SRC
+
+- 関連修正
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 93ba6049
+  git show 78f08ecd
+  git show a0c51220
+  #+END_SRC
+
+*** DONE 1巻 其16 rubyの「なほこゝろ」が一部重なっている件について :採択:
+CLOSED: [2024-10-06 日 00:20]
+| クレーム   | rubyの「なほこゝろ」が一部重なって「なほゝろ」となっている。 |
+| 旧PDF      | 1巻 其16 p-72 l-03                                           |
+| 新PDF      | 1巻 其16 p-72 l-03                                           |
+| 国会図書館 |                                                              |
+| commit     | 180a005d                                                     |
+| 処置       | 採択                                                           |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 180a005d
+  #+END_SRC
+
+*** DONE 1巻 其19 rubyの「みんなしん」が一部重なり「みんなん」に見える。 :採択:
+CLOSED: [2024-10-06 日 00:37]
+| クレーム   | rubyの「みんなしん」が一部重なり「みんなん」に見える。 |
+| 旧PDF      | 1巻 其19 p-83 l-12                                     |
+| 新PDF      | 1巻 其19 p-83 l-12                                     |
+| 国会図書館 |                                                        |
+| commit     | 8c936002                                               |
+| 処置       | 採択                                                     |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 8c936002
+  #+END_SRC
+
+*** DONE 1巻 其19 rubyの「たつたひとり」が「たつたとり」に見える。 :採択:
+CLOSED: [2024-10-06 日 00:48]
+| クレーム   | rubyの「たつたひとり」が「たつたとり」に見える。 |
+| 旧PDF      | 1巻 其19 p-85 l-07                               |
+| 新PDF      | 1巻 其19 p-85 l-07                               |
+| 国会図書館 |                                                  |
+| commit     | 44d40295                                         |
+| 処置       | 採択                                             |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 44d40295
+  #+END_SRC
+
+*** DONE 1巻 其25 rubyの「いにしへけんじん」というように「いにしへ」と「けんじん」が繋がって見えるが :採択:
+CLOSED: [2024-10-06 日 00:59]
+| クレーム   | rubyの「いにしへけんじん」というように       |
+|            | 「いにしへ」と「けんじん」が繋がって見えるが |
+|            | ここはできれば空字を挿入したほうが良い。     |
+| 旧PDF      | 1巻 其25 p-111 l-08                          |
+| 新PDF      | 1巻 其25 p-111 l-08                          |
+| 国会図書館 |                                              |
+| commit     | 0bd8e217                                     |
+| 処置       | 採択                                         |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 0bd8e217
+  #+END_SRC
+
+*** DONE 1巻 其26 忌々の直後で改行しているも、これは改行文字を削除してほしい。つまり連続すべき。 :採択:
+CLOSED: [2024-10-06 日 01:26]
+| クレーム   | 忌々の直後で改行しているも、これは改行文字を削除してほしい。つまり連続すべき。 |
+| 旧PDF      | 1巻 其26 p-116 l-05                                                            |
+| 新PDF      | 1巻 其26 p-116 l-05                                                            |
+| 国会図書館 | コマ番号 85/134 p-163 l-02                                                     |
+| commit     | fd10c6a8                                                                       |
+| 処置       | 採択                                                                           |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show fd10c6a8
+  #+END_SRC
+
+*** DONE 1巻 其27 昔語のruby「むかしがたり」の「し」と「が」の字重なり。 :採択:
+CLOSED: [2024-10-06 日 01:45]
+| クレーム   | 昔語のruby「むかしがたり」の「し」と「が」の字重なり。 |
+| 旧PDF      | 1巻 其27 p-117 l-13                                    |
+| 新PDF      | 1巻 其27 p-117 l-13                                    |
+| 国会図書館 |                                                        |
+| commit     | 7d7567a9                                               |
+| 処置       | 採択                                                   |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 7d7567a9
+  #+END_SRC
+
+*** DONE 1巻 其33 「ifundefined デバッグ＠ビルド」 不要につき削除。 :採択:
+CLOSED: [2024-10-06 日 02:05]
+| クレーム   | 「ifundefined デバッグ＠ビルド」 不要につき削除。 |
+| 旧PDF      | 1巻 其33 p-146 l-15                               |
+| 新PDF      | 1巻 其33 p-146 l-15                               |
+| 国会図書館 |                                                   |
+| commit     | c16c3113                                          |
+| 処置       | 採択                                              |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show c16c3113
+  #+END_SRC
+
+*** DONE 1巻 其35 「ifundefined デバッグ＠ビルド」 不要につき削除。 :採択:
+CLOSED: [2024-10-06 日 02:07]
+| クレーム   | 「ifundefined デバッグ＠ビルド」 不要につき削除。 |
+| 旧PDF      | 1巻 其35 p-151 l-08                               |
+| 新PDF      | 1巻 其35 p-151 l-08                               |
+| 国会図書館 |                                                   |
+| commit     | 7963c10c                                          |
+| 処置       | 採択                                              |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 7963c10c
+  #+END_SRC
+
+*** DONE 2巻 其37 ruby「そろ」⇨「をそ」                      :却下:
+CLOSED: [2024-10-12 土 13:43]
+| クレーム   | ruby「そろ」⇨「をそ」              |
+| 旧PDF      | 2巻 其37 p337 l-14                 |
+| 新PDF      | 2巻 其37 p337 l-14                 |
+| 国会図書館 | コマ番号 116/160 p-222 l-11        |
+| commit     | 2194eed9                           |
+| 処置       | 却下（原本通り）                   |
+|            | 「恐ろしく」の本来のルビは（おそ） |
+|            | なので、誤植だと思うけど原本通り   |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 2194eed9
+  #+END_SRC
+
+
+*** DONE 3巻 其三十 「全然」のrubyは、「ま まる」となっているが ... :却下:
+CLOSED: [2024-10-12 土 13:22]
+| クレーム   | 「全然」のrubyは、「ま まる」となっているが                      |
+|            | 「まるつきり」とか「まるで」や「まったく」の意味であろう。       |
+|            | そういう意味で「ま まる」のruby は不可解としか思えないが、如何？ |
+| 旧PDF      | 3巻 其三十 p511 l-11                                             |
+| 新PDF      | 3巻 其三十 p513 l-11                                             |
+| 国会図書館 |                                                                  |
+| commit     | 3a84e760(操作ミスで不要な改行混入）→ 1cd0586e                    |
+| 処置       | 却下                                                             |
+|            | （まるまる）と思われるが原本通りとした                           |
+
+- 修正内容
+
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+    git show 3a84e760
+  #+END_SRC
+
+- 補正修正( 3a84e760 で余分な改行が混入したため）
+
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+    git show 1cd0586e
+  #+END_SRC
+
+- 「全然」のルビの振り方状況
+  | 全然 | ま　まる | 3巻 其30 |          |          |          |          |
+  | 全然 | まる〳〵 | 3巻 其48 |          |          |          |          |
+  |------+----------+----------+----------+----------+----------+----------|
+  | 全然 | まるで　 | 1巻 其01 |          |          |          |          |
+  | 全然 | まるで　 | 2巻 其40 | 2巻 其50 |          |          |          |
+  | 全然 | まるで   | 3巻 其14 | 3巻 其16 | 3巻 其20 | 3巻 其24 | 3巻 其40 |
+  |------+----------+----------+----------+----------+----------+----------|
+  | 全然 | まるきり | 3巻 其21 |          |          |          |          |
+  |------+----------+----------+----------+----------+----------+----------|
+  | 全然 | すつかり | 1巻 其04 | 1巻 其20 |          |          |          |
+  | 全然 | すつかり | 2巻 其07 | 2巻 其33 | 2巻 其33 | 2巻 其49 |          |
+  | 全然 | すつかり | 3巻 其05 | 3巻 其24 |          |          |          |
+  |------+----------+----------+----------+----------+----------+----------|
+  | 全然 | ぜん〴〵 | 2巻 其45 |          |          |          |          |
+
+*** DONE 3巻 其三十二 「私一人」の ruby が「し」と「ひ」の字重なり。 :採択:
+CLOSED: [2024-10-06 日 10:36]
+| クレーム   | 「私一人」の ruby が「し」と「ひ」の字重なり。 |
+| 旧PDF      | 3巻 其三十二 p521 l-04                         |
+| 新PDF      | 3巻 其三十二 p523 l-04                         |
+| 国会図書館 | コマ番号 92/146 p-177 l-10                     |
+| commit     | fc39c974                                       |
+| 処置       | 採択                                           |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show fc39c974
+  #+END_SRC
+
+*** DONE 3巻 其三十三 「篤實」の ruby だが「こくめい」とあるが ... :却下:
+CLOSED: [2024-10-12 土 11:51]
+| クレーム   | 「篤實」の ruby だが「こくめい」とあるが類似語には「克明」   |
+|            | があるも、この「読み」は「とくじつ」でなかろうか？           |
+|            | 「こくめい」は見たこともない聞いたこともない。               |
+|            | しかし、後にももう１箇所同様の ruby が繰り返されているので、 |
+|            | これは意図的な記述なのであろう。                             |
+| 旧PDF      | 3巻 其三十三 p525 l-03                                       |
+| 新PDF      | 3巻 其三十三 p527 l-03                                       |
+| 国会図書館 | コマ番号  95/146 p-183 l-06 （3巻 其三十三）                 |
+| 国会図書館 | コマ番号 124/134 p-241 l-07 （1巻 其四十）                   |
+| 国会図書館 | コマ番号 125/146 p-242 l-11 （3巻 其四十三）                 |
+| commit     | 4ab1bb27                                                     |
+| 処置       | 却下:同様の他二つも含め後注書きとする                        |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 4ab1bb27
+  #+END_SRC
+
+- （こくめい）とルビを振っている状況
+
+  |          |                            | 通常の読み |                            |
+  | 1巻 其40 | \ruby[g]{朴實}{こくめい}な | ぼくじつ   | 飾り気がなく律気であること |
+  | 3巻 其33 | \ruby[g]{篤實}{こくめい}の | とくじつ   | 情が深く誠実なこと         |
+  | 3巻 其43 | \ruby[g]{實直}{こくめい}な | じっちょく | 誠実でかげひなたのないこ   |
+
+
+*** DONE 3巻 其四十六 「凍てたる路に」、で改行されている件について :採択:
+CLOSED: [2024-10-06 日 11:39]
+| クレーム   | 「凍てたる路に」、で改行されているが、           |
+|            | 原典では、次の「車の走る轟の、」は連続している。 |
+| 旧PDF      | 3巻 其四十六 p576 l-02                           |
+| 新PDF      | 3巻 其四十六 p578 l-02                           |
+| 国会図書館 |                                                  |
+| commit     | 53ac8693                                         |
+| 処置       | 採択                                             |
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show 53ac8693
+  #+END_SRC
+
+*** DONE 1巻 巻尾  「後注」の各項目頭がindentされないようにして欲しい。 :採択:
+CLOSED: [2024-10-13 日 12:30]
+| クレーム   | 「後注」の各項目頭がindentされないようにして欲しい。 |
+|            | （各項目の２行目を１文字下げても良い。）             |
+| 旧PDF      |                                                      |
+| 新PDF      |                                                      |
+| 国会図書館 |                                                      |
+| commit     | a527bdac                                             |
+| 処置       | 採択                                                 |
+
+
+- 修正内容
+  #+BEGIN_SRC sh :exports results :results output code :wrap SRC diff
+  git show a527bdac
+  #+END_SRC

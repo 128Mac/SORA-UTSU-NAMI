@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP.UTF-8" xml:lang="ja_JP.UTF-8">
+<head>
+<!-- 2024-10-13 日 23:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>『天うつ浪』三次校正作業結果</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">『天うつ浪』三次校正作業結果</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1a8a107">1. <code>[100%]</code><code>[15/15]</code> check</a>
+<ul>
+<li><a href="#org7bd075f">1.1. <span class="done DONE">DONE</span> 1巻 其3 ににん⇨ふたり&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></a></li>
+<li><a href="#org2d2ca8a">1.2. <span class="done DONE">DONE</span> 1巻 其16 rubyの「なほこゝろ」が一部重なっている件について&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#orgbf348ba">1.3. <span class="done DONE">DONE</span> 1巻 其19 rubyの「みんなしん」が一部重なり「みんなん」に見える。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#orgea1934c">1.4. <span class="done DONE">DONE</span> 1巻 其19 rubyの「たつたひとり」が「たつたとり」に見える。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#orgae0a2e3">1.5. <span class="done DONE">DONE</span> 1巻 其25 rubyの「いにしへけんじん」というように「いにしへ」と「けんじん」が繋がって見えるが&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#org03b4382">1.6. <span class="done DONE">DONE</span> 1巻 其26 忌々の直後で改行しているも、これは改行文字を削除してほしい。つまり連続すべき。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#org8e43c0d">1.7. <span class="done DONE">DONE</span> 1巻 其27 昔語のruby「むかしがたり」の「し」と「が」の字重なり。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#org379b963">1.8. <span class="done DONE">DONE</span> 1巻 其33 「ifundefined デバッグ＠ビルド」 不要につき削除。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#org5a4f9ad">1.9. <span class="done DONE">DONE</span> 1巻 其35 「ifundefined デバッグ＠ビルド」 不要につき削除。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#org11a5beb">1.10. <span class="done DONE">DONE</span> 2巻 其37 ruby「そろ」⇨「をそ」&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></a></li>
+<li><a href="#orge540c0e">1.11. <span class="done DONE">DONE</span> 3巻 其三十 「全然」のrubyは、「ま まる」となっているが ...&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></a></li>
+<li><a href="#orgf7a2774">1.12. <span class="done DONE">DONE</span> 3巻 其三十二 「私一人」の ruby が「し」と「ひ」の字重なり。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#orgdc5aef6">1.13. <span class="done DONE">DONE</span> 3巻 其三十三 「篤實」の ruby だが「こくめい」とあるが ...&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></a></li>
+<li><a href="#orgbde7939">1.14. <span class="done DONE">DONE</span> 3巻 其四十六 「凍てたる路に」、で改行されている件について&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+<li><a href="#org7d91292">1.15. <span class="done DONE">DONE</span> 1巻 巻尾  「後注」の各項目頭がindentされないようにして欲しい。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1a8a107" class="outline-2">
+<h2 id="org1a8a107"><span class="section-number-2">1.</span> <code>[100%]</code><code>[15/15]</code> check</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org7bd075f" class="outline-3">
+<h3 id="org7bd075f"><span class="section-number-3">1.1.</span> <span class="done DONE">DONE</span> 1巻 其3 ににん⇨ふたり&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></h3>
+<div class="outline-text-3" id="text-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">ににん⇨ふたり</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">前に話題となったことだが、今回あらためて通読すると、</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">やはり ここは「ふたり」と読んだほうが適当と思われる。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">念の為原典を確かめたが、原典でもそうなっている。</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其3 p-14 l-08</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其3 p-14 l-08</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号 13/134 p-19 l-11</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">15f9be73 [fix] 「二人（ににん）」とした旨の注記</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">93ba6049 [fix] 「一人（いちにん）」とした旨の注記</td>
+<td class="org-left">関連修正</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">78f08ecd [fix] 「一人並（いちにんなみ）」とした旨の注記</td>
+<td class="org-left">関連修正</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">a0c51220 [fix] 「一人（いちにん）」とした旨の注記</td>
+<td class="org-left">関連修正</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">却下</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">和田も「二人」は（ふたり）としたいが「二人（にん）」</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">となっているので「ににん」としている。因みに「二人」</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">の読みは（ににん）（ふたあり）がそれぞれ一箇所、他は（ふたり）</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 15f9be73116f726c8bd8bc1de39374619793bf5d
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Fri Oct 11 16:13:54 2024 +0900
+
+    [fix] 「二人（ににん）」とした旨の注記
+
+diff --git a/source/003-1-03-其三.tex b/source/003-1-03-其三.tex
+index 87031ac4..5891c85b 100644
+--- a/source/003-1-03-其三.tex
++++ b/source/003-1-03-其三.tex
+@@ -303,7 +303,14 @@
+ \ruby{出}{い}でたる
+ \ruby[g]{山瀬}{やませ　}
+ \ruby[g]{羽{\換字{勝}}}{は　がち}の
+-\ruby[g]{二人}{に　にん}の
++\ruby[g]{二人}{に　にん}
++\footnote{%
++この文脈では、「二人」のルビは（ふたり）と思われるが、
++原本では「\ruby[g]{二人}{　　にん}」となっていたため、
++漢数字のルビ化に伴い（ににん）とした。
++（国会図書館 コマ番号13/134 p-19 l-11）
++}%
++の
+ \ruby[g]{言葉}{ことば　}は
+ \ruby[g]{一句}{いつく　}と
+ \ruby[g]{一句}{いつく　}と
+</pre>
+</div></li>
+
+<li><p>
+関連修正
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 93ba604949641202baaeff1d3e60cda223b76c61
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Fri Oct 11 16:12:13 2024 +0900
+
+    [fix] 「一人（いちにん）」とした旨の注記
+
+diff --git a/source/001-1-01-其一.tex b/source/001-1-01-其一.tex
+index 97ecdbd9..3baecb63 100644
+--- a/source/001-1-01-其一.tex
++++ b/source/001-1-01-其一.tex
+@@ -641,7 +641,14 @@
+ \ruby[g]{三人}{さんにん}の
+ \ruby[g]{財布}{さいふ　}を
+ \ruby{揮}{ふる}つては
+-\ruby[g]{一人}{いちにん}の
++\ruby[g]{一人}{いちにん}
++\footnote{%
++この文脈では、「一人」のルビは（ひとり）と思われるが、
++原本では「\ruby[g]{一人}{　　にん}」となっていたため、
++漢数字のルビ化に伴い（いちにん）とした。
++（国会図書館 コマ番号7/134 p-6 l-10）
++}%
++の
+ \ruby[g]{{\換字{遊}}學}{いうがく}の
+ \ruby[g]{支度}{し　たく}を
+ \ruby{拵}{こしら}へ、
+@@ -649,7 +656,14 @@
+ \ruby[g]{五人}{ご　にん}の
+ \ruby[g]{着物}{き　もの}を
+ \ruby{賣}{う}つては
+-\ruby[g]{一人}{いちにん}の
++\ruby[g]{一人}{いちにん}
++\footnote{%
++この文脈では、「一人」のルビは（ひとり）と思われるが、
++原本では「\ruby[g]{一人}{　　にん}」となっていたため、
++漢数字のルビ化に伴い（いちにん）とした。
++（国会図書館 コマ番号7/134 p-6 l-10）
++}%
++の
+ \ruby{身}{み}の
+ \ruby{立}{た}つ
+ \ruby[g]{本錢}{もとで　}とするといふ
+commit 78f08ecd0f6947b0777ed3bd8059c29a9670f9eb
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Fri Oct 11 16:16:12 2024 +0900
+
+    [fix] 「一人並（いちにんなみ）」とした旨の注記
+
+diff --git a/source/018-1-18-其十八.tex b/source/018-1-18-其十八.tex
+index 06dcdcc4..69e3efa2 100644
+--- a/source/018-1-18-其十八.tex
++++ b/source/018-1-18-其十八.tex
+@@ -40,7 +40,14 @@
+ \ruby{奴}{やつ}あ、
+ %
+ \ruby[g]{人間}{にんげん}が
+-\ruby{一人並}{いち|にん|なみ}に
++\ruby{一人並}{いち|にん|なみ}
++\footnote{%
++この文脈では、「一人並」のルビは（ひとなみ）とも思われるが、
++原本では「\ruby[g]{一人並}{　　にんなみ}」となっていたため、
++漢数字のルビ化に伴い（いちにんなみ）とした。
++（国会図書館 コマ番号58/134 p-108 l-09）
++}%
++に
+ \原本頁{108-10}\改行%
+ \ruby[g]{成熟}{できあが}ると、
+ %
+commit a0c512203561a18826d665b50f7605b2039919b8
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Fri Oct 11 16:16:42 2024 +0900
+
+    [fix] 「一人（いちにん）」とした旨の注記
+
+diff --git a/source/082-2-42-其四十二.tex b/source/082-2-42-其四十二.tex
+index 190c1fa2..db04cc2b 100644
+--- a/source/082-2-42-其四十二.tex
++++ b/source/082-2-42-其四十二.tex
+@@ -266,7 +266,14 @@
+ %
+ \ruby{{\換字{終}}}{つひ}に
+ \ruby[g]{此處}{こ　ゝ　}へと% 踊り字調整「〻（二の字点、揺すり点）に見えるが（ゝ）」
+-\ruby[g]{一人}{いちにん}の
++\ruby[g]{一人}{いちにん}
++\footnote{%
++この文脈では、「一人」のルビは（ひとり）と思われるが、
++原本では「\ruby[g]{一人}{　　にん}」となっていたため、
++漢数字のルビ化に伴い（いちにん）とした。
++（国会図書館 コマ番号129/134 p-248 l-08）
++}%
++の
+ \ruby{男}{をとこ}を
+ \ruby{導}{みちび}き
+ \ruby{來}{きた}れり。
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2d2ca8a" class="outline-3">
+<h3 id="org2d2ca8a"><span class="section-number-3">1.2.</span> <span class="done DONE">DONE</span> 1巻 其16 rubyの「なほこゝろ」が一部重なっている件について&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">rubyの「なほこゝろ」が一部重なって「なほゝろ」となっている。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其16 p-72 l-03</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其16 p-72 l-03</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">180a005d</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 180a005d5f8508f4eae32d9503b1c3cb471154b4
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 00:17:38 2024 +0900
+
+    [fix] 「猶」と「心」のルビが重ならないよう調整
+
+diff --git a/source/016-1-16-其十六.tex b/source/016-1-16-其十六.tex
+index b8c18c79..cba56070 100644
+--- a/source/016-1-16-其十六.tex
++++ b/source/016-1-16-其十六.tex
+@@ -335,8 +335,15 @@
+ \ruby{見}{み}て、
+ %
+ \ruby{此}{こ}の
+-\ruby[&lt;j||]{{\換字{猶}}}{なほ}% 行末行頭の境界付近なので特例処置を施す
+-\ruby[&lt;j||]{心}{こゝろ}の
++\makeatletter
++\@ifundefined{デバッグ@ビルド}{%
++  \ruby{{\換字{猶}}}{なほ}
++  \ruby{心}{こゝろ}の
++}{%
++  \ruby[&lt;j||]{{\換字{猶}}}{なほ}% 行末行頭の境界付近なので特例処置を施す
++  \ruby[&lt;j||]{心}{こゝろ}の
++}%
++\makeatother
+ \ruby{醇}{じゆん}なる
+ \ruby[g]{年{\換字{若}}}{としわか}き
+ \ruby{友}{とも}を
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf348ba" class="outline-3">
+<h3 id="orgbf348ba"><span class="section-number-3">1.3.</span> <span class="done DONE">DONE</span> 1巻 其19 rubyの「みんなしん」が一部重なり「みんなん」に見える。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">rubyの「みんなしん」が一部重なり「みんなん」に見える。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其19 p-83 l-12</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其19 p-83 l-12</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">8c936002</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 8c936002e602ccca93d01efbadda1c80d958d941
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 00:35:28 2024 +0900
+
+    [fix] 「皆」と「心気」のルビが重ならないように調整
+
+diff --git a/source/019-1-19-其十九.tex b/source/019-1-19-其十九.tex
+index 9d0b172b..a52f3ff1 100644
+--- a/source/019-1-19-其十九.tex
++++ b/source/019-1-19-其十九.tex
+@@ -443,7 +443,13 @@
+ \ruby[g]{一人}{ひとり　}も
+ \ruby{無}{な}く、
+ %
+-\ruby[||j&gt;]{皆}{みんな}
++\makeatletter
++\@ifundefined{デバッグ@ビルド}{%
++  \ruby[&lt;j||]{皆}{みんな}
++}{%
++  \ruby[||j&gt;]{皆}{みんな}
++}%
++\makeatother
+ \ruby[g]{心氣}{し　ん　}の
+ \ruby[g]{疲勞}{つかれ　}に
+ \ruby{堪}{こら}へ
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgea1934c" class="outline-3">
+<h3 id="orgea1934c"><span class="section-number-3">1.4.</span> <span class="done DONE">DONE</span> 1巻 其19 rubyの「たつたひとり」が「たつたとり」に見える。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">rubyの「たつたひとり」が「たつたとり」に見える。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其19 p-85 l-07</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其19 p-85 l-07</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">44d40295</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 44d40295ce47b1f3e162b5b303b847c7feaf65a4
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 00:45:55 2024 +0900
+
+    [fix] 「唯（たつた）」と「一人（ひとり）」のルビが重ならないよう調整
+
+diff --git a/source/019-1-19-其十九.tex b/source/019-1-19-其十九.tex
+index a52f3ff1..6d33ba4d 100644
+--- a/source/019-1-19-其十九.tex
++++ b/source/019-1-19-其十九.tex
+@@ -737,7 +737,13 @@
+ %
+ \ruby{天}{てん}にも
+ \ruby{地}{ち}にも
+-\ruby[||j&gt;]{唯}{たつた}
++\makeatletter
++\@ifundefined{デバッグ@ビルド}{%
++  \ruby[&lt;j||]{唯}{たつた}
++}{%
++  \ruby[||j&gt;]{唯}{たつた}
++}%
++\makeatother
+ \ruby[g]{一人}{ひとり}の
+ \ruby[g]{大切}{たいせつ}な
+ \ruby[g]{朋友}{ともだち}に
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgae0a2e3" class="outline-3">
+<h3 id="orgae0a2e3"><span class="section-number-3">1.5.</span> <span class="done DONE">DONE</span> 1巻 其25 rubyの「いにしへけんじん」というように「いにしへ」と「けんじん」が繋がって見えるが&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">rubyの「いにしへけんじん」というように</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">「いにしへ」と「けんじん」が繋がって見えるが</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">ここはできれば空字を挿入したほうが良い。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其25 p-111 l-08</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其25 p-111 l-08</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">0bd8e217</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 0bd8e21738a19472fa5b2f55b4f15b4e434a39ba
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 00:57:29 2024 +0900
+
+    [fix] 「古（いにしへ）」と「賢人（けんじん）」のルビが連らないよう調整
+
+diff --git a/source/025-1-25-其二十五.tex b/source/025-1-25-其二十五.tex
+index 462413da..8fdccbaf 100644
+--- a/source/025-1-25-其二十五.tex
++++ b/source/025-1-25-其二十五.tex
+@@ -627,7 +627,14 @@
+ %
+ \ruby{我}{われ}は
+ たゞ
+-\ruby[&lt;g&gt;]{{\換字{古}}の}{いにしへ}% 行頭なので[&lt;j&gt;] を使えない故「古の（いにしへ）」
++\makeatletter
++\@ifundefined{デバッグ@ビルド}{%
++  \ruby[&lt;g&gt;]{{\換字{古}}}{いにしへ}
++  の
++}{%
++  \ruby[&lt;g&gt;]{{\換字{古}}の}{いにしへ}% 行頭なので[&lt;j&gt;] を使えない故「古の（いにしへ）」
++}%
++\makeatother
+ \ruby[g]{賢人}{けんじん}として
+ \ruby[g]{大士}{だいし　}を
+ \ruby{待}{ま}たんと
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org03b4382" class="outline-3">
+<h3 id="org03b4382"><span class="section-number-3">1.6.</span> <span class="done DONE">DONE</span> 1巻 其26 忌々の直後で改行しているも、これは改行文字を削除してほしい。つまり連続すべき。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">忌々の直後で改行しているも、これは改行文字を削除してほしい。つまり連続すべき。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其26 p-116 l-05</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其26 p-116 l-05</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号 85/134 p-163 l-02</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">fd10c6a8</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit fd10c6a8b2002bbe1358c604c1873e3f3f9ded76
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 01:23:33 2024 +0900
+
+    [fix] 「忌々（改行）しい」の不要な改行の調整
+
+    かつての修正で \par と \relax の取り扱いが間違っていた。
+
+diff --git a/source/026-1-26-其二十六.tex b/source/026-1-26-其二十六.tex
+index e112242b..b9d9e103 100644
+--- a/source/026-1-26-其二十六.tex
++++ b/source/026-1-26-其二十六.tex
+@@ -569,9 +569,9 @@
+ \ruby[g]{忌々}{いま〳〵}
+ \makeatletter
+ \@ifundefined{デバッグ@ビルド}{%
+-  \par%
+-}{%
+   \relax%
++}{%
++  \par%
+ }%
+ \makeatother
+ しい、
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e43c0d" class="outline-3">
+<h3 id="org8e43c0d"><span class="section-number-3">1.7.</span> <span class="done DONE">DONE</span> 1巻 其27 昔語のruby「むかしがたり」の「し」と「が」の字重なり。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">昔語のruby「むかしがたり」の「し」と「が」の字重なり。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其27 p-117 l-13</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其27 p-117 l-13</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">7d7567a9</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 7d7567a926aff4412a0e0c7dc745974d6999574e
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 01:42:32 2024 +0900
+
+    [fix] 「昔（むかし）語（がたり）」のルビ調整
+
+diff --git a/source/027-1-27-其二十七.tex b/source/027-1-27-其二十七.tex
+index afbe8c4e..8ca3753a 100644
+--- a/source/027-1-27-其二十七.tex
++++ b/source/027-1-27-其二十七.tex
+@@ -62,7 +62,7 @@
+
+ \原本頁{165-4}%
+ \ruby[||j&gt;]{昔}{むかし}% ルビ調整（特殊処理）行頭の長いルビ対策
+-\ruby[g]{語の}{がたり}
++\ruby[g]{語の}{　がたり}
+ \ruby[||j&gt;]{海}{　うみ}
+ \ruby[||j&gt;]{坊}{　ばう}
+ \ruby[||j&gt;]{主}{　ず}の
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org379b963" class="outline-3">
+<h3 id="org379b963"><span class="section-number-3">1.8.</span> <span class="done DONE">DONE</span> 1巻 其33 「ifundefined デバッグ＠ビルド」 不要につき削除。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「ifundefined デバッグ＠ビルド」 不要につき削除。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其33 p-146 l-15</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其33 p-146 l-15</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">c16c3113</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit c16c3113f35d9b7e357bb8f483856d99439420d8
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 02:04:13 2024 +0900
+
+    [fix] ON/OFF コーディングミス
+
+diff --git a/source/033-1-33-其三十三.tex b/source/033-1-33-其三十三.tex
+index e77d9481..591e0ef1 100644
+--- a/source/033-1-33-其三十三.tex
++++ b/source/033-1-33-其三十三.tex
+@@ -252,12 +252,14 @@
+ %
+ \ruby[g]{流石}{さすが　}に
+ \ruby{堪}{こら}へ
++\makeatletter
+ \@ifundefined{デバッグ@ビルド}{%
+   \ruby[||g&gt;]{{\換字{情}}{\換字{強}}}{じやうつよ}き
+ }{%
+   \ruby[||j&gt;]{{\換字{情}}}{じやう}
+   \ruby[||j&gt;]{{\換字{強}}}{　つよ}き
+ }%
++\makeatother
+ \ruby[g]{水野}{みづの　}も
+ \ruby[g]{眞靑}{まつさを}に
+ なりたり。
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5a4f9ad" class="outline-3">
+<h3 id="org5a4f9ad"><span class="section-number-3">1.9.</span> <span class="done DONE">DONE</span> 1巻 其35 「ifundefined デバッグ＠ビルド」 不要につき削除。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-9">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「ifundefined デバッグ＠ビルド」 不要につき削除。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">1巻 其35 p-151 l-08</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">1巻 其35 p-151 l-08</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">7963c10c</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 7963c10c607802dfad244fd56d83a2fc5fdeafee
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 02:06:28 2024 +0900
+
+    [fix] ON/OFF コーディングミス
+
+diff --git a/source/035-1-35-其三十五.tex b/source/035-1-35-其三十五.tex
+index 5acd7cc6..c956e781 100644
+--- a/source/035-1-35-其三十五.tex
++++ b/source/035-1-35-其三十五.tex
+@@ -76,12 +76,14 @@
+ その
+ \ruby{人}{ひと}の
+ \ruby[g]{魂魄}{た　ま　}の
++\makeatletter
+ \@ifundefined{デバッグ@ビルド}{%
+   \ruby[g]{{\換字{情}}無}{なさけな}くも
+ }{%
+   \ruby[||j&gt;]{{\換字{情}}}{なさけ}
+   \ruby[||j&gt;]{無}{　な　}くも
+ }%
++\makeatother
+ \ruby{天}{そら}に
+ \ruby{去}{さ}つて、
+ %
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org11a5beb" class="outline-3">
+<h3 id="org11a5beb"><span class="section-number-3">1.10.</span> <span class="done DONE">DONE</span> 2巻 其37 ruby「そろ」⇨「をそ」&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></h3>
+<div class="outline-text-3" id="text-1-10">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">ruby「そろ」⇨「をそ」</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">2巻 其37 p337 l-14</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">2巻 其37 p337 l-14</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号 116/160 p-222 l-11</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">2194eed9</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">却下（原本通り）</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">「恐ろしく」の本来のルビは（おそ）</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">なので、誤植だと思うけど原本通り</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 2194eed917de979d10296a3ce4f63c3bbaa6bbe2
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sat Oct 12 13:42:15 2024 +0900
+
+    [fix] 「恐（そろ）ろしく」とルビを振っている理由の注記
+
+diff --git a/source/077-2-37-其三十七.tex b/source/077-2-37-其三十七.tex
+index 41fb08cb..9bc0bc5e 100644
+--- a/source/077-2-37-其三十七.tex
++++ b/source/077-2-37-其三十七.tex
+@@ -851,6 +851,11 @@
+ %
+ \ruby[g]{斯樣}{か　う　}
+ \ruby{恐}{そろ}ろしく% ルビ調整（原本通り）にしておく
++\footnote{%
++原本のルビは「\ruby{恐}{そろ}ろしく」とあり、
++「\ruby{恐}{おそ}ろしく」の誤植と思われるが原本通りとする。
++（国会図書館 コマ番号 116/160 p-222 l-11）
++}%
+ \ruby{思}{おも}ひ
+ \ruby{{\換字{込}}}{こ}んでは
+ \ruby[g]{始末}{し　まつ}が
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge540c0e" class="outline-3">
+<h3 id="orge540c0e"><span class="section-number-3">1.11.</span> <span class="done DONE">DONE</span> 3巻 其三十 「全然」のrubyは、「ま まる」となっているが ...&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></h3>
+<div class="outline-text-3" id="text-1-11">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「全然」のrubyは、「ま まる」となっているが</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">「まるつきり」とか「まるで」や「まったく」の意味であろう。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">そういう意味で「ま まる」のruby は不可解としか思えないが、如何？</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">3巻 其三十 p511 l-11</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">3巻 其三十 p513 l-11</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">3a84e760(操作ミスで不要な改行混入）→ 1cd0586e</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">却下</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">（まるまる）と思われるが原本通りとした</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+
+<div class="org-src-container">
+<pre class="src src-diff">commit 3a84e7609240a8f48b779130b40f81a48d819f58
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sat Oct 12 13:18:58 2024 +0900
+
+    [fix] 「全然」のルビが（ま　まる）と空白が含まれる理由についての注記
+
+    誤操作で不要な「段落開始の空行」が入っているので別途修正する
+
+diff --git a/source/121-3-30-其三十.tex b/source/121-3-30-其三十.tex
+index 633b7b99..5a41ad19 100644
+--- a/source/121-3-30-其三十.tex
++++ b/source/121-3-30-其三十.tex
+@@ -213,6 +213,7 @@
+ \ruby{龍}{りう}が
+ \ruby[g]{樣子}{やうす　}
+ などには
++
+ \ruby{眼}{め}も
+ \ruby{{\換字{遣}}}{や}らずして、
+
+@@ -258,7 +259,12 @@
+ %
+ \ruby{{\換字{若}}}{もし}
+ \ruby{{\換字{又}}}{また}
+-\ruby[g]{全然}{ま　まる}% ルビ調整（原本通り）（まるまる）」のようにもも見える
++\ruby[g]{全然}{ま　まる}% ルビ調整（原本通り）他の用例から（まるまる）と思われるが
++\footnote{%
++原本の「全然」のルビは他の用例「\ruby[g]{全然}{まる〳〵}」から（まるまる）と思われるが、
++原本通り「\ruby[g]{全然}{ま　まる}」とする。
++（国会図書館 コマ番号 86/146 p-164 l-03）
++}%
+ \ruby{握}{にぎ}り
+ \ruby{{\換字{拳}}}{こぶし}でも
+ \ruby{濟}{す}みませぬやうの
+</pre>
+</div></li>
+
+<li><p>
+補正修正( 3a84e760 で余分な改行が混入したため）
+</p>
+
+<div class="org-src-container">
+<pre class="src src-diff">commit 1cd0586edaa8c572828ffefbf15103836e93ede3
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 13 21:48:54 2024 +0900
+
+    [fix] 「全然」のルビが（ま　まる）と空白が含まれる理由についての注記（訂正修正）
+
+    3a84e760 での修正時に誤操作で「段落開始の空行」が混入してしまったので
+    是正修正を行う
+
+diff --git a/source/121-3-30-其三十.tex b/source/121-3-30-其三十.tex
+index 5a41ad19..2518891b 100644
+--- a/source/121-3-30-其三十.tex
++++ b/source/121-3-30-其三十.tex
+@@ -213,7 +213,6 @@
+ \ruby{龍}{りう}が
+ \ruby[g]{樣子}{やうす　}
+ などには
+-
+ \ruby{眼}{め}も
+ \ruby{{\換字{遣}}}{や}らずして、
+
+</pre>
+</div></li>
+
+<li><p>
+「全然」のルビの振り方状況
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">全然</th>
+<th scope="col" class="org-left">ま　まる</th>
+<th scope="col" class="org-left">3巻 其30</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">全然</th>
+<th scope="col" class="org-left">まる〳〵</th>
+<th scope="col" class="org-left">3巻 其48</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">まるで　</td>
+<td class="org-left">1巻 其01</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">まるで　</td>
+<td class="org-left">2巻 其40</td>
+<td class="org-left">2巻 其50</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">まるで</td>
+<td class="org-left">3巻 其14</td>
+<td class="org-left">3巻 其16</td>
+<td class="org-left">3巻 其20</td>
+<td class="org-left">3巻 其24</td>
+<td class="org-left">3巻 其40</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">まるきり</td>
+<td class="org-left">3巻 其21</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">すつかり</td>
+<td class="org-left">1巻 其04</td>
+<td class="org-left">1巻 其20</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">すつかり</td>
+<td class="org-left">2巻 其07</td>
+<td class="org-left">2巻 其33</td>
+<td class="org-left">2巻 其33</td>
+<td class="org-left">2巻 其49</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">すつかり</td>
+<td class="org-left">3巻 其05</td>
+<td class="org-left">3巻 其24</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">全然</td>
+<td class="org-left">ぜん〴〵</td>
+<td class="org-left">2巻 其45</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf7a2774" class="outline-3">
+<h3 id="orgf7a2774"><span class="section-number-3">1.12.</span> <span class="done DONE">DONE</span> 3巻 其三十二 「私一人」の ruby が「し」と「ひ」の字重なり。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-12">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「私一人」の ruby が「し」と「ひ」の字重なり。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">3巻 其三十二 p521 l-04</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">3巻 其三十二 p523 l-04</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号 92/146 p-177 l-10</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">fc39c974</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit fc39c974e89fb9da8b13ac554fa5acd47bceb9a9
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 10:34:31 2024 +0900
+
+    [fix] 「私（わたくし）一人（ひとり）」のルビが重ならないよう調整
+
+diff --git a/source/123-3-32-其三十二.tex b/source/123-3-32-其三十二.tex
+index 2fda6ae3..0ec18ae8 100644
+--- a/source/123-3-32-其三十二.tex
++++ b/source/123-3-32-其三十二.tex
+@@ -126,7 +126,13 @@
+ \ruby{致}{いた}さうと
+ \ruby{致}{いた}しますれば、
+ %
+-\ruby[&lt;j&gt;]{私}{わたくし}
++\makeatletter
++\@ifundefined{デバッグ@ビルド}{%
++  \ruby[&lt;j|]{私}{わたくし}
++}{%
++  \ruby[&lt;j&gt;]{私}{わたくし}
++}%
++\makeatother
+ \ruby[g]{一人}{ひとり}% ルビ調整（長いルビ対策）直前の長いルビ対策% ルビ調整（原本通り）非グループルビ
+ のところへ
+ \ruby[g]{夫{\換字{婦}}}{ふうふ　}
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdc5aef6" class="outline-3">
+<h3 id="orgdc5aef6"><span class="section-number-3">1.13.</span> <span class="done DONE">DONE</span> 3巻 其三十三 「篤實」の ruby だが「こくめい」とあるが ...&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">却下</span></span></h3>
+<div class="outline-text-3" id="text-1-13">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「篤實」の ruby だが「こくめい」とあるが類似語には「克明」</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">があるも、この「読み」は「とくじつ」でなかろうか？</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">「こくめい」は見たこともない聞いたこともない。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">しかし、後にももう１箇所同様の ruby が繰り返されているので、</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">これは意図的な記述なのであろう。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">3巻 其三十三 p525 l-03</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">3巻 其三十三 p527 l-03</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号  95/146 p-183 l-06 （3巻 其三十三）</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号 124/134 p-241 l-07 （1巻 其四十）</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">コマ番号 125/146 p-242 l-11 （3巻 其四十三）</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">4ab1bb27</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">却下:同様の他二つも含め後注書きとする</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 4ab1bb2792d9b8c5864b3af60c1494ec70f22dfc
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sat Oct 12 11:45:12 2024 +0900
+
+    [fix] （こくめい）とルビを振る「篤實」「朴實」「實直」についての注記
+
+diff --git a/source/040-1-40-其四十.tex b/source/040-1-40-其四十.tex
+index 3ca8c0d3..8833c771 100644
+--- a/source/040-1-40-其四十.tex
++++ b/source/040-1-40-其四十.tex
+@@ -109,7 +109,13 @@
+ \ruby{見}{み}たやうに
+ \ruby{變}{へん}に
+ \ruby[g]{乾固}{ひ　かた}まつた
+-\ruby[g]{朴實}{こくめい}な
++\ruby[g]{朴實}{こくめい}
++\footnote{%
++通常「朴實」のルビは（こくめい）ではなく（とくじつ）と思われるが原本通りとする。
++（国会図書館 コマ番号 124/134 p-241 l-07）
++類似の通常（とくめい）と読まない「篤實（三巻 其33）」や「實直（三巻 其43）」も原本通りとする。
++}%
++な
+ \ruby{人}{ひと}だ
+ \原本頁{241-8}\改行%
+ つたのには
+diff --git a/source/124-3-33-其三十三.tex b/source/124-3-33-其三十三.tex
+index 8f9bcbcf..2418cc1c 100644
+--- a/source/124-3-33-其三十三.tex
++++ b/source/124-3-33-其三十三.tex
+@@ -22,7 +22,13 @@
+ \ruby[||j&gt;]{正}{しやう}
+ \ruby[||j&gt;]{直}{　ぢき}な
+ % \ruby{正直}{しやう|ぢき}な
+-\ruby[g]{篤實}{こくめい}の
++\ruby[g]{篤實}{こくめい}
++\footnote{%
++通常「篤實」の読みは（こくめい）ではなく（とくじつ）と思われるが原本通りとする。
++（国会図書館 コマ番号 95/146 p-183 l-06）
++類似の通常（とくめい）と読まない「朴實（一巻 其40）」や「實直（三巻 其43 ）」も原本通りとする。
++}%
++の
+ \ruby{人}{ひと}
+ も
+ ございますのネエ。
+diff --git a/source/134-3-43-其四十三.tex b/source/134-3-43-其四十三.tex
+index 0130b0ef..fb6f08ba 100644
+--- a/source/134-3-43-其四十三.tex
++++ b/source/134-3-43-其四十三.tex
+@@ -254,7 +254,13 @@
+ \ruby{鍬}{くは}を
+ \ruby{擔}{かつ}ぐ
+ \ruby{男}{をとこ}でも
+-\ruby[g]{實直}{こくめい}な
++\ruby[g]{實直}{こくめい}
++\footnote{%
++通常「實直」のルビは（こくめい）ではなく（じつちよく）と思われるが原本通りとする。
++（国会図書館 コマ番号 125/146 p-241 l-11）
++類似の通常（とくめい）と読まない「朴實（一巻 其40）」や「篤實（三巻 其33）」も原本通りとする。
++}%
++な
+ \ruby{堅}{かた}い
+ \ruby{人}{ひと}を、
+ %
+</pre>
+</div></li>
+
+<li><p>
+（こくめい）とルビを振っている状況
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">通常の読み</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1巻 其40</td>
+<td class="org-left">\ruby[g]{朴實}{こくめい}な</td>
+<td class="org-left">ぼくじつ</td>
+<td class="org-left">飾り気がなく律気であること</td>
+</tr>
+
+<tr>
+<td class="org-left">3巻 其33</td>
+<td class="org-left">\ruby[g]{篤實}{こくめい}の</td>
+<td class="org-left">とくじつ</td>
+<td class="org-left">情が深く誠実なこと</td>
+</tr>
+
+<tr>
+<td class="org-left">3巻 其43</td>
+<td class="org-left">\ruby[g]{實直}{こくめい}な</td>
+<td class="org-left">じっちょく</td>
+<td class="org-left">誠実でかげひなたのないこ</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbde7939" class="outline-3">
+<h3 id="orgbde7939"><span class="section-number-3">1.14.</span> <span class="done DONE">DONE</span> 3巻 其四十六 「凍てたる路に」、で改行されている件について&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-14">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「凍てたる路に」、で改行されているが、</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">原典では、次の「車の走る轟の、」は連続している。</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">3巻 其四十六 p576 l-02</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">3巻 其四十六 p578 l-02</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">53ac8693</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit 53ac8693ba9fe2d0a345813ce0e26a496306f698
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 6 11:34:59 2024 +0900
+
+    [fix] 不要な改行を除去
+
+    以前の修正 86ca815925349d880973f357a287dd151bedfade
+    において、不要な「回行→段落区切り」を混入させていたので是正
+
+diff --git a/source/137-3-46-其四十六.tex b/source/137-3-46-其四十六.tex
+index 3d83aca0..39340125 100644
+--- a/source/137-3-46-其四十六.tex
++++ b/source/137-3-46-其四十六.tex
+@@ -92,7 +92,6 @@
+ %
+ \ruby{凍}{い}てたる
+ \ruby{路}{みち}に
+-
+ \ruby{車}{くるま}の
+ \ruby{走}{はし}る
+ \ruby{轟}{とどろ}きの、% 原本では非通り字表記
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7d91292" class="outline-3">
+<h3 id="org7d91292"><span class="section-number-3">1.15.</span> <span class="done DONE">DONE</span> 1巻 巻尾  「後注」の各項目頭がindentされないようにして欲しい。&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">採択</span></span></h3>
+<div class="outline-text-3" id="text-1-15">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">クレーム</td>
+<td class="org-left">「後注」の各項目頭がindentされないようにして欲しい。</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">（各項目の２行目を１文字下げても良い。）</td>
+</tr>
+
+<tr>
+<td class="org-left">旧PDF</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">新PDF</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">国会図書館</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">commit</td>
+<td class="org-left">a527bdac</td>
+</tr>
+
+<tr>
+<td class="org-left">処置</td>
+<td class="org-left">採択</td>
+</tr>
+</tbody>
+</table>
+
+
+<ul class="org-ul">
+<li><p>
+修正内容
+</p>
+<div class="org-src-container">
+<pre class="src src-diff">commit a527bdac798cfd38e6d707eaf0c44617c0fca278
+Author: 128Mac &lt;qaz_wada136@yahoo.co.jp&gt;
+Date:   Sun Oct 13 12:23:25 2024 +0900
+
+    [fix] 注記の文言を『「（開始鍵カッコ）』で始めないようにした
+
+    『「』で注記を開始すると字下がり的に見えるため、
+    全体の見栄えを揃える目的でその直前に文字を配置した。
+
+diff --git a/source/002-1-02-其二.tex b/source/002-1-02-其二.tex
+index 9be97a33..169bad91 100644
+--- a/source/002-1-02-其二.tex
++++ b/source/002-1-02-其二.tex
+@@ -155,7 +155,9 @@
+ \ruby[g]{隨{\換字{分}}}{ずゐぶん}
+ \ruby[||j&gt;]{忠}{ちゆう}% 原本通り（ちゆう）(国会図書館 コマ番号 9/134 p10 l8)
+ \ruby[||j&gt;]{告}{　こく}
+-\footnote{「忠」を（ちゆう）ないし（ちう）と読む場合の使用例『
++\footnote{%
++原本では「\ruby{忠}{ちゆう}」ないし「\ruby{忠}{ちう}」の二通りのルビが使われている。
++その使用例『
+ 第一巻「\ruby{忠告}{ちゆう|こく}」
+       「\ruby[g]{忠義}{ちゆうぎ}」
+ 第二巻「\ruby[g]{忠告}{ちうこく}」
+diff --git a/source/004-1-04-其四.tex b/source/004-1-04-其四.tex
+index ab5a57e5..8b2e4ce6 100644
+--- a/source/004-1-04-其四.tex
++++ b/source/004-1-04-其四.tex
+@@ -150,7 +150,9 @@
+ \ruby{才}{さい}
+ はじけたも
+ \ruby{謹}{つゝ}しまやか
+-\footnote{「謹」の読みの一つに「つつしむ」があるので原本通りとする
++\footnote{%
++検討対象の「\ruby{謹}{つゝ}しまやか」とルビを振っている件について、
++「謹」の読みの一つに「つつしむ」があるので原本通りとする
+ （国会図書館 コマ番号17/134 p-27 l-10）}%
+ なも、
+ %
+diff --git a/source/023-1-23-其二十三.tex b/source/023-1-23-其二十三.tex
+index 036ebf64..3ccab27d 100644
+--- a/source/023-1-23-其二十三.tex
++++ b/source/023-1-23-其二十三.tex
+@@ -304,7 +304,8 @@
+ \ruby{邪}{じや}でも
+ \ruby{非}{ひ}でも
+ まかはない% （かまはない）と思われるが原本通り
+-\footnote{「まかはない」は「かまはない」の誤植と思われるが原本通りとする
++\footnote{%
++検討対象の「まかはない」は「かまはない」の誤植と思われるが原本通りとする
+ （国会図書館 コマ番号 74/134 p 140 l-1）}%
+ \ruby{彼}{あ}の
+ \ruby{顏}{かほ}つき！。
+diff --git a/source/047-2-07-其七.tex b/source/047-2-07-其七.tex
+index 96fedf2e..5455e056 100644
+--- a/source/047-2-07-其七.tex
++++ b/source/047-2-07-其七.tex
+@@ -28,7 +28,9 @@
+ \ruby{出}{で}て
+ \ruby{居}{ゐ}た
+ \ruby[g]{二才}{に　さい}
+-\footnote{「二歳」ではなく「二才」と記す場合は実年齢以外にも
++\footnote{%
++検討対象の「\ruby[g]{二才}{に　さい}」の記述について、
++「二歳」ではなく「二才」と記す場合は「年齢」以外にも
+ 「若くて未熟な人」の意味もあるので原本通りとする
+ （国会図書館 コマ番号24/160 p-039 l-10）}%
+ の
+diff --git a/source/050-2-10-其十.tex b/source/050-2-10-其十.tex
+index 0b4de391..16c6df0c 100644
+--- a/source/050-2-10-其十.tex
++++ b/source/050-2-10-其十.tex
+@@ -188,8 +188,12 @@
+ \ruby{妾}{わたし}が
+ お
+ \ruby{母}{かつ}さん
+-\footnote{「母」のルビを（かつ）としているのはここのみで違和感はあるが原本通りとする
+-（国会図書館 コマ番号34/160 p-058 l-04）}%
++\footnote{%
++検討対象の
++「お\ruby{母}{かつ}さん」とルビが振られている件について、
++「お\ruby{母}{つか}さん」の誤植とも考えられるが原本通りとする
++（国会図書館 コマ番号34/160 p-058 l-04）
++}%
+ に
+ \ruby{抱}{だ}かれて
+ うと〳〵として
+diff --git a/source/051-2-11-其十一.tex b/source/051-2-11-其十一.tex
+index f7c9d667..eee6d670 100644
+--- a/source/051-2-11-其十一.tex
++++ b/source/051-2-11-其十一.tex
+@@ -169,7 +169,10 @@
+ ところは
+ \ruby{兎}{と}まれ
+ \ruby{角}{かく}かれ
+-\footnote{「\ruby{兎}{と}まれ\ruby{角}{かく}まれ」と思われるが原本通り「\ruby{兎}{と}まれ\ruby{角}{かく}かれ」とした
++\footnote{%
++検討対象の
++「\ruby{兎}{と}まれ\ruby{角}{かく}かれ」の最後の「かれ」は
++「\ruby{兎}{と}まれ\ruby{角}{かく}まれ」と「まれ」で終わるとも考えられるが原本通りとした
+ （国会図書館 コマ番号36/160 p-063 l-01）}%
+ 、
+ %
+@@ -201,8 +204,10 @@
+ \ruby{私}{ひそか}に
+ \ruby{{\換字{前}}}{まへ}の
+ \ruby{世}{よ}を
+-\footnote{「\ruby{私}{ひそか}に\ruby{{\換字{前}}}{まへ}の\ruby{世}{よ}」に続く文字は原本通り「を」とする
+-（国会図書館 コマ番号36/160 p-063 l-03 l-04）}%
++\footnote{%
++検討対象の「\ruby{世}{よ}」に続く文字は原本通り「を」とする
++（国会図書館 コマ番号36/160 p-063 l-03 l-04）
++}%
+ \ruby{有}{あ}るものゝやう% 踊り字調整「〻（二の字点、揺すり点）に見えるが（ゝ）」
+ \ruby{思}{おも}ふ
+ \ruby[g]{心地}{こゝち　}も% 踊り字調整「〻（二の字点、揺すり点）に見えるが（ゝ）」
+@@ -272,8 +277,16 @@
+ \原本頁{63-10}\改行%
+ \ruby{遙}{はるか}に
+ \ruby{亘}{わた}れるなる。
+-\footnote{「刹那の此の關より彼方には」では『長路ぞ』であるが、「刹那の關より此方にも」では『長路に』となっている
++\footnote{%
++検討対象の「長路」に続く（係）助詞は、
++前句の「刹那の此の關より彼方には」では『長路ぞ』であるが、
++それに続く「刹那の關より此方にも」では『長路は』となっているので
++原本通りとする
+ （国会図書館 コマ番号36/160 p-063 l-09）}%
++% 刹那の此の關より彼方には涯無き路の長路ぞ遙に亘れるなる。
++% 刹那の    關より此方にも涯無き路の長路は遙に亘れるなる。
++
++
+
+ \原本頁{63-11}%
+ \ruby{思}{おも}へ
+@@ -293,8 +306,10 @@
+ %
+ \ruby{爲}{な}されし
+ こと
+-\footnote{原本通り（こと）は平仮名とする
+-（国会図書館 コマ番号37/160 p-064 l-01）}%
++\footnote{%
++検討対象の「こと」は原本通り平仮名とする
++（国会図書館 コマ番号37/160 p-064 l-01）
++}%
+ の
+ かつて
+ \ruby[g]{此路}{こ　ゝ　}に% 踊り字調整「〻（二の字点、揺すり点）に見えるが（ゝ）」
+diff --git a/source/056-2-16-其十六.tex b/source/056-2-16-其十六.tex
+index 6af82fc9..4ea58ce8 100644
+--- a/source/056-2-16-其十六.tex
++++ b/source/056-2-16-其十六.tex
+@@ -437,8 +437,10 @@
+ \ruby{一}{ひ}ト
+ \ruby{當}{あて}
+ \ruby{當}{あ}つれ
+-\footnote{「\ruby{當}{あ}つ」の活用形の一つとして原本通り「\ruby{當}{あ}つれ」とした
+-原本通り（国会図書館 コマ番号51/160 p-092 l-01）}%
++\footnote{%
++検討対象の「當」の送り仮名は「\ruby{當}{あ}つ」の活用形の一つとして原本通り「\ruby{當}{あ}つれ」とした
++（国会図書館 コマ番号51/160 p-092 l-01）
++}%
+ ば
+ \ruby[g]{尾竹}{を　だけ}は
+ \ruby{驚}{おどろ}き、
+diff --git a/source/057-2-17-其十七.tex b/source/057-2-17-其十七.tex
+index 9bfd4c32..019c1b20 100644
+--- a/source/057-2-17-其十七.tex
++++ b/source/057-2-17-其十七.tex
+@@ -454,8 +454,10 @@
+ \ruby{異}{ことな}れる
+ \ruby{同}{おな}じ
+ \ruby[g]{時刻}{ころほひ}
+-\footnote{「刻」のルビは（ほひ）ないし（はひ）と読み取れるが「\ruby{多}{おほ}きや」や
+-「お\ruby{濱}{はま}」を参考に「\ruby{時刻}{ころ|ほひ}」とした
++\footnote{%
++検討対象の「時刻」の「刻」のルビは
++（ほひ）ないし（はひ）と読み取れるが
++原本通り「\ruby[g]{時刻}{ころほひ}」とした
+ （国会図書館 コマ番号54/160 p-098 l-15）}%
+ に、
+ %
+diff --git a/source/062-2-22-其二十二.tex b/source/062-2-22-其二十二.tex
+index 872799b0..5b99b574 100644
+--- a/source/062-2-22-其二十二.tex
++++ b/source/062-2-22-其二十二.tex
+@@ -316,8 +316,11 @@
+ \ruby[g]{水野}{みづの　}は
+ \ruby{今}{いま}
+ きさ%
+-\footnote{「きさ【×詭詐】うそをつくこと・偽ること・譎詐(きっさ)」という意味もあることから原本通りとする
+-（国会図書館 コマ番号66/160 p-123 l-03）}%
++\footnote{%
++検討対象の「きさ」には、
++【×詭詐】うそをつくこと・偽ること・譎詐(きっさ)」という意味もあることから原本通りとする
++（国会図書館 コマ番号66/160 p-123 l-03）
++}%
+ % 「きさ」はどれかな？
+ % きさ【×詭詐】 うそをつくこと。偽ること。譎詐(きっさ)。
+ %    水野が神佛を信ぜぬと言う自身の考えに偽っている様を示すと思うので原本通り。
+diff --git a/source/063-2-23-其二十三.tex b/source/063-2-23-其二十三.tex
+index e96c7e4e..3e2d4d10 100644
+--- a/source/063-2-23-其二十三.tex
++++ b/source/063-2-23-其二十三.tex
+@@ -208,8 +208,11 @@
+ \ruby{較}{くら}ぶれば、
+ %
+ \ruby{然}{ま}る
+-\footnote{「然る」は「さる」が順当だと思うが、「まるごと」の意味もあり
+-  原文通り「まる」とする（国会図書館 コマ番号68/160 p-126 l-05）}%
++\footnote{%
++  検討対象の「然る」のルビは、「\ruby[g]{全然}{まる〳〵}」のような用法
++  もあり原文通り「まる」とする
++  （国会図書館 コマ番号68/160 p-126 l-05）
++}%
+ \ruby[&lt;j||]{心}{こゝろ}% 踊り字調整「〻（二の字点、揺すり点）に見えるが（ゝ）」
+ \ruby[||j&gt;]{{\換字{遣}}}{づかひ}
+ をするも
+@@ -229,9 +232,12 @@
+ \ruby{御}{おん}
+ \ruby[||j&gt;]{經}{きやう}にも
+ \ruby{見}{み}えす
+-\footnote{『詞「みる（見）」の未然形に尊敬の助動詞「す」の付いたものか』
+-  「 ごらんになる」と解釈し「見えず」ではなく「みえす」と原本通り
+-  （国会図書館 コマ番号68 / 160 p-126 l-07）}%
++\footnote{%
++  検討対象の「\ruby{見}{み}えす」に関して、
++  『詞「みる（見）」の未然形に尊敬の助動詞「す」の付いたもの』があり、
++  『ごらんになる』と解釈し原本通りとする
++  （国会図書館 コマ番号68 / 160 p-126 l-07）
++}%
+ 、
+ %
+ \ruby[g]{賣僧}{まいす　}の
+diff --git a/source/068-2-28-其二十八.tex b/source/068-2-28-其二十八.tex
+index d66223c5..e5a25e73 100644
+--- a/source/068-2-28-其二十八.tex
++++ b/source/068-2-28-其二十八.tex
+@@ -768,10 +768,13 @@
+ \ruby[g]{子守}{こ　もり}は
+ \ruby{獨}{ひと}り
+ \ruby{定}{ぎめ}に
+-\ruby[g]{凱歌}{とちどき}
+-\footnote{「凱歌」は通常（がいか）、（かちどき）だが原本通り（とちどき）とした
+-（国会図書館 コマ番号84/160 p-158 l-06）}%
+-を% ルビ調整（原本通り）意味的には「かちどき」と思われるが
++\ruby[g]{凱歌}{とちどき}% ルビ調整（原本通り）意味的には「かちどき」と思われるが
++\footnote{%
++検討対象の「凱歌」のルビについて、（がいか）ないし（かちどき）が妥当だが、
++原本通り（とちどき）とした
++（国会図書館 コマ番号84/160 p-158 l-06）
++}%
++を
+ \ruby{擧}{あ}げて、
+ %
+ \ruby[g]{得意}{とくい　}の
+diff --git a/source/079-2-39-其三十九.tex b/source/079-2-39-其三十九.tex
+index d95a040d..bc324863 100644
+--- a/source/079-2-39-其三十九.tex
++++ b/source/079-2-39-其三十九.tex
+@@ -271,7 +271,7 @@
+ %
+ \ruby{醉眠秋被}{すゐ|みん|あき|ひ}
+ \footnote{
+-「李十二白と同に活十の隠居を尋ぬ」詩の冒頭六句の一句の
++杜甫の「與李十二白同尋范十隱居　李十二白と同に活十の隠居を尋ぬ」の冒頭六句の一句の
+ 「酔眠秋共被　酔いて眠れば秋に被(掛け布団)を共にし」
+ からの引用と思われ原本通り「秋」は（あき）とする
+ （国会図書館 コマ番号120/160 p-231 l-09）}%
+diff --git a/source/093-3-02-其二.tex b/source/093-3-02-其二.tex
+index 3e7a0540..c175ac26 100644
+--- a/source/093-3-02-其二.tex
++++ b/source/093-3-02-其二.tex
+@@ -59,8 +59,11 @@
+ \ruby{今}{いま}
+ ただ% ルビ調整（原本通り）非踊り字表記（行末行頭の境界付近）
+ \ruby[g]{恍然}{うつかり}
+-\footnote{（うっかり）には「心惹かれ他に注意の向かない様＝うっとり」の意味もあるので、原本通りとする %
+-（国会図書館 コマ番号 7/146 p-007 l-07）}%
++\footnote{%
++検討対象の「\ruby[g]{恍然}{うつかり}」のルビについて、
++（うっかり）には「心惹かれ他に注意の向かない様＝うっとり」の意味もあるので、原本通りとする
++（国会図書館 コマ番号 7/146 p-007 l-07）
++}%
+ として
+ \ruby{居}{ゐ}た
+ ところ
+diff --git a/source/105-3-14-其十四.tex b/source/105-3-14-其十四.tex
+index 9c1703f8..ddfa51cb 100644
+--- a/source/105-3-14-其十四.tex
++++ b/source/105-3-14-其十四.tex
+@@ -414,8 +414,10 @@
+ \ruby{其}{それ}あ
+ \ruby[|g|]{何方}{どつち}が
+ \ruby[g]{眞正}{ほんた　}
+-\footnote{「眞正」のルビは（ほんたう）が妥当だが原本通り（ほんた）とする
+-（国会図書館 コマ番号4/146 p-081 l-02）}%
++\footnote{%
++検討対象の「眞正」のルビは（ほんたう）が妥当だが原本通り（ほんた）とする
++（国会図書館 コマ番号4/146 p-081 l-02）
++}%
+ だか% ルビ調整（原本通り）
+ \ruby{會}{あ}つて
+ \ruby{見}{み}ない
+diff --git a/source/106-3-15-其十五.tex b/source/106-3-15-其十五.tex
+index 132c241f..40894090 100644
+--- a/source/106-3-15-其十五.tex
++++ b/source/106-3-15-其十五.tex
+@@ -391,8 +391,11 @@
+ \ruby[g]{五十}{い　そ　}さんの
+ \ruby[&lt;j||]{母}{おつか}さん% 行末行頭の境界付近なので特例処置を施す
+ ならカエ
+-\footnote{「カエ」「かエ」の使用頻度はそれぞれ 2箇所、31箇所 であるが「ネエ」などの用法もあり原本通りとする
+-（国会図書館 コマ番号 46 / 146 p-085 l-09）}%
++\footnote{%
++原本での「カエ」「かエ」の用法について、
++使用頻度はそれぞれ 2箇所、31箇所 であるが「ネエ」などの用法もあり原本通りとする
++（国会図書館 コマ番号 46 / 146 p-085 l-09）
++}%
+ 。
+ %
+ さうさねエ、
+diff --git a/source/108-3-17-其十七.tex b/source/108-3-17-其十七.tex
+index 48b9eb04..cf80064b 100644
+--- a/source/108-3-17-其十七.tex
++++ b/source/108-3-17-其十七.tex
+@@ -342,8 +342,11 @@
+ \ruby[|g|]{此方}{こつち}あ
+ \ruby[||j&gt;]{食}{かゝ}
+ \ruby[||j&gt;]{客}{りうど}てす
+-\footnote{原本の前後の「て」「で」と比較し原本通り「てす」とする
+-（国会図書館 コマ番号51/146 p-095 l-01）}%
++\footnote{%
++検討対象は「\ruby[g]{食客}{かゝりうど}」に続く「てす」の「て」について、
++原本でのこの周辺の「て」「で」の印字形状と比較し原本通り「てす」とする
++（国会図書館 コマ番号51/146 p-095 l-01）
++}%
+ 、
+ % \ruby{食客}{かゝ|りうど}てす、
+ %
+diff --git a/source/117-3-26-其二十六.tex b/source/117-3-26-其二十六.tex
+index e2a9bbb6..36392136 100644
+--- a/source/117-3-26-其二十六.tex
++++ b/source/117-3-26-其二十六.tex
+@@ -157,8 +157,11 @@
+ \ruby[|g|]{此方}{こちら}
+ \ruby{樣}{さま}
+ 　%
+-\footnote{「\ruby{樣}{さま}」に続く文字は原本では「に」の断片のように見えるが判読不可のため空白とする
+-（国会図書館 コマ番号 74 / 146 p-140 l-07）}%
++\footnote{%
++原本で「\ruby{樣}{さま}」に続く文字について判読を試みたが、
++「に」の断片のように見えるも判読しつらいので空白とする
++（国会図書館 コマ番号 74 / 146 p-140 l-07）
++}%
+ \ruby{伺}{うかゞ}つて、
+ %
+ \ruby[g]{段々}{だん〴〵}
+diff --git a/source/118-3-27-其二十七.tex b/source/118-3-27-其二十七.tex
+index 2a3132f9..aa01ef88 100644
+--- a/source/118-3-27-其二十七.tex
++++ b/source/118-3-27-其二十七.tex
+@@ -355,8 +355,10 @@
+ \ruby{身}{み}を
+ \ruby{固}{かた}めさせて
+ \ruby{頂}{いただ}　たう% 「（　）たう」の部分、判読できず
+-\footnote{「\ruby{頂}{いただ}　たう」の空白部分は判読できず空白とした
+-（国会図書館 コマ番号78/146 p-148 l-06）}%
++\footnote{%
++原本で「\ruby{頂}{いただ}　たう」の空白部分の判読を試みたが、判読できず空白とした
++（国会図書館 コマ番号78/146 p-148 l-06）
++}%
+ ございます、
+ %
+ と
+diff --git a/source/122-3-31-其三十一.tex b/source/122-3-31-其三十一.tex
+index 2ba4d2a8..481ec105 100644
+--- a/source/122-3-31-其三十一.tex
++++ b/source/122-3-31-其三十一.tex
+@@ -217,8 +217,11 @@
+ \ruby{毒}{どく}らしきを
+ \ruby{越}{こ}して
+ \ruby{稍}{や}% 「稍（Shāo）」→「少し、ちょっと、わずか、やや」
+-\footnote{「稍（Shāo）」の意味等は（少し・ちょっと・わずか・やや）なので（やや）が妥当と思われるが原本通りとする
+-（国会図書館 コマ番号90/146 p-172 l-07）}%
++\footnote{%
++検討対象の「稍（Shāo）」は、その意味に「少し・ちょっと・わずか・やや」があるので
++「やや」から「や」でも妥当と思われ原本通りとする
++（国会図書館 コマ番号90/146 p-172 l-07）
++}%
+ \ruby[|g|]{可笑}{をかし}きに、
+ %
+ お
+diff --git a/source/128-3-37-其三十七.tex b/source/128-3-37-其三十七.tex
+index 7bfc8763..fd6b1836 100644
+--- a/source/128-3-37-其三十七.tex
++++ b/source/128-3-37-其三十七.tex
+@@ -225,8 +225,11 @@
+ %
+ \ruby{其}{そ}の
+ \ruby{無作法}{ぶ|さ|　ふ}% ルビ調整（原本通り）（ぶさ　ふ）
+-\footnote{「\ruby{無作法}{ぶ|さ|はふ}」が適切かと思われるが（は）の部分は原本通り無印字とする
+-（国会図書館 コマ番号108/146 p-209 l-05）}%
++\footnote{%
++検討対象の「無作法」のルビは、（ぶさはふ）が適切かと思われるが
++（は）の部分は原本通り無印字とする
++（国会図書館 コマ番号108/146 p-209 l-05）
++}%
+ さ、
+ %
+ \ruby{其}{そ}の
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2024-10-13 日 23:19</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
